@@ -5,139 +5,171 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>主页</title>
-    <link rel="stylesheet" type="text/css" href="lib/mui/css/mui.css">
+    <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+    <!-- <link rel="stylesheet" href="./lib/mui/fonts/mui.ttf"> -->
     <link rel="stylesheet" type="text/css" href="lib/fontAwesome/css/font-awesome.css">
-    <link rel="stylesheet/less" href="less/index.less">
-    <script src="lib/less/less.js"></script>
+    <link rel="stylesheet" href="./less/index.css">
 </head>
 
 <body>
+    <!-- 头部区域 -->
     <header id="header">
-        <a href="#" title="" class="logo">
-            <img src="http://static.manmanbuy.com/m/img/mlogo.png" alt="">
+        <a href="#">
+            <img class="header_logo" src="./images/header_logo.png" alt="">
         </a>
-        <form action="#">
-            <input type="search" name="">
-        </form>
-        <a href="#" title="" class="download">
-            下载
+        <a href="#">
+            <img class="header_app" src="./images/header_app.png" alt="">
         </a>
     </header>
+    <!-- 搜索区域 -->
+    <section id="search">
+        <input type="search" class="search" placeholder="请输入你要比价的商品">
+        <a href="#">搜索</a>
+    </section>
+    <!-- 主体区域 -->
     <main id="main">
-        <nav id="nav">
-            <div class="mui-row">
-                <div class="mui-col-xs-3">
-                    <a href="#" title="">
-                        <img src="images/gengduo.png" alt="">
-                        <p>比价搜索</p>
-                    </a>
-                </div>
-                <div class="mui-col-xs-3">
-                    <a href="#" title="">
-                        <img src="images/gengduo.png" alt="">
-                        <p>比价搜索</p>
-                    </a>
-                </div>
-                <div class="mui-col-xs-3">
-                    <a href="#" title="">
-                        <img src="images/gengduo.png" alt="">
-                        <p>比价搜索</p>
-                    </a>
-                </div>
-                <div class="mui-col-xs-3">
-                    <a href="#" title="">
-                        <img src="images/gengduo.png" alt="">
-                        <p>比价搜索</p>
-                    </a>
-                </div>
-                <div class="mui-col-xs-3">
-                    <a href="#" title="">
-                        <img src="images/gengduo.png" alt="">
-                        <p>比价搜索</p>
-                    </a>
-                </div>
-                <div class="mui-col-xs-3">
-                    <a href="#" title="">
-                        <img src="images/gengduo.png" alt="">
-                        <p>比价搜索</p>
-                    </a>
-                </div>
-                <div class="mui-col-xs-3">
-                    <a href="#" title="">
-                        <img src="images/gengduo.png" alt="">
-                        <p>比价搜索</p>
-                    </a>
-                </div>
-                <div class="mui-col-xs-3">
-                    <a href="#" title="">
-                        <img src="images/gengduo.png" alt="">
-                        <p>比价搜索</p>
-                    </a>
-                </div>
+        <!-- 首页菜单栏区域 -->
+        <section class="menu">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="./images/ic_search.png" alt="">比价搜索</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/ic_cu.png" alt="">省钱控</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/ic_coudanpin.png" alt="">国内折扣</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/ic_bcj.png" alt="">白菜价</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/ic_search.png" alt="">比价搜索</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/ic_cu.png" alt="">省钱控</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/ic_coudanpin.png" alt="">国内折扣</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/ic_bcj.png" alt="">白菜价</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/ic_search.png" alt="">比价搜索</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/ic_cu.png" alt="">省钱控</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/ic_coudanpin.png" alt="">国内折扣</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/ic_bcj.png" alt="">白菜价</a>
+                </li>
+            </ul>
+        </section>
+        <!-- 折扣推荐区域 -->
+        <section class="sale">
+            <!-- 头部导航区域 -->
+            <div class="nav">
+                <a href="#">超值折扣推荐</a>
+                <img src="http://www.zuyushop.com/wap/images/more.png" alt="">
             </div>
-        </nav>
-        <div id="productList">
-            <div class="title">
-                <span>超值折扣推荐</span>
-            </div>
-            <div class="content">
-                <ul>
-                    <li>
-                        <a href="#">
-                            <div class="left">
-                                <img src="http://wnzk-img.zuyushop.com/r_img/img/20181029/16/4ea84814d68341d2a9bf39105d3cec26.jpg" alt="">
-                            </div>
-                            <div class="right">
-                                <p class="product-name">
-                                    双11预售：鸿星尔克 男童棉马甲 
-                                    <span>89元包邮 （付20元定金立减40元）</span>
-                                </p>
-                                <div class="product-from">
-                                    天猫商城 | 10-29 17:04
-                                    <i class="icon-common"></i>
-                                    <span>0</span>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </main>
-    <script id="indexMenuTpl" type="text/html">
-        {{each result value}}
-            <div class="mui-col-xs-3">
-                <a href="{{value.titlehref}}" title="">
-                    <!-- 默认默认不能直接解析一个富文本 标签之类富文本  如果要解析富文本加一个@符号即可-->
-                    {{@value.img}}
-                    <p>{{value.name}}</p>
-                </a>
-            </div>
-        {{/each}}
-    </script>
-    <script id="discountProductTpl" type="text/html">
-        {{each result value}}
-             <li>
-                <a href="#">
-                    <div class="left">
-                        {{@value.productImgSm}}
-                    </div>
-                    <div class="right">
-                        <p class="product-name">
-                            {{value.productName}} 
-                            <span>{{value.productPinkage}}</span>
+            <!-- 商品列表区域 -->
+            <div class="productBox">
+                <div class="productList">
+                    <a href="#">
+                        <img src="http://img2019.manmanbuy.com/r_img/img/20181126/22/432dea014b4042fd8e81ff451094197f.jpg" alt="">
+                    </a>
+                    <div class="productRight">
+                        <p class="title">移动端凑单品:海天 鲜味 生抽</p>
+                        <p class="litre">1.28L
+                            <span class="price">10.9元</span>
                         </p>
-                        <div class="product-from">
-                            {{value.productFrom}} | {{value.productTime}}
-                            <i class="icon-common"></i>
-                            <span>{{value.productComCount.replace('有','').replace('人评论','')}}</span>
-                        </div>
+                        <p class="productInfo">
+                            <span class="productFrom">京东商城</span> |
+                            <span class="productTime">10-25 14:10</span>
+                            <span class="fa fa-comments-o comment">1</span>
+                        </p>
                     </div>
-                </a>
-            </li>
-        {{/each}}
-    </script>
-    <footer id="footer"></footer>
+                </div>
+                <div class="productList">
+                    <a href="#">
+                        <img src="http://img2019.manmanbuy.com/r_img/img/20181126/22/432dea014b4042fd8e81ff451094197f.jpg" alt="">
+                    </a>
+                    <div class="productRight">
+                        <p class="title">移动端凑单品:海天 鲜味 生抽</p>
+                        <p class="litre">1.28L
+                            <span class="price">10.9元</span>
+                        </p>
+                        <p class="productInfo">
+                            <span class="productFrom">京东商城</span> |
+                            <span class="productTime">10-25 14:10</span>
+                            <span class="fa fa-comments-o comment">1</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="productList">
+                    <a href="#">
+                        <img src="http://img2019.manmanbuy.com/r_img/img/20181126/22/432dea014b4042fd8e81ff451094197f.jpg" alt="">
+                    </a>
+                    <div class="productRight">
+                        <p class="title">移动端凑单品:海天 鲜味 生抽</p>
+                        <p class="litre">1.28L
+                            <span class="price">10.9元</span>
+                        </p>
+                        <p class="productInfo">
+                            <span class="productFrom">京东商城</span> |
+                            <span class="productTime">10-25 14:10</span>
+                            <span class="fa fa-comments-o comment">1</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 更多优惠信息 -->
+        <section class="special-offers">
+            <a href="#">更多优惠信息 »</a>
+        </section>
+        <section class="brandRanking">
+            <!-- 尾部导航区域 -->
+            <div class="nav">
+                <a href="#">品牌排行</a>
+                <img src="http://www.zuyushop.com/wap/images/more.png" alt="">
+            </div>
+        </section>
+    </main>
+    <!-- 底部区域 -->
+    <footer id="footer">
+        <div class="register">
+            <a href="#">登录</a>
+            <a href="#">注册</a>
+            <a href="#">
+                <img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部</a>
+        </div>
+        <div class="footer-info">
+            <p>
+                <a href="#"  style="color: Red;">手机APP下载</a>
+                <a href="#">
+                    慢慢买手机版</a> -- 掌上比价平台</p>
+            <p>
+                m.manmanbuy.com
+            </p>
+        </div>
+    </footer>
     <script src="lib/mui/js/mui.js"></script>
     <script src="lib/zepto/zepto.min.js"></script>
     <script src="lib/artTemplate/template-web.js"></script>
