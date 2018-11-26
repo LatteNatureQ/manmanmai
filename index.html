@@ -142,7 +142,7 @@
         </section>
         <!-- 更多优惠信息 -->
         <section class="special-offers">
-            <a href="#">更多优惠信息 »</a>
+            <a href="moneyctrl.html">更多优惠信息 »</a>
         </section>
         <section class="brandRanking">
             <!-- 尾部导航区域 -->
@@ -162,7 +162,7 @@
         </div>
         <div class="footer-info">
             <p>
-                <a href="#"  style="color: Red;">手机APP下载</a>
+                <a href="#" style="color: Red;">手机APP下载</a>
                 <a href="#">
                     慢慢买手机版</a> -- 掌上比价平台</p>
             <p>
@@ -173,6 +173,35 @@
     <script src="lib/mui/js/mui.js"></script>
     <script src="lib/zepto/zepto.min.js"></script>
     <script src="lib/artTemplate/template-web.js"></script>
+    <script type="text/html" id="menuTpl">
+        {{each result value}}
+        <li>
+            <a href="{{value.titlehref}}">
+                {{@value.img}} {{value.name}}
+            </a>
+        </li>
+        {{/each}}
+    </script>
+    <script type="text/html" id="moneyctrlTpl">
+        {{each result value}}
+        <div class="productList">
+            <a href="#">
+                {{@value.productImg2}}
+            </a>
+            <div class="productRight">
+                <p class="title">{{value.productName}}</p>
+                <p class="litre">
+                    <span class="price">{{value.productPinkage}}</span>
+                </p>
+                <p class="productInfo">
+                    <span class="productFrom">{{value.productFrom}}</span> |
+                    <span class="productTime">{{value.productTime}}</span>
+                    <span class="fa fa-comments-o comment">{{value.productComCount.replace('有','').replace('人评论','')}}</span>
+                </p>
+            </div>
+        </div>
+        {{/each}}
+    </script>
     <script src="js/index.js"></script>
 </body>
 
