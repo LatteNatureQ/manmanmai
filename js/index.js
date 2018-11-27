@@ -14,6 +14,10 @@ mmb.prototype = {
             success: function (obj) {
                 var html = template('menuTpl', obj);
                 $('.menu ul').append(html);
+                $('.li7 a').attr('href','javascript:;')
+                $('.li7 a').on('tap',function(){
+                    console.log(111);
+                })
             }
         })
     },
@@ -39,5 +43,5 @@ mmb.prototype = {
         if (localStorage.getItem('key')) {
             $('#iframe-wrap').remove();
         }
-    }
+    },
 }
