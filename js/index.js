@@ -1,7 +1,9 @@
 $(function () {
     var MMB = new mmb();
+    MMB.hide();
     MMB.getindexmenu();
     MMB.getmoneyctrl();
+    MMB.close();
 })
 var mmb = function () {};
 mmb.prototype = {
@@ -24,5 +26,18 @@ mmb.prototype = {
                 $('.productBox').html(html);
             }
         })
+    },
+    close: function () {
+        $('.close').on('tap', function () {
+            localStorage.setItem('key', 'show');
+            console.log(localStorage.getItem('key'));
+            $('#iframe-wrap').remove();
+            $('.menu li').addClass('animated tada')
+        })
+    },
+    hide: function () {
+        if (localStorage.getItem('key')) {
+            $('#iframe-wrap').remove();
+        }
     }
 }
