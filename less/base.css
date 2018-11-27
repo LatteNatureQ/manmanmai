@@ -60,7 +60,7 @@ input[type=search] {
   display: flex;
   padding: .05rem;
   background-color: #fff;
-  box-shadow: 0px 0px 10px 1px #ccc;
+  box-shadow: 0px 0px 1px 1px #ccc;
   align-items: center;
 }
 #search .search {
