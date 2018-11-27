@@ -120,6 +120,30 @@ input[type=search] {
   text-align: center;
   padding: .1rem 0;
 }
+/* 外嵌页面公共样式 */
+#iframe-wrap {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 999;
+}
+#iframe-wrap .close {
+  position: absolute;
+  width: .3rem;
+  height: .3rem;
+  right: .2rem;
+  top: .5rem;
+  font-size: .18rem;
+  z-index: 1;
+}
+#iframe-wrap img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: .8;
+}
 /* 主体区域 */
 body {
   padding-top: .89rem;
@@ -158,6 +182,13 @@ body {
 }
 #main .menu ul li.travel {
   text-align: center;
+}
+#main .menu ul li.travel.lottery p {
+  background-color: #fff;
+}
+#main .menu ul li.travel.game p {
+  color: #fff;
+  background-color: #44c760;
 }
 #main .menu ul li.travel p {
   width: .35rem;
@@ -304,27 +335,4 @@ body {
   max-height: 100%;
   text-align: center;
   margin: 0 auto;
-}
-#iframe-wrap {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
-  z-index: 999;
-}
-#iframe-wrap .close {
-  position: absolute;
-  width: .3rem;
-  height: .3rem;
-  right: .2rem;
-  top: .5rem;
-  font-size: .18rem;
-  z-index: 1;
-}
-#iframe-wrap img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: .8;
 }
