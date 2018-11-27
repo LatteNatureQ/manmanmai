@@ -1,12 +1,30 @@
 @import 'base.less';
 /* 主体区域 */
 
+body {
+    padding-top: .89rem;
+}
+
+#header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 33;
+}
+
+#search {
+    position: fixed;
+    top: .45rem;
+    width: 100%;
+    z-index: 33;
+}
+
 #main {
     /* 菜单栏区域 */
     .menu {
         padding-top: .2rem;
         background-color: #fff;
-        margin-top: .1rem;
+        margin-top: .08rem;
         box-shadow: 0px 0px 10px 1px #ccc;
         ul {
             display: flex;

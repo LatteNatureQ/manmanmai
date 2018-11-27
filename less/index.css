@@ -62,6 +62,10 @@ input[type=search] {
   background-color: #fff;
   box-shadow: 0px 0px 10px 1px #ccc;
   align-items: center;
+  position: fixed;
+  top: .45rem;
+  width: 100%;
+  z-index: 33;
 }
 #search .search {
   flex: 1;
@@ -121,6 +125,21 @@ input[type=search] {
   padding: .1rem 0;
 }
 /* 主体区域 */
+body {
+  padding-top: .89rem;
+}
+#header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 33;
+}
+#search {
+  position: fixed;
+  top: .45rem;
+  width: 100%;
+  z-index: 33;
+}
 #main {
   /* 菜单栏区域 */
   /* 折扣推荐区域 */
@@ -129,7 +148,7 @@ input[type=search] {
 #main .menu {
   padding-top: .2rem;
   background-color: #fff;
-  margin-top: .1rem;
+  margin-top: .08rem;
   box-shadow: 0px 0px 10px 1px #ccc;
 }
 #main .menu ul {
