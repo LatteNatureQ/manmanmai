@@ -314,11 +314,12 @@ body {
   background-color: #fff;
   z-index: 999;
 }
-#iframe-wrap .close {
+.close {
   position: absolute;
   width: .3rem;
   height: .3rem;
   right: .2rem;
   top: .5rem;
   font-size: .18rem;
+  z-index: 9999;
 }

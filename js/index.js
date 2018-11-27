@@ -32,6 +32,7 @@ mmb.prototype = {
             localStorage.setItem('key', 'show');
             console.log(localStorage.getItem('key'));
             $('#iframe-wrap').remove();
+            $(this).remove();
             $('.menu li').addClass('animated tada')
         })
     },
