@@ -39,6 +39,7 @@ mmb.prototype = {
     hide: function () {
         if (localStorage.getItem('key')) {
             $('#iframe-wrap').remove();
+            $('.close').remove();
         }
     }
 }
