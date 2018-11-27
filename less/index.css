@@ -170,6 +170,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: skyblue;
 }
 #main .menu ul li a {
   display: flex;
@@ -312,12 +313,18 @@ body {
   background-color: #fff;
   z-index: 999;
 }
-.close {
+#iframe-wrap .close {
   position: absolute;
   width: .3rem;
   height: .3rem;
   right: .2rem;
   top: .5rem;
   font-size: .18rem;
-  z-index: 9999;
+  z-index: 1;
+}
+#iframe-wrap img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: .8;
 }
