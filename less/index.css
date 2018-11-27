@@ -189,6 +189,10 @@ body {
   box-shadow: 0px 0px 1px 0px #ccc;
   display: flex;
 }
+#main .sale .productList .img {
+  width: 1rem;
+  height: 1rem;
+}
 #main .sale .productList .litre {
   color: #333;
 }

@@ -31,54 +31,10 @@
         <!-- 首页菜单栏区域 -->
         <section class="menu">
             <ul>
-                <li>
+                <!-- <li>
                     <a href="#">
-                        <img src="./images/ic_search.png" alt="">比价搜索</a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./images/ic_cu.png" alt="">省钱控</a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./images/ic_coudanpin.png" alt="">国内折扣</a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./images/ic_bcj.png" alt="">白菜价</a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./images/ic_search.png" alt="">比价搜索</a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./images/ic_cu.png" alt="">省钱控</a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./images/ic_coudanpin.png" alt="">国内折扣</a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./images/ic_bcj.png" alt="">白菜价</a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./images/ic_search.png" alt="">比价搜索</a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./images/ic_cu.png" alt="">省钱控</a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./images/ic_coudanpin.png" alt="">国内折扣</a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./images/ic_bcj.png" alt="">白菜价</a>
-                </li>
+                        <img src="./images/下载.jpg" alt="">国内旅游</a>
+                </li> -->
             </ul>
         </section>
         <!-- 折扣推荐区域 -->
@@ -148,7 +104,10 @@
             <div class="nav">
                 <!-- <a href="#">品牌排行</a>
                 <img src="http://www.zuyushop.com/wap/images/more.png" alt=""> -->
-                <img src="http://m.360buyimg.com/mobilecms/jfs/t15526/56/2344102455/23273/d8e15d5a/5aa0dbc1Nefd2bd2a.png!q70.jpg.dpg" alt="">
+                <a href="#">
+                    <img src="http://m.360buyimg.com/mobilecms/jfs/t15526/56/2344102455/23273/d8e15d5a/5aa0dbc1Nefd2bd2a.png!q70.jpg.dpg" alt="">
+                </a>
+
             </div>
         </section>
     </main>
@@ -190,8 +149,9 @@
     <script type="text/html" id="moneyctrlTpl">
         {{each result value}}
         <div class="productList">
-            <a href="#">
+            <a href="#" class='img'>
                 {{@value.productImg2}}
+                <!-- <img src="https://img3.doubanio.com/icon/up97165331-15.jpg" alt=""> -->
             </a>
             <div class="productRight">
                 <p class="title">{{value.productName}}</p>

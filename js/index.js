@@ -13,7 +13,7 @@ mmb.prototype = {
             url: 'http://localhost:9090/api/getindexmenu',
             success: function (obj) {
                 var html = template('menuTpl', obj);
-                $('.menu ul').html(html);
+                $('.menu ul').append(html);
             }
         })
     },
