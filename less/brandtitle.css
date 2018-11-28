@@ -1,0 +1,206 @@
+html {
+  font-size: 100px;
+}
+body {
+  background-color: #f2f2f2;
+  font-size: .12rem;
+  line-height: .12rem;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: #333333;
+}
+ul {
+  list-style: none;
+}
+i,
+strong,
+u {
+  font-style: normal;
+}
+p {
+  margin: 0;
+  padding: 0;
+  line-height: .16rem;
+  font-size: .12rem;
+}
+img {
+  vertical-align: middle;
+}
+input[type=email],
+input[type=search],
+input[type=text],
+input[type=password] {
+  margin: 0;
+}
+input[type=search] {
+  text-align: left;
+}
+/* 头部区域公共样式 */
+#header {
+  height: .45rem;
+  background-color: #ff841d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+  box-shadow: 0px 0px 10px 1px #ccc;
+}
+#header .header_logo {
+  height: .25rem;
+}
+#header .header_app {
+  height: .34rem;
+}
+/* 搜索区域公共样式 */
+#search {
+  display: flex;
+  padding: .05rem;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px 1px #ccc;
+  align-items: center;
+}
+#search .search {
+  flex: 1;
+  background-color: #f1f1f1;
+  border: 0;
+  border-radius: .1rem;
+  margin-right: .05rem;
+  padding-left: .2rem;
+}
+#search .search::-webkit-input-placeholder {
+  color: #cbcbcb;
+}
+#search a {
+  width: .45rem;
+  height: .24rem;
+  color: #fff;
+  background-color: #ff841d;
+  border-radius: .2rem;
+  text-align: center;
+  line-height: .24rem;
+}
+/* 导航栏公共样式 */
+/* 底部区域公共样式 */
+#footer {
+  margin-top: .1rem;
+}
+#footer .register {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+}
+#footer .register :last-child::after {
+  width: 0px;
+}
+#footer .register a {
+  flex: 1;
+  text-align: center;
+  height: .34rem;
+  line-height: .34rem;
+  position: relative;
+}
+#footer .register a::after {
+  content: '';
+  width: 1px;
+  height: .34rem;
+  position: absolute;
+  right: 0;
+  background-color: #ccc;
+}
+#footer .register a img {
+  width: .15rem;
+  vertical-align: sub;
+  margin-bottom: .01rem;
+}
+#footer .footer-info {
+  text-align: center;
+  padding: .1rem 0;
+}
+html {
+  height: 100%;
+}
+body {
+  font-family: "NSimSun";
+  height: 100%;
+  padding-top: .85rem;
+  padding-bottom: 1.4rem;
+  overflow: hidden;
+}
+#header {
+  z-index: 999;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+#footer {
+  z-index: 999;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+/* 设置a标签点击时的字体颜色 */
+a:active {
+  color: black;
+}
+/* 搜索区域 */
+#search {
+  position: fixed;
+  top: .45rem;
+  width: 100%;
+}
+#search .search {
+  height: .24rem;
+}
+/* 导航区域 */
+#nav {
+  z-index: 999;
+  top: .8rem;
+  width: 100%;
+  height: .4rem;
+  background-color: #f7f7f7;
+  padding: .1rem;
+  line-height: .2rem;
+  box-shadow: 0px 2px 2px 2px #ccc;
+  position: fixed;
+}
+#nav a {
+  position: absolute;
+  left: .1rem;
+}
+#nav h4 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: normal;
+  display: inline-block;
+  line-height: .1rem;
+}
+/* 主体区域 */
+#main {
+  margin-top: .45rem;
+  position: relative;
+  height: 100%;
+}
+#main .title {
+  font-size: .15rem;
+  line-height: .4rem;
+  padding-left: .2rem;
+  color: #944604;
+  height: .4rem;
+  box-shadow: 0px 1px 1px 1px #ccc;
+  background-color: #eeeeee;
+}
+#main .brand-list {
+  margin-top: .1rem;
+  background-color: #f5f5f5;
+}
+#main .brand-list li {
+  height: .4rem;
+  background-color: #f5f5f5;
+}
