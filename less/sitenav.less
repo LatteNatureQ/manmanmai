@@ -1,0 +1,118 @@
+@headColor : #ff841d;
+
+html,body {
+    height: 100%;
+}
+
+html {
+    font-size: 100px;
+}
+
+body {
+    background-color: #f2f2f2;
+    font-size: .12rem;
+    line-height: .12rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #333333;
+}
+
+ul {
+    list-style: none;
+}
+
+i,
+strong,
+u {
+    font-style: normal;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    line-height: .16rem;
+    font-size: .12rem;
+}
+
+img {
+    vertical-align: middle;
+}
+
+input[type=email],
+input[type=search],
+input[type=text],
+input[type=password] {
+    margin: 0;
+}
+
+input[type=search] {
+    text-align: left;
+}
+
+#header {
+    height: .45rem;
+    background-color: @headColor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    box-shadow: 0px 0px 10px 1px #ccc;
+    .fa-angle-left {
+        width: .34rem;
+        font-size: .34rem;
+        color: #fff;
+    }
+    h3 {
+        flex: 1;
+        font-size: .2rem;
+        color: #fff;
+        font-weight: normal;
+        text-align: center;
+    }
+    .header-app {
+        width: .34rem;
+    }
+}
+
+#main{
+    height: 100%;
+    position: relative;
+    background-color: #fff;
+    .mui-scroll-wrapper{
+        height: 100%;   
+        .mui-scroll {
+            min-height: 100.1%; 
+            ul{
+                padding: .1rem .6rem;
+                min-height: 100.1%; 
+                display: flex;
+                flex-wrap: wrap;
+                li{
+                    margin-right: .05rem;
+                    margin-top: .05rem;
+                    height: .4rem;
+                    a{
+                        display: flex;
+                        height: .4rem;
+                        padding: .13rem .08rem;
+                        background-color: #f4f4f4;
+                        border: 1px solid #bfbfbf;
+                        .navTitle {
+                            color: #000;
+                            width: auto;
+                            margin-left: .08rem;
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
