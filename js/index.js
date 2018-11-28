@@ -8,19 +8,26 @@ $(function () {
 var mmb = function () {};
 mmb.prototype = {
     /* 获取首页菜单栏信息 */
+    baseURL:'http://localhost:9090',
     getindexmenu: function () {
+        var that = this;
         $.ajax({
-            url: 'http://localhost:9090/api/getindexmenu',
+            url: that.baseURL+'/api/getindexmenu',
             success: function (obj) {
                 var html = template('menuTpl', obj);
                 $('.menu ul').append(html);
+                $('.li7 a').attr('href','javascript:;')
+                $('.li7 a').on('tap',function(){
+                    console.log(111);
+                })
             }
         })
     },
     /* 获取优惠商品 */
     getmoneyctrl: function () {
+        var that = this;
         $.ajax({
-            url: 'http://localhost:9090/api/getmoneyctrl',
+            url: that.baseURL+'/api/getmoneyctrl',
             success: function (obj) {
                 var html = template('moneyctrlTpl', obj);
                 $('.productBox').html(html);
@@ -32,14 +39,12 @@ mmb.prototype = {
             localStorage.setItem('key', 'show');
             console.log(localStorage.getItem('key'));
             $('#iframe-wrap').remove();
-            $(this).remove();
             $('.menu li').addClass('animated tada')
         })
     },
     hide: function () {
         if (localStorage.getItem('key')) {
             $('#iframe-wrap').remove();
-            $('.close').remove();
         }
-    }
+    },
 }

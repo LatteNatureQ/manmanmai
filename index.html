@@ -9,6 +9,45 @@
     <link rel="stylesheet" type="text/css" href="lib/fontAwesome/css/font-awesome.css">
     <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="./less/index.css">
+    <style>
+        .bounceInDown {
+            animation: bounceInDown 5s;
+        }
+
+        @keyframes bounceInDown {
+            from,
+            60%,
+            75%,
+            90%,
+            to {
+                animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+            }
+
+            0% {
+                opacity: 0;
+                transform: translate3d(0, -3000px, 0);
+            }
+
+            60% {
+                opacity: .3;
+                transform: translate3d(0, 25px, 0);
+            }
+
+            75% {
+                transform: translate3d(0, -10px, 0);
+            }
+
+            90% {
+                opacity: .8;
+                transform: translate3d(0, 5px, 0);
+            }
+
+            to {
+                opacity: .8;
+                transform: none;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -17,7 +56,7 @@
         <a href="#">
             <img class="header_logo" src="./images/header_logo.png" alt="">
         </a>
-        <a href="#">
+        <a href="download.html">
             <img class="header_app" src="./images/header_app.png" alt="">
         </a>
     </header>
@@ -32,9 +71,19 @@
         <section class="menu">
             <ul>
                 <li class="travel">
-                    <a href="#">
+                    <a href="travel.html">
                         <p>🌍</p>
                         国内旅游</a>
+                </li>
+                <li class="travel game">
+                    <a href="game.html">
+                        <p>⛑</p>
+                        休闲时刻</a>
+                </li>
+                <li class="travel lottery">
+                    <a href="lottery.html">
+                        <p>💯</p>
+                        幸运大转盘</a>
                 </li>
             </ul>
         </section>
@@ -115,15 +164,15 @@
     <!-- 底部区域 -->
     <footer id="footer">
         <div class="register">
-            <a href="#">登录</a>
-            <a href="#">注册</a>
+            <a href="login.html">登录</a>
+            <a href="register.html">注册</a>
             <a href="#">
                 <img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部</a>
         </div>
         <div class="footer-info">
             <p>
-                <a href="#" style="color: Red;">手机APP下载</a>
-                <a href="#">
+                <a href="download.html" style="color: Red;">手机APP下载</a>
+                <a href="download.html">
                     慢慢买手机版</a> -- 掌上比价平台</p>
             <p>
                 m.manmanbuy.com
@@ -131,16 +180,18 @@
         </div>
     </footer>
     <div id="iframe-wrap" class="animate-close">
-        <iframe id="iframe" src="http://www.jq22.com/demo/html5taobao201801082236" frameborder="0" width="100%" height="100%"></iframe>
+        <img class="animated bounceInDown" src="./images/activity.jpg" alt="">
+        <a href="#" class="close">❌</a>
+        <iframe id="iframe" src="http://www.jq22.com/demo/jquery-cloud-141217202931/" frameborder="0" width="100%" height="100%"></iframe>
+
     </div>
-    <a href="#" class="close">❌</a>
     <script src="lib/mui/js/mui.js"></script>
     <script src="lib/zepto/zepto.min.js"></script>
     <script src="lib/artTemplate/template-web.js"></script>
     <script type="text/html" id="menuTpl">
-        {{each result value}}
+        {{each result value index}}
         <!-- tada -->
-        <li>
+        <li class='li{{index}}' data-id='{{value.indexmenuId}}'>
             <a href="{{value.titlehref}}">
                 {{@value.img}} {{value.name}}
             </a>

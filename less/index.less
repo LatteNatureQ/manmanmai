@@ -35,6 +35,17 @@ body {
                 margin-bottom: .1rem;
                 &.travel {
                     text-align: center;
+                    &.lottery {
+                        p {
+                            background-color: #fff;
+                        }
+                    }
+                    &.game {           
+                        p {
+                            color: #fff;
+                            background-color: #44c760;
+                        }
+                    }
                     p {
                         width: .35rem;
                         height: .35rem;
@@ -46,6 +57,7 @@ body {
                         display: flex;
                         justify-content: center;
                         align-items: center;
+                        background-color: skyblue;
                     }
                 }
                 a {
@@ -161,20 +173,3 @@ body {
     }
 }
 
-#iframe-wrap {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-    z-index: 999;
-}
-.close {
-    position: absolute;
-    width: .3rem;
-    height: .3rem;
-    right: .2rem;
-    top: .5rem;
-    font-size: .18rem;
-    z-index: 9999;
-}
