@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品排行</title>
+    <!-- 引入mui插件 -->
+    <link rel="stylesheet" href="lib/mui/css/mui.min.css">
+    <!-- 引入字体图标 -->
+    <link rel="stylesheet" type="text/css" href="lib/fontAwesome/css/font-awesome.css">
+    <!-- 引入页面的css文件 -->
+    <link rel="stylesheet" href="less/brandcontent.css">
+    <!-- 引入rem -->
+    <script src="js/rem.js"></script>
+	
+</head>
+
+<body>
+    <!-- 头部区域 -->
+    <header id="header">
+        <a href="#">
+            <img class="header_logo" src="./images/header_logo.png" alt="">
+        </a>
+        <a href="download.html">
+            <img class="header_app" src="./images/header_app.png" alt="">
+        </a>
+    </header>
+    <!-- 搜索区域 -->
+    <section id="search">
+        <input type="search" class="search" placeholder="请输入你要比价的商品">
+        <a href="#">搜索</a>
+    </section>
+    <!-- 主体区域 -->
+    <nav id="nav">
+        <a href="javascript:history.back();" class="fa fa-arrow-left">返回</a>
+        <h4>全部分类</h4>
+    </nav>
+    <main id="main">
+        <div class="mui-scroll-wrapper roll">
+            <div class="mui-scroll">
+                <div class="title">
+                    <ul class="ul1">
+                        <li class="active">
+                            <a href="javascript:;">商品品牌排行</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">销量排行</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">最新评论</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <ul class="mui-table-view brandlist"></ul>
+                    <ul class="mui-table-view sales-volume"></ul>
+                    <ul class="mui-table-view comment"></ul>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <!-- 底部区域 -->
+    <footer id="footer">
+        <div class="register">
+            <a href="login.html">登录</a>
+            <a href="register.html">注册</a>
+            <a href="#">
+                <img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">
+                返回顶部
+            </a>
+        </div>
+        <div class="footer-info">
+            <p>
+                <a href="#" style="color: Red;">手机APP下载</a>
+                <a href="#">
+                    慢慢买手机版</a> -- 掌上比价平台</p>
+            <p>
+                m.manmanbuy.com
+            </p>
+
+        </div>
+    </footer>
+    <!-- 品牌区域的模板 -->
+    <script id="brandtpl" type="text/html">
+        {{each result value index}}
+        <li class="mui-table-view-cell" data-brandname="{{value.brandName}}"  data-categoryid = "{{value.categoryId}}">
+            {{if index == 0}}
+            <i class="dot red">1</i>
+            {{else if index ==1}}
+            <i class="dot skyblue">2</i>
+            {{else if index ==2}}
+            <i class="dot green">3</i>
+            {{else}}
+            <i class="dot">{{index}}</i>
+            {{/if}}
+            <div class="right">
+                <a class="mui-navigate-right"> {{value.brandName}} </a>
+                <p>{{value.brandInfo}}</p>
+            </div>
+        </li>
+        {{/each}}
+    </script>
+    <!-- 销量区域的模板 -->
+    <script id="volumeTpl" type="text/html">
+        {{if result.length > 0}}
+        {{each result value}}
+        <li data-productid="{{value.productId}}">
+            <a href="javascript:;">
+                <div class="product-img">
+                   {{@value.productImg}}
+                </div>
+                <div class="product-par">
+                    <p class="product-name">{{value.productName}}</p>
+                    <div class="product-num">
+                        <span class="product-price">{{value.productPrice}}</span>
+                         <div class="star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="product-params">
+                        {{value.productQuote}}{{value.productCom}}
+                    </p>
+                </div>
+            </a>
+        </li>
+        {{/each}}
+        {{else}}
+        <p style="font-size: .2rem;line-height: 1.2rem;color: red;">暂无数据</p>
+        {{/if}}
+    
+    </script>
+    <script id="commentTpl" type="text/html">
+        {{if result.length>0}}
+        {{each result value index}}
+    <li>
+        {{if index == 0}}
+        <img src="http://pro.zuyushop.com:8015/ProPic/20166/Thumb/Thumb_2016060015530027148.png" alt="">
+        {{else if index == 1}}
+        <img src="http://pro.zuyushop.com:8015/ProPic/20158/Thumb/Thumb_2015080010223719207.jpg" alt="">
+        {{else if index == 2}}
+        <img src="http://img2014.zuyushop.com/ProPic/201410/Thumb/Thumb_201410001446243808.jpg" alt="">
+        {{else}}
+        <img src="http://pro.zuyushop.com:8015/ProPic/20166/Thumb/Thumb_2016060015543557283.png" alt="">
+        {{/if}}
+        <div class="comment-content">
+            <div class="comment-username">{{value.comName}}</div>
+            <div class="comment-star-time">
+                <div class="star">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <div class="comTime">{{value.comTime}}</div>
+            </div>
+            <div class="comContent">
+                {{value.comContent}}
+            </div>
+            <div class="comFrom">
+                {{value.comFrom}}
+            </div>
+        </div>
+    </li>
+    {{/each}}
+    {{else}}
+    <p style="font-size: .2rem;line-height: 1.2rem;color: red;">且无多论</p>
+    {{/if}}
+    </script>
+    <!-- mui的js文件 -->
+    <script src="lib/mui/js/mui.js"></script>
+    <!-- 引入zepto -->
+    <script src="lib/zepto/zepto.min.js"></script>
+    <!-- 模板引擎 -->
+    <script src="lib/artTemplate/template-web.js"></script>
+    <!-- 自己的js文件 -->
+    <script src="js/brandcontent.js"></script>
+</body>
+
+</html>

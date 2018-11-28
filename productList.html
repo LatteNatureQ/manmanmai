@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>产品分类-慢慢买比价网</title>
+  <link rel="stylecut icon" href="https://m.manmanbuy.com/favicon.ico">
+  <link rel="stylesheet" href="lib/mui/css/mui.min.css">
+  <link rel="stylesheet" href="lib/fontAwesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/productList.css">
+  <script src="js/rem.js"></script>
+</head>
+
+<body>
+  <header id="header">
+    <div class="head">
+      <a class="logo" href="index.html">
+        <img src="http://static.manmanbuy.com/m/img/mlogo.png" alt="">
+      </a>
+      <form action="#">
+        <i class="fa fa-search"></i>
+        <input class="search" type="search" placeholder="商品比价,查历史价">
+      </form>
+      <a class="download" href="https://at.umeng.com/onelink/Pvmmmy" target="_blank">
+        下载
+      </a>
+    </div>
+    <div class="nav-bar">
+        <div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+            <div class="mui-scroll nav-scroll clearfix">
+            <a  href="index.html">
+                首页
+            </a>
+            <a href="#">
+                省钱控
+            </a>
+            <a href="#">
+                查看史价
+            </a>
+            <a class="active" href="category.html">
+                比价搜索
+            </a>
+            <a href="#">
+                国内折扣
+            </a>
+            <a href="#">
+                白菜价
+            </a>
+            <a  href="#">
+                小时风云榜
+            </a>
+          </div>
+          </div>
+    </div>
+  </header>
+  <main id="main">
+    <div class="mui-scroll-wrapper">
+      <div class="mui-scroll">
+        <div class="content">
+            <div class="select">
+                <a class="active" href="#">综合</a>
+                <a href="#">销量</a>
+                <a href="#">价格</a>
+                <a class="fa fa-filter" href="#" >筛选</a>
+            </div>
+            <div class="product">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <div class="left">
+                                <img src="http://pro-img.zuyushop.com/ProPic/20178/small80/Thumb_2017080009360474424.jpg" alt="海信(Hisense) LED55EC750US 55英寸 4K超高清 HDR智能智慧语音液晶电视">
+                            </div>
+                            <div class="right">
+                                <p class="title">海信(Hisense) LED55EC750US 55英寸 4K超高清 HDR智能智慧语音液晶电视</p>
+                                <p class="price"><span>￥</span>1233</p>
+                                <div class="star">
+                                    <p><span>3</span>商城报价</p>
+                                    <p>有<span>3324</span>人评论</p>
+                                </div>
+                           </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="paging">
+            <button class="mui-btn mui-btn-primary mui-btn-outlined first" type="button">首页</button>
+            <button class="mui-btn mui-btn-primary mui-btn-outlined prev" type="button">上一页</button>
+            <p>第<span class="page">1</span>页--共<span class="totals">3</span>页</p>
+            <button class="mui-btn mui-btn-primary mui-btn-outlined next" type="button">下一页</button>
+            <button class="mui-btn mui-btn-primary mui-btn-outlined last" type="button">尾页</button>
+        </div>
+        <div id="footer">
+            <div class="mui-row">
+              <div class="mui-col-xs-4">
+                <a href="#">登录</a>
+              </div>
+              <div class="mui-col-xs-4">
+                <a href="#">注册</a>
+              </div>
+              <div class="mui-col-xs-4">
+                <a class="fa fa-arrow-up cancelTop" href="javascript:void(0);">返回顶部</a>
+              </div>
+            </div>
+            <div class="bottom">
+              <p>
+                <a href="#">手机APP下载</a>
+                <a href="#">慢慢买手机版</a>
+                <span>---掌上比价平台</span>
+              </p>
+              <span>m.manmanbuy.com</span>
+            </div>
+          </di>
+      </div>
+    </div>
+  </main>
+  
+  <div id="fixed-ad">
+    <a class="close fa fa-times-circle" href="javascript:void(0);"></a>
+    <div class="left">
+      <img class="mui-pull-left" src="https://img.alicdn.com/imgextra/i4/690311/TB2mY9udDJYBeNjy1zeXXahzVXa_!!690311.png_200x200.jpg">
+      <div class="content mui-pull-left">
+        <p>慢慢买--查看历史价格</p>
+        <span>双11虚假促销 不被坑</span>
+      </div>
+    </div>
+    <a class="download" href="https://at.umeng.com/onelink/Pvmmmy">立即打开</a>
+  </div>
+
+  <script id="productListTpl" type="text/html">
+      {{ each result value index}}
+      <li>
+        <a href="detail.html?productId={{value.productId}}&categoryName={{ categoryName }}">
+            <div class="left">
+                {{@value.productImg}}
+            </div>
+            <div class="right">
+                <p class="title">{{ value.productName }}</p>
+                <p class="price">{{ value.productPrice}}</p>
+                <div class="star">
+                    <p>{{ value.productQuote}}</p>
+                    <p>{{ value.productCom }}</p>
+                </div>
+            </div>
+        </a>
+     </li>
+      {{ /each }}
+  </script>
+  <script src="lib/mui/js/mui.min.js"></script>
+  <script src="lib/zepto/zepto.min.js"></script>
+  <script src="lib/artTemplate/template-web.js"></script>
+  <script src="js/productList.js"></script>
+</body>
+</html>

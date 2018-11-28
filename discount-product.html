@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>国内折扣</title>
+    <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+    <!-- <link rel="stylesheet" href="./lib/mui/fonts/mui.ttf"> -->
+    <link rel="stylesheet" type="text/css" href="lib/fontAwesome/css/font-awesome.css">
+    <link rel="stylesheet" href="./css/font_flr4ci1zize/iconfont.css">
+    <link rel="stylesheet" href="./less/discount-product.css">
+</head>
+
+<body>
+    <!-- 头部区域 -->
+    <header id="header">
+        <a href="inlanddiscount.html">
+            <i class="iconfont icon-fanhui"></i>
+        </a>
+        <h4>国内折扣</h4>
+        <a href="#">
+            <img class="header_app" src="./images/header_app.png" alt="">
+        </a>
+    </header>
+    <!-- 主体区域 -->
+    <main id="main">
+        <div id="refreshContainer" class="mui-content mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <div class="content">
+                    <!--数据列表-->
+                    <div class="cont">
+                        <h3 class="title"> Apple iPhone 6 64GB 金色 移动联通电信4G手机 </h3>
+                        <h4>4088.00</h4>
+                        <p class="info">苏宁易购 10-22 13:29 zjie / 慢慢买</p>
+                        <p class="describe">64G果6，需要的可以入手。 苏宁自营，现在参加大聚惠，4088到手，不玩游戏用用蛮好的。</p>
+                        <div class="img">
+                            <img class="product" src="http://image3.suning.cn/uimg/b2c/newcatentries/0000000000-000000000123129054_1_200x200.jpg">
+                        </div>
+                            <div class="buy">前往购买</div>
+                    </div>
+                    
+                    <img src="images/mmbweixin2.png" class="qr" alt="">
+                    <div class="text clearfix">
+                        <p>发表评论</p>
+                        <textarea rows="3" class="Txt"></textarea>
+                        <div class="bottom">
+                            <div id="publis ">发表评论</div>
+                        </div>
+
+                    </div>
+                    <div class="comment">
+                        <p>最新评论</p>
+                        <ul>
+                            <li>1</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+
+                <!-- 底部区域 -->
+                <footer id="footer">
+                    <div class="register">
+                        <a href="login.html">登录</a>
+                        <a href="register.html">注册</a>
+                        <a href="#" class="top" >
+                            <img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部</a>
+                    </div>
+                    <div class="footer-info">
+                        <p>
+                            <a href="#" style="color: Red;">手机APP下载</a>
+                            <a href="#">
+                                慢慢买手机版</a> -- 掌上比价平台</p>
+                        <p>
+                            m.manmanbuy.com
+                        </p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </main>
+
+    <!-- 商品详情模板 -->
+    <script id="detailsTpl" type="text/html">
+        <h3 class="title">{{productName}}</h3>
+    <h4>{{productPrice}}</h4>
+    <p class="info">{{productFrom}} {{productTime}} {{productTips}}</p>
+    <p class="describe">{{productInfo}}</p>
+    <div class="img">
+        {{@productImg}}
+    </div>
+        <div class="buy" data-id="{{productId}}">前往购买</div>
+    </script>
+
+
+
+    <script src="lib/mui/js/mui.js"></script>
+    <script src="lib/zepto/zepto.min.js"></script>
+    <script src="lib/artTemplate/template-web.js"></script>
+    <script src="js/discount-product.js"></script>
+</body>
+
+</html>

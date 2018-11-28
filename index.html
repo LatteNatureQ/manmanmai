@@ -6,9 +6,48 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>主页</title>
     <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
-    <!-- <link rel="stylesheet" href="./lib/mui/fonts/mui.ttf"> -->
     <link rel="stylesheet" type="text/css" href="lib/fontAwesome/css/font-awesome.css">
+    <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="./less/index.css">
+    <style>
+        .bounceInDown {
+            animation: bounceInDown 5s;
+        }
+
+        @keyframes bounceInDown {
+            from,
+            60%,
+            75%,
+            90%,
+            to {
+                animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+            }
+
+            0% {
+                opacity: 0;
+                transform: translate3d(0, -3000px, 0);
+            }
+
+            60% {
+                opacity: .3;
+                transform: translate3d(0, 25px, 0);
+            }
+
+            75% {
+                transform: translate3d(0, -10px, 0);
+            }
+
+            90% {
+                opacity: .8;
+                transform: translate3d(0, 5px, 0);
+            }
+
+            to {
+                opacity: .8;
+                transform: none;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -17,7 +56,7 @@
         <a href="#">
             <img class="header_logo" src="./images/header_logo.png" alt="">
         </a>
-        <a href="#">
+        <a href="download.html">
             <img class="header_app" src="./images/header_app.png" alt="">
         </a>
     </header>
@@ -31,53 +70,20 @@
         <!-- 首页菜单栏区域 -->
         <section class="menu">
             <ul>
-                <li>
-                    <a href="#">
-                        <img src="./images/ic_search.png" alt="">比价搜索</a>
+                <li class="travel">
+                    <a href="travel.html">
+                        <p>🌍</p>
+                        国内旅游</a>
                 </li>
-                <li>
-                    <a href="#">
-                        <img src="./images/ic_cu.png" alt="">省钱控</a>
+                <li class="travel game">
+                    <a href="game.html">
+                        <p>⛑</p>
+                        休闲时刻</a>
                 </li>
-                <li>
-                    <a href="#">
-                        <img src="./images/ic_coudanpin.png" alt="">国内折扣</a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./images/ic_bcj.png" alt="">白菜价</a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./images/ic_search.png" alt="">比价搜索</a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./images/ic_cu.png" alt="">省钱控</a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./images/ic_coudanpin.png" alt="">国内折扣</a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./images/ic_bcj.png" alt="">白菜价</a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./images/ic_search.png" alt="">比价搜索</a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./images/ic_cu.png" alt="">省钱控</a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./images/ic_coudanpin.png" alt="">国内折扣</a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./images/ic_bcj.png" alt="">白菜价</a>
+                <li class="travel lottery">
+                    <a href="lottery.html">
+                        <p>💯</p>
+                        幸运大转盘</a>
                 </li>
             </ul>
         </section>
@@ -85,8 +91,7 @@
         <section class="sale">
             <!-- 头部导航区域 -->
             <div class="nav">
-                <a href="#">超值折扣推荐</a>
-                <img src="http://www.zuyushop.com/wap/images/more.png" alt="">
+                <img src="http://m.360buyimg.com/mobilecms/jfs/t19381/275/717008577/26686/e58b7ef4/5aa23f27Nfa6d6be3.png!q70.jpg.dpg" alt="">
             </div>
             <!-- 商品列表区域 -->
             <div class="productBox">
@@ -147,35 +152,46 @@
         <section class="brandRanking">
             <!-- 尾部导航区域 -->
             <div class="nav">
-                <a href="#">品牌排行</a>
-                <img src="http://www.zuyushop.com/wap/images/more.png" alt="">
+                <!-- <a href="#">品牌排行</a>
+                <img src="http://www.zuyushop.com/wap/images/more.png" alt=""> -->
+                <a href="#">
+                    <img src="http://m.360buyimg.com/mobilecms/jfs/t15526/56/2344102455/23273/d8e15d5a/5aa0dbc1Nefd2bd2a.png!q70.jpg.dpg" alt="">
+                </a>
+
             </div>
         </section>
     </main>
     <!-- 底部区域 -->
     <footer id="footer">
         <div class="register">
-            <a href="#">登录</a>
-            <a href="#">注册</a>
+            <a href="login.html">登录</a>
+            <a href="register.html">注册</a>
             <a href="#">
                 <img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部</a>
         </div>
         <div class="footer-info">
             <p>
-                <a href="#" style="color: Red;">手机APP下载</a>
-                <a href="#">
+                <a href="download.html" style="color: Red;">手机APP下载</a>
+                <a href="download.html">
                     慢慢买手机版</a> -- 掌上比价平台</p>
             <p>
                 m.manmanbuy.com
             </p>
         </div>
     </footer>
+    <div id="iframe-wrap" class="animate-close">
+        <img class="animated bounceInDown" src="./images/activity.jpg" alt="">
+        <a href="#" class="close">❌</a>
+        <iframe id="iframe" src="http://www.jq22.com/demo/jquery-cloud-141217202931/" frameborder="0" width="100%" height="100%"></iframe>
+
+    </div>
     <script src="lib/mui/js/mui.js"></script>
     <script src="lib/zepto/zepto.min.js"></script>
     <script src="lib/artTemplate/template-web.js"></script>
     <script type="text/html" id="menuTpl">
-        {{each result value}}
-        <li>
+        {{each result value index}}
+        <!-- tada -->
+        <li class='li{{index}}' data-id='{{value.indexmenuId}}'>
             <a href="{{value.titlehref}}">
                 {{@value.img}} {{value.name}}
             </a>
@@ -184,8 +200,8 @@
     </script>
     <script type="text/html" id="moneyctrlTpl">
         {{each result value}}
-        <div class="productList">
-            <a href="#">
+        <div class="productList" data-id='{{value.productId}}'>
+            <a href="#" class='img'>
                 {{@value.productImg2}}
             </a>
             <div class="productRight">
@@ -196,7 +212,7 @@
                 <p class="productInfo">
                     <span class="productFrom">{{value.productFrom}}</span> |
                     <span class="productTime">{{value.productTime}}</span>
-                    <span class="fa fa-comments-o comment">{{value.productComCount.replace('有','').replace('人评论','')}}</span>
+                    <span class="comment">👍{{value.productComCount.replace('有','').replace('人评论','')}}</span>
                 </p>
             </div>
         </div>
