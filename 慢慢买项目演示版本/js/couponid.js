@@ -1,1 +1,0 @@
-window.onload=function(){var o;o="#discount_banner_con",$.ajax({url:baseUrl+"/api/getcoupon",success:function(n){var a=template("product",n);$(o).append(a)}})};
