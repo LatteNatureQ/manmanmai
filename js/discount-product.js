@@ -1,16 +1,11 @@
 $(function () {
-    $(document).ready(function(){
-        $('#footer .top').on('tap',function(){
-            console.log(111 )
-            $('html,body').animate({scrollTop:0},'slow');
-        });
-    });
-
+ 
     
     var mmm = new Mmm();
     mmm.refresh();
     mmm.getdiscountproduct();
     mmm.publish();
+    mmm.top();
   
 })
 var Mmm = function () {
@@ -71,6 +66,12 @@ Mmm.prototype = {
                var li = '<li>'+text+'</li>'
                console.log($('#main .comment ul'))
                $($('#main .comment ul')[0]).prepend(li)
+            })
+        },
+        top:function(){
+            var that = this;
+            $('#main #footer .top').on('tap',function(){
+                mui('.mui-scroll-wrapper').scroll().scrollTo(0,0,100);
             })
         }
     }
