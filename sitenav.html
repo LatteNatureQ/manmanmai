@@ -9,10 +9,7 @@
     <link rel="stylesheet" href="lib/mui/css/mui.min.css">
     <!-- 2. 引入字体图标的CSS文件  提供字体图标-->
     <link rel="stylesheet" href="lib/fontAwesome/css/font-awesome.css">
-    <!-- 3. 引入主页的less文件 注意 rel="stylesheet/less"-->
-    <link rel="stylesheet/less" href="less/sitenav.less">
-    <!-- 4. 引入less的编译器文件 编译less -->
-    <script src="lib/less/less.js"></script>
+    <link rel="stylesheet" href="./less/sitenav.css">
     <!-- 5. 引入rem.js 要在前面引入因为他会影响到页面渲染提前引入 -->
     <script src="js/rem.js"></script>
 </head>
@@ -20,7 +17,7 @@
 <body>
     <!-- 头部区域 -->
     <header id="header">
-        <a href="#">
+        <a href="javascript:history.back()">
             <i class="fa fa-angle-left" aria-hidden="true"></i>
         </a>
         <h3>商城导航</h3>

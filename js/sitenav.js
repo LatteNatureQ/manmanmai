@@ -16,9 +16,7 @@ MMB.prototype = {
         $.ajax({
             url: 'http://localhost:9090/api/getsitenav',
             success: function (result) { 
-                console.log(result);
                 var html = template('sitenavTpl',result);
-                console.log(html);
                 $('.sitenavList').html(html);
             }
         })

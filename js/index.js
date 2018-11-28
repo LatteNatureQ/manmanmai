@@ -8,9 +8,11 @@ $(function () {
 var mmb = function () {};
 mmb.prototype = {
     /* 获取首页菜单栏信息 */
+    baseURL:'http://localhost:9090',
     getindexmenu: function () {
+        var that = this;
         $.ajax({
-            url: 'http://localhost:9090/api/getindexmenu',
+            url: that.baseURL+'/api/getindexmenu',
             success: function (obj) {
                 var html = template('menuTpl', obj);
                 $('.menu ul').append(html);
@@ -23,8 +25,9 @@ mmb.prototype = {
     },
     /* 获取优惠商品 */
     getmoneyctrl: function () {
+        var that = this;
         $.ajax({
-            url: 'http://localhost:9090/api/getmoneyctrl',
+            url: that.baseURL+'/api/getmoneyctrl',
             success: function (obj) {
                 var html = template('moneyctrlTpl', obj);
                 $('.productBox').html(html);
