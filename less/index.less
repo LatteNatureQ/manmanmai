@@ -1,65 +1,19 @@
 @import 'base.less';
 /* 主体区域 */
 
-body {
-    padding-top: .89rem;
-}
-
-#header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 33;
-}
-
-#search {
-    position: fixed;
-    top: .45rem;
-    width: 100%;
-    z-index: 33;
-}
-
 #main {
     /* 菜单栏区域 */
     .menu {
         padding-top: .2rem;
         background-color: #fff;
-        margin-top: .08rem;
-        box-shadow: 0px 0px 1px 0px #ccc;
-        height: 2.68rem;
+        margin-top: .1rem;
+        box-shadow: 0px 0px 10px 1px #ccc;
         ul {
             display: flex;
             flex-wrap: wrap;
             li {
                 width: 25%;
                 margin-bottom: .1rem;
-                &.travel {
-                    text-align: center;
-                    &.lottery {
-                        p {
-                            background-color: #fff;
-                        }
-                    }
-                    &.game {           
-                        p {
-                            color: #fff;
-                            background-color: #44c760;
-                        }
-                    }
-                    p {
-                        width: .35rem;
-                        height: .35rem;
-                        margin-bottom: .05rem;
-                        text-align: center;
-                        line-height: .35rem;
-                        font-size: .25rem;
-                        border-radius: 50%;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        background-color: skyblue;
-                    }
-                }
                 a {
                     display: flex;
                     flex-direction: column;
@@ -78,12 +32,8 @@ body {
         .nav-base();
         .productList {
             background-color: #fff;
-            box-shadow: 0px 0px 1px 0px #ccc;
+            border-bottom: 1px solid #ccc;
             display: flex;
-            .img {
-                width: 1rem;
-                height: 1rem;
-            }
             .litre {
                 color: #333;
                 .price {
@@ -116,22 +66,6 @@ body {
                 width: 1rem;
             }
         }
-        .nav {
-            background-color: #f6f6f6;
-            position: relative;
-            img {
-                position: absolute;
-                left: 0;
-                right: 0;
-                top: 0;
-                bottom: 0;
-                display: block;
-                width: auto;
-                max-height: 100%;
-                text-align: center;
-                margin: 0 auto;
-            }
-        }
     }
     /* 更多优惠信息 */
     .special-offers {
@@ -154,22 +88,5 @@ body {
     .brandRanking {
         margin-top: .05rem;
         .nav-base();
-        .nav {
-            background-color: #f6f6f6;
-            position: relative;
-            img {
-                position: absolute;
-                left: 0;
-                right: 0;
-                top: 0;
-                bottom: 0;
-                display: block;
-                width: auto;
-                max-height: 100%;
-                text-align: center;
-                margin: 0 auto;
-            }
-        }
     }
 }
-
