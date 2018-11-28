@@ -3,6 +3,7 @@
       mmm.getinlanddiscount();
       mmm.refresh();
       mmm.skip();
+      mmm.top();
 
   });
 
@@ -53,5 +54,12 @@
               location = 'discount-product.html?productid='+id;
           })
 
-      }
+      },
+      top:function(){
+          //返回顶部的点击事件
+        var that = this;
+        $('#main #footer .top').on('tap',function(){
+            mui('.mui-scroll-wrapper').scroll().scrollTo(0,0,100);
+        })
+    }
   }
