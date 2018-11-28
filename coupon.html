@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>优惠券</title>
+    <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+    <link rel="stylesheet" type="text/css" href="lib/fontAwesome/css/font-awesome.css">
+    <link rel="stylesheet" href="./less/coupon.css">
+</head>
+
+<body>
+    <!-- 头部区域 -->
+    <header id="header">
+        <a href="#">
+
+            <i class="fa fa-angle-left back"></i>
+        </a>
+        <a href="#">
+            <h4>优惠券</h4>
+        </a>
+        <a href="#">
+            <img class="header_app" src="./images/header_app.png" alt="">
+        </a>
+    </header>
+
+    <!-- 主体区域 -->
+    <main id="main">
+        <ul>
+            
+        </ul>
+
+    </main>
+    <!-- 底部区域 -->
+    <footer id="footer">
+        <div class="register">
+            <a href="#">登录</a>
+            <a href="#">注册</a>
+            <a href="#">
+                <img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部</a>
+        </div>
+        <div class="footer-info">
+            <p>
+                <a href="#" style="color: Red;">手机APP下载</a>
+                <a href="#">
+                    慢慢买手机版</a> -- 掌上比价平台</p>
+            <p>
+                m.manmanbuy.com
+            </p>
+        </div>
+    </footer>
+    <script src="lib/mui/js/mui.js"></script>
+    <script src="lib/zepto/zepto.min.js"></script>
+    <script src="lib/artTemplate/template-web.js"></script>
+    <script type="text/html" id="listTpl">
+        {{each result value}}
+            <li>
+                <a href="./couponproduct.html?id={{ value.couponId }}">
+                    <img src="{{ /value.couponImg }}" alt="">
+                    <p>{{ value.couponTitle }}</p>
+                </a>
+            </li>
+        {{/each}}
+    </script>
+    <script src="js/coupon.js"></script>
+</body>
+
+</html>
