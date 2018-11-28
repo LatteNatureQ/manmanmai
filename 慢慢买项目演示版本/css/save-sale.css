@@ -1,0 +1,240 @@
+/*头部样式*/
+#header{
+    height: 44px;
+}
+.icon-back a{
+    float: left;
+    width: 24px;
+    height: 44px;
+    line-height:44px;
+    display: block;
+    font-weight: 700;
+    font-size: 30px;
+    color: white;
+    padding-left: 20px;
+    font-family: 'SimSun';
+}
+.header-text{
+    color: white;
+    text-align: center;
+    line-height: 44px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: arial;
+}
+
+/*中间海天酱油的样式*/
+.main,.sale{
+    width: 100%;
+}
+.h-title>h3{
+    display: block;
+    font-size: 18px;
+    padding-top:10px;
+    padding-left:20px;
+    font-weight: 800;
+    text-align: left;
+    text-align-last: left;
+    word-break: break-all;
+    color: #5a5a5a;
+    line-height: normal;
+    font-family: arial;
+}
+.name-id{
+   padding-left:20px;
+    color: #999;
+    font-size: 12px;
+    padding-top:20px;
+    padding-bottom: 20px;
+}
+.right-tu{
+    width: 120px;
+    height: 120px;
+    float: right;
+    margin-left:8px;
+    margin-right: 10px;
+
+}
+.right-tu>img{
+    width: 100%;
+    height: 100%;
+}
+.left-content>p:first-of-type,p:last-of-type{
+    width: 100%;
+    line-height: 24px;
+    color: #606060;
+    word-break: break-all;
+    font-size:16px;
+    padding-left:20px;
+    font-family: "宋体";
+}
+.left-content>p:last-of-type{
+   margin-top:10px;
+}
+.left-tu{
+    width: 350px;
+    height: 350px;
+    margin:20px;
+}
+.left-tu>img{
+    width: 100%;
+    height: 100%;
+}
+/*送货地址样式*/
+.city-trade{
+    width: 100%;
+}
+.drop{
+    padding: 0 0 10px;
+    background-color: #fff;
+    box-shadow: 1px 2px 5px rgba(0,0,0,.1);
+    border-color: #f1f1f1 #f1f1f1 #dbdbdb;
+    border-width: 0 1px 1px;
+    border-style: solid;
+    width: 136px;
+    margin:0 auto;
+}
+#disstorck{
+    width: 136px;
+    margin:0 auto;
+}
+#disstorck>li{
+    font-size: 12px;
+    font-family: Microsoft Yahei;
+    line-height: 20px;
+}
+#disstorck>li strong{
+    color:#f27b04;
+    float: right;
+    font-weight: 400;
+}
+#disstorck>li>a{
+    display: block;
+    padding: 0 10px;
+}
+#disstorck>li>a>span{
+    border-bottom: 1px dotted silver;
+    display: block;
+    text-align: left;
+}
+/*送货地址样式结束*/
+.goBuy{
+    margin-top: 10px;
+    padding-left:20px;
+    padding-right:20px;
+    height: 30px;
+}
+.goBuy-m{
+    width: 100%;
+}
+.goBuy-a{
+    display:block;
+    background:#ff9000;
+    color:white;
+    margin: 0 auto;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 5px;
+}
+.bigTu{
+    padding:20px 10px;
+}
+.bigTu>img{
+    width: 100%;
+    height: 100%;
+}
+
+.talks .tit{
+    padding:6px 8px;
+    font-size:16px;
+    font-family: "宋体";
+}
+.form{
+    border: 2px solid #eceae8;
+    border-radius: 2px;
+    padding: 4px 0 0 4px;
+    background-color: #fff;
+    position: relative;
+    width: 98%;
+    margin: 0 auto;
+}
+.form textarea{
+    width: 100%;
+    resize: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border: none;
+    line-height: 22px;
+    font-size: 14px;
+    outline: 0;
+    color: #666;
+    height: 68px;
+}
+.ctrl{
+    background-color: #fbfbfb;
+    height: 36px;
+    margin-left: -4px;
+    border-top: 1px solid #f2f2f2;
+}
+.form .ctrl input{
+    position: absolute;
+    right: -2px;
+    bottom: -2px;
+    background: #ff841d;
+    border: none;
+    border: 2px solid #ff841d;
+    padding: 0;
+    width: 100px;
+    height: 39px;
+    color: #fff;
+    outline: 0;
+    border-radius:2px;
+    font-size: 16px;
+}
+.tit{
+    font-size: 16px;
+    padding: 6px 8px;
+}
+.list >ul>li{
+    padding: 18px 10px;
+    background-color: #fff;
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.list .userimg {
+    width: 40px;
+    height: 40px;
+    float: left;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.list .userimg>img{
+    width: 100%;
+    height: 100%;
+}
+.con{
+    overflow: hidden;
+    padding-left: 10px;
+}
+.name{
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #2e8b01;
+}
+.username {
+    color: #5997c0;
+    font-size: 13px !important;
+    float: left;
+}
+.time {
+    color: #999;
+    font-size: 13px !important;
+    float: right;
+}
+.list .con .content {
+    word-break: break-all;
+    font-size: 15px!important;
+    color: #606060;
+    line-height: 20px;
+}

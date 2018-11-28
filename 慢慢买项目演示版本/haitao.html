@@ -1,0 +1,12 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>海淘折扣</title><link rel="stylesheet" href="css/base.css"><link rel="stylesheet" href="css/haitao.css"><script src="lib/jquery/jquery.min.js"></script><script src="js/template-native.js"></script><script src="js/haitao.js"></script><script src="js/common.js"></script></head><body><script type="text/html" id="haittemplate"> <% for(i=0;i< result.length;i++){ %> <li class="clearfix">
+        <a href="moneyctrl.html?<%=result[i].productId%>">
+            <div class="pic clearfix"> <%=# result[i].productImgSm%> </div>
+            <div class="title"><%=result[i].productName%> <span><%=result[i].productPinkage%></span>
+            </div>
+            <div class="text-ht">
+                <i><%=result[i].productFrom%></i>
+                <span>
+                    <i></i> <%=  /\d+/.exec(result[i].productComCount)[0] %> </span>
+            </div>
+        </a>
+    </li> <% } %> </script><script type="text/html" id="xifenyetemp"> <% for(var j=0;j<= items-1;j++){%> <option value="<%=j+1%>"><%=j+1%>/<%=items%></option> <%}%> </script><header class="haitao-header"><div><a href="index.html" class="header-retreat">&lt;</a></div><h1>海淘折扣</h1><div class="appdown"><a href="#"><img src="images/header_app.png" alt="手机app下载"></a></div></header><section class="commodity"><div class="commodity-ht"><ul class="commodity-htlb"></ul></div><div class="page clearfix"><span><a href="javascript:getData($('.commodity-htlb'),0);" id="pageUp">上一页</a> </span><span><select name="" id="xifenye"></select> </span><span><a href="javascript:getData($('.commodity-htlb'),0);" id="pagedown">下一页</a></span></div></section><div class="footnav"><span><a href="index.html">首页</a> <a href="saveMoney.html">> 省钱控 ></a> <a href="javascript:;">海淘折扣</a></span></div><footer id="ctl00_foot"><div class="foot_top"><a href="##">登录</a> <a href="##">注册</a> <a href="#" style="width: 40%; border: 0;" id="rtt"><img src="images/top.png" width="16" height="16">返回顶部</a></div><div class="footer"><p><a href="##" style="color: #ff4e49">手机APP下载</a> <a href="index.htm" tppabs="##" style="color:#bebebe;">慢慢买手机版 -- 掌上比价平台</a></p><p>m.manmanbuy.com</p></div></footer></body></html>

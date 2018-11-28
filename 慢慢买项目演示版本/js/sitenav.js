@@ -1,0 +1,1 @@
+$(function(){getSiteNav=function(e){$.ajax({type:"get",data:{},url:baseUrl+"/api/getsitenav",success:function(t){console.log(123),e&&e(t)}})},getSiteNav(function(t){var e=template("siteNav",t);$(".link").html(e),console.log(e)})});

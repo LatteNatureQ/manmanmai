@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>慢慢买项目</title>
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script id="indexMenu" type="text/template"><div class="row clearfix"> <% for(var i=0; i< result.length; i++){ %> <div class="menu-item">
+					<a href="<%= i==7?'javascript:;':result[i].titlehref %>"> <%=# result[i].img %> <p><%= result[i].name %></p>
+					</a>
+				</div> <% } %> </div></script>
+</head>
+
+<body>
+	<header id="header" class="header">
+		<div class="logo"><a href="index.html" title="慢慢买"><img src="images/header_logo.png" alt=""></a></div>
+		<div class="appdown"><a href="##"><img src="images/header_app.png" alt="手机app下载"></a></div>
+	</header>
+	<section id="form-search">
+		<form action="#" class="search"><input type="search" name="" id="" placeholder="请输入你想比价的商品"> <input type="button"
+			 value="搜索"></form>
+	</section>
+	<div class="banner">
+		<ul>
+			<li><a href="javascript:;"><img src="images/banner05.jpg" alt=""></a></li>
+			<li><a href="javascript:;"><img src="images/banner03.jpg" alt=""></a></li>
+			<li><a href="javascript:;"><img src="images/banner02.jpg" alt=""></a></li>
+			<li><a href="javascript:;"><img src="images/banner04.jpg" alt=""></a></li>
+			<li><a href="javascript:;"><img src="images/banner05.jpg" alt=""></a></li>
+			<li><a href="javascript:;"><img src="images/banner03.jpg" alt=""></a></li>
+		</ul>
+		<ol>
+			<li class="active"></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ol>
+	</div>
+	<section id="menu"></section>
+	<section class="list-title">
+		<div class="list-title-content"><span>超值折扣推荐</span> <img src="images/more.png" width="20" height="20"></div>
+	</section>
+	<script type="text/html" id="indexWares">
+		<% for(var i=0; i< result.length; i++){ %> <li class="clearfix ui-border-b">
+                	<a href="save-sale.html?productid=<%= result[i].productId%>">
+                		<div class="pic"> <%=# result[i].productImgSm%> </div>
+                		<div class="clearfix info">
+                    		<div class="title"> <%= result[i].productName%> <span><%= result[i].productPinkage%></span>
+                    		</div>
+                    		<div class="other">
+                    			<span class="mall"><%= result[i].productFrom%> | <%= result[i].productTime%></span>
+                    			<span class="comment">
+                    				<i class="icon-comment"></i>
+                    				<i><%= /\d+/.exec(result[i].productComCount)[0] %></i>
+                    			</span>
+                    		</div>
+                		</div>
+                	</a>
+                </li> <% } %> </script>
+	<main id="recommen-product">
+		<div class="recommen-product-list product-list cu-list">
+			<ul></ul>
+			<div class="more-bar"><a href="moneyctrl.html">更多优惠信息 »</a></div>
+		</div>
+	</main>
+	<section id="recommen" class="list-title">
+		<div class="list-title-content"><span>品牌排行</span> <img src="images/more.png" width="20" height="20"></div>
+	</section>
+	<footer id="ctl00_foot">
+		<div class="foot_top"><a href="login.html">登录</a> <a href="register.html">注册</a> <a href="##" style="width: 40%; border: 0;"
+			 id="rtt"><img src="images/top.png" width="16" height="16">返回顶部</a></div>
+		<div class="footer">
+			<p><a href="##" style="color: #ff4e49">手机APP下载</a> <a href="index.htm" tppabs="##" style="color:#bebebe;">慢慢买手机版 --
+					掌上比价平台</a></p>
+			<p>m.manmanbuy.com</p>
+		</div>
+	</footer>
+	<div class="mask hide"></div>
+	<div class="circle">
+		<div class="ring"><a href="category.html" class="menuItem"></a> <a href="moneyctrl.html" class="menuItem"></a> <a
+			 href="inlanddiscount.html" class="menuItem"></a> <a href="baicaijia.html" class="menuItem"></a> <a href="moneyctrl.html"
+			 class="menuItem"></a> <a href="coupon.html" class="menuItem"></a> <a href="gsproduct.html" class="menuItem"></a> <a
+			 href="index.html" class="menuItem"></a></div><a href="##" class="center"></a>
+	</div>
+	<script src="js/scrollTop.js"></script>
+	<script src="lib/jquery/jquery.min.js"></script>
+	<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+	<script src="js/template-native.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/base.js"></script>
+</body>
+
+</html>

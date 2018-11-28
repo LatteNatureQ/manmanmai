@@ -1,0 +1,308 @@
+body,html{
+    width: 100%;
+    font-family: "Microsoft YaHei", sans-serif;
+}
+ul,p{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+a,a:hover,a:focus{
+    text-decoration: none;
+    color: black;
+}
+.allBrand{
+    height: 35px;
+    line-height: 35px;
+    padding-left: 10px;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
+    margin-top: 100px;
+}
+.brand-content{
+    width: 100%;
+    overflow: hidden;
+}
+.brand-content > nav {
+    display: flex;
+    background-color: #EEEEEE;
+}
+.brand-content > nav span {
+    flex: 1;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+}
+.brand-content > nav span.active {
+    background-color: #232a34;
+    color: #f0f0f0;
+}
+
+.brand-content > section {
+    display: none;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+}
+.brand-content > section.active {
+    display: block;
+}
+.brand-content  .brandTitle > ul > li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.brand-content > section.brandTitle > ul > li:nth-of-type(1) em {
+    background-color: red;
+}
+.brand-content > section.brandTitle > ul > li:nth-of-type(2) em {
+    background-color: #f9a83f;
+}
+.brand-content > section.brandTitle > ul > li:nth-of-type(3) em {
+    background-color: #00d300;
+}
+.brand-content  .brandTitle > ul > li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.brand-content > section.brandTitle > ul > li > a > em{
+    display: inline-block;
+    width: 20px;
+    height:20px;
+    line-height: 20px;
+    background-color: #ccc;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-style: normal;
+   vertical-align: top;
+    text-align: center;
+}
+.brand-content > section.brandTitle > ul > li > a>.inner{
+    display: inline-block;
+    margin-left: 10px;
+}
+.brand-content > section.brandTitle > ul > li > a>.inner>.title{
+    font-size: 16px;
+    color: #000;
+}
+.brand-content > section.brandTitle > ul > li > a>.inner>p{
+    font-size: 14px;
+    padding-top: 10px;
+    color: #bbbbbb;
+}
+.brand-content > section.brandTitle > ul > li > a>.inner>span{
+    position: absolute;
+    right: 0;
+    top: -5px;
+    font-size: 36px;
+    color: #c4c4c4;
+    font-weight: lighter;
+}
+.brand-content > section.brandRange > ul > li {
+    height: 130px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.brand-content > section.brandRange > ul > li:last-child{
+    border-bottom: none;
+}
+.brand-content > section.brandRange > ul > li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.brand-content > section.brandRange > ul > li a > .pic {
+    float: left;
+    width: 110px;
+    height: 100px;
+}
+.brand-content > section.brandRange > ul > li a > .pic>img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    vertical-align: top;
+}
+.brand-content > section.brandRange > ul > li a >  .info{
+    height:100%;
+}
+.brand-content > section.brandRange > ul > li a >  .info >.title{
+    font-size: 15px;
+    line-height: 1.5;
+    color: #000;
+    height: 44px;
+    overflow: hidden;
+}
+.brand-content > section.brandRange > ul > li a > .info > .price {
+    padding-top: 15px;
+    font-size: 20px;
+    color: #ff4300;
+}
+.brand-content > section.brandRange > ul > li a > .info > .price em{
+    font-style: normal;
+}
+.brand-content > section.brandRange > ul > li a > .info > .other{
+    padding-top: 5px;
+}
+.brand-content > section.brandRange > ul > li a > .info > .other em{
+    font-style: normal;
+    color: gray;
+}
+.brand-content > section.brandComment .commentTitle{
+    height: 100px;
+}
+.brand-content > section.brandComment ul{
+    padding: 10px;
+}
+.brand-content > section.brandComment ul li{
+    padding-top: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+}
+.brand-content > section.brandComment ul li .commentTitle>img{
+    width: 100px;
+    height: 100px;
+    display: block;
+    float: left;
+   padding-left: 10px;
+}
+.brand-content > section.brandComment ul li .commentTitle>span{
+    overflow: hidden;
+    height: 70px;
+    padding-top: 20px;
+    padding-left: 10px;
+     float: left;
+    width: 270px;
+    color: gray;
+    line-height: 1.5;
+}
+.brand-content > section.brandComment > ul > li .commentBox {
+    background: #eee;
+    margin: 10px;
+    border: 1px solid #ccc;
+    position: relative;
+    border-radius: 5px;
+    padding: 10px;
+}
+.brand-content > section.brandComment > ul > li .commentBox > .content {
+    line-height: 2;
+}
+.brand-content > section.brandComment > ul > li .commentBox > .from {
+    margin-top: 5px;
+    color: #e92322;
+}
+.brand-content > section.brandComment > ul > li .commentBox > .name {
+    line-height: 30px;
+}
+.brand-content > section.brandComment > ul > li .commentBox > .name > i {
+    float: right;
+    font-style: normal;
+}
+.brand-content > section.brandComment > ul > li .commentBox > .name .star {
+    width: 90px;
+    vertical-align: top;
+    margin-left: 10px;
+    margin-top: 3px;
+}
+.brand-content > section.brandComment > ul > li .commentBox > .name .star,
+.brand-content > section.brandComment > ul > li .commentBox > .name .star1,
+.brand-content > section.brandComment > ul > li .commentBox > .name .star2,
+.brand-content > section.brandComment > ul > li .commentBox > .name .star3,
+.brand-content > section.brandComment > ul > li .commentBox > .name .star4,
+.brand-content > section.brandComment > ul > li .commentBox > .name .star5 {
+    display: inline-block;
+    height: 18px;
+}
+.brand-content > section.brandComment > ul > li .commentBox > .name .star1,
+.brand-content > section.brandComment > ul > li .commentBox > .name .star2,
+.brand-content > section.brandComment > ul > li .commentBox > .name .star3,
+.brand-content > section.brandComment > ul > li .commentBox > .name .star4,
+.brand-content > section.brandComment > ul > li .commentBox > .name .star5 {
+    background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><path fill="#ff9000" d="M496.529 75.126l112.468 346.201H973.01l-294.48 213.977 112.48 346.2-294.48-213.966-294.54 213.966 112.483-346.2L19.99 421.327h364.014L496.53 75.126z"/></svg>');
+    width: 20px;
+}
+.brand-content > section.brandComment > ul > li .commentBox > .name .star1 {
+    width: 18px;
+}
+.brand-content > section.brandComment > ul > li .commentBox > .name .star2 {
+    width: 35px;
+}
+.brand-content > section.brandComment > ul > li .commentBox > .name .star3 {
+    width: 55px;
+}
+.brand-content > section.brandComment > ul > li .commentBox > .name .star4 {
+    width: 70px;
+}
+.brand-content > section.brandComment > ul > li .commentBox > .name .star5 {
+    width: 90px;
+}
+.brand-content > section.brandComment > ul > li .commentBox > .name .price .star {
+    float: right;
+}
+.brand-content > section.brandComment > ul > li .commentBox::before,
+.brand-content > section.brandComment > ul > li .commentBox::before {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 29px;
+    top: -8px;
+    border-bottom: 8px solid #ccc;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+}
+.brand-content > section.brandComment > ul > li .commentBox::after {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 29px;
+    top: -5px;
+    border-bottom: 8px solid #eee;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+}
+.brand-content > section.brandRange > ul > li a > .info>.price .star5 {
+    width: 90px;
+    vertical-align: top;
+    margin-left: 10px;
+    margin-top: 3px;
+}
+.brand-content > section.brandRange > ul > li a > .info>.price .star,
+.brand-content > section.brandRange > ul > li a > .info>.price .star1,
+.brand-content > section.brandRange > ul > li a > .info>.price .star2,
+.brand-content > section.brandRange > ul > li a > .info>.price .star3,
+.brand-content > section.brandRange > ul > li a > .info>.price .star4,
+.brand-content > section.brandRange > ul > li a > .info>.price .star5 {
+    display: inline-block;
+    height: 18px;
+}
+.brand-content > section.brandRange > ul > li a > .info>.price .star1,
+.brand-content > section.brandRange > ul > li a > .info>.price .star2,
+.brand-content > section.brandRange > ul > li a > .info>.price .star3,
+.brand-content > section.brandRange > ul > li a > .info>.price .star4,
+.brand-content > section.brandRange > ul > li a > .info>.price .star5 {
+    background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><path fill="#ff9000" d="M496.529 75.126l112.468 346.201H973.01l-294.48 213.977 112.48 346.2-294.48-213.966-294.54 213.966 112.483-346.2L19.99 421.327h364.014L496.53 75.126z"/></svg>');
+    width: 20px;
+}
+.brand-content > section.brandRange > ul > li a > .info>.price .star1 {
+    width: 18px;
+}
+.brand-content > section.brandRange > ul > li a > .info>.price .star2 {
+    width: 35px;
+}
+.brand-content > section.brandRange > ul > li a > .info>.price .star3 {
+    width: 55px;
+}
+.brand-content > section.brandRange > ul > li a > .info>.price .star4 {
+    width: 70px;
+}
+.brand-content > section.brandRange > ul > li a > .info>.price .star5 {
+    width: 90px;
+}
+.brand-content > section.brandRange > ul > li a > .info>.price .star5 {
+    float: right;
+}
+

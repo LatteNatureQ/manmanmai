@@ -1,0 +1,166 @@
+.su_nav {
+  width: 100%;
+  margin-top: 50px;
+  height: 40px;
+  padding: 0 20px;
+  background: linear-gradient(to bottom, #fff, #ddd);
+  line-height: 40px;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0 -1px 3px #ddd;
+  position: fixed;
+  top:0px;
+}
+.su_nav a:last-child {
+  height: 30px;
+  padding: 0 10px;
+  line-height: 30px;
+  margin-top: 5px;
+  border-radius: 5px;
+  background: linear-gradient(to top, #fff, #ddd);
+  display: inline-block;
+  float: right;
+  box-shadow: 0px 0px 1px  #AAAAAA,0px 1px 1px  #AAAAAA;
+}
+.su_details {
+  width: 100%;
+  background: #fff;
+  margin-top: 90px;
+}
+.su_details .details_image {
+  width: 100%;
+  text-align: center;
+}
+.su_details .details_image p {
+  padding: 20px 20px 0 20px;
+  text-align: left;
+}
+.su_details .details_image .image2 {
+  width: 50px;
+  vertical-align: bottom;
+}
+.su_details .details_nav {
+  margin-top: 30px;
+  width: 100%;
+  background: #fff;
+}
+.su_details .details_nav ul > li {
+  width: 33.333%;
+  height: 30px;
+  float: left;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  border: 1px solid #c14d00;
+  border-left: none;
+}
+.su_details .details_nav ul > li:first-child {
+  background: #ffa025;
+}
+.su_details .details_nav ul > li:nth-child(2) {
+  background: #ffc627;
+}
+.su_details .details_nav ul > li:last-of-type {
+  background: #ffc525;
+  border-right: none;
+}
+.su_details .details_nav ul > li a {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  display: block;
+}
+.su_details .details_nav table {
+  height: 40px;
+  line-height: 40px;
+}
+.su_details .details_nav table td:nth-child(2) {
+  text-align: left;
+}
+.su_details .details_nav table td:nth-child(3) {
+  color: #e92322;
+  text-align: right;
+}
+.su_details .details_nav .p_brand > li {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  box-sizing: border-box;
+  padding-left: 10px;
+  float: left;
+}
+.su_details .details_nav .p_brand > li:nth-child(n+2) {
+  float: right;
+  width: 70px;
+  margin-right: 5px;
+}
+.su_details .details_nav .p_brand > li:nth-child(2) {
+  padding: 5px 0;
+}
+.su_details .details_nav .p_brand > li:nth-child(2) a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 30px;
+  border-radius: 5px;
+  background: #f50;
+}
+.su_details .details_nav .p_brand > li:last-of-type {
+  margin-right: 30px;
+  color: #d30311;
+  font-size: 16px;
+}
+.su_details .prompt {
+  padding: 10px;
+  font-size: 12px;
+  border-top: 1px solid #ccc;
+  border-bottom: 3px solid #aaa;
+  color: #888888;
+}
+.su_details .evaluate {
+  width: 100%;
+}
+.su_details .evaluate .evaluate_top {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background: #ccc;
+  margin-top: 1px;
+  text-align: center;
+}
+.su_details .evaluate .evaluate_list {
+  width: 100%;
+}
+.su_details .evaluate .evaluate_list ul > li {
+  width: 100%;
+  padding: 10px;
+  border-bottom: 1px solid #bbb;
+}
+.su_details .evaluate .evaluate_list ul > li .data {
+  width: 100%;
+  font-size: 12px;
+  color: #666;
+  overflow: hidden;
+}
+.su_details .evaluate .evaluate_list ul > li .data .userName {
+  float: left;
+}
+.su_details .evaluate .evaluate_list ul > li .data .date {
+  float: right;
+}
+.su_details .evaluate .evaluate_list ul > li .from {
+  width: 100%;
+  font-size: 12px;
+  color: #666;
+  margin: 5px 0 10px 0;
+  text-align: right;
+}
+.su_details .evaluate .evaluate_list ul > li .from span img {
+  height: 18px;
+  width: 18px;
+  float: left;
+}
+.su_details .evaluate .evaluate_list ul > li .evaluate_list_content {
+  font-family: simsun;
+  line-height: 1.5;
+  color: #000;
+}

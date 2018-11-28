@@ -1,0 +1,97 @@
+/*注册搜索栏的样式*/
+form {
+    display: block;
+}
+.search1 {
+    border-bottom: 1px solid #e6e6e6;
+    height: 51px;
+    padding: 10px;
+    position: relative;
+    background-color: White;
+}
+
+.search1 .searchtxt input {
+    -webkit-appearance: none;
+    border: none;
+    background: #f1f1f1;
+    margin: 0px;
+    padding: 0px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    width: 90%;
+    padding-left: 5%;
+    font-size: 16px;
+}
+.search1 .searchbtn input {
+    -webkit-appearance: none;
+    width: 63px;
+    background: #ff841d;
+    color: #FFFFFF;
+    border: none;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 16px;
+}
+/*注册选项*/
+
+.loginTab {
+    width: 100%;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.loginTab td {
+    height: 48px;
+}
+.loginTab .score_t {
+    height: 38px;
+}
+.yz {
+    width: 40%;
+    height: 36px;
+    background-color: #d4d4d4;
+    background: -webkit-gradient(linear,0 0,0 100%,from(#ffffff),to(#d4d4d4));
+
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 32px;
+    overflow: hidden;
+    border: 1px solid #bababa;
+}
+.score_t {
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    background-color: #fff;
+    background: -webkit-gradient(linear,0 0,0 100%,from(#f5f5f5),to(#fdfdfd));
+    line-height: 32px;
+    -webkit-border-radius: 0;
+    font-size: 14px;
+    border: solid 1px #ccc;
+    border-top-color: #aaa;
+    padding-left: 5px;
+    color: #666;
+}
+.login {
+    background-color: #ff4e49;
+    box-shadow: 0 0 1px #666;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 40px;
+    overflow: hidden;
+    border: none;
+    border-bottom: 1px solid #bababa;
+    width: 100%;
+    color: #fff;
+}

@@ -1,0 +1,47 @@
+#category{
+    width: 100%;
+    margin-top: 100px;
+}
+#category .title{
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+#category .title .product{
+    overflow: hidden;
+}
+#category .title >li{
+    height: 100%;
+    line-height: 40px;
+}
+#category .title >li>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0 15px;
+    font-weight: bold;
+    font-size: 15px;
+    background: url(http://www.zuyushop.com/wap/images/arrow1.gif) right center no-repeat;
+}
+#category .title >li>a:hover{
+    background: url(http://www.zuyushop.com/wap/images/arrow2.gif) right center no-repeat;
+}
+#category .title  .product{
+    width: 100%;
+    height: 100%;
+    background-color: #F9F9F9;
+    border-bottom: 1px solid #ccc;
+}
+#category .title .product >li{
+    width: 33.33%;
+    height: 40px;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    text-align: center;
+    float: left;
+}
+#category .title .product >li>a{
+    display: block;
+    height: 40px;
+
+}

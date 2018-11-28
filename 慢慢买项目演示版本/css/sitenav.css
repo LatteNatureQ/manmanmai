@@ -1,0 +1,184 @@
+/*头部样式*/
+#header{
+    height: 44px;
+}
+.icon-back a{
+    float: left;
+    width: 24px;
+    height: 44px;
+    line-height:44px;
+    display: block;
+    font-weight: 700;
+    font-size: 30px;
+    color: white;
+    padding-left: 20px;
+    font-family: 'SimSun';
+}
+.header-text{
+    color: white;
+    text-align: center;
+    line-height: 44px;
+    font-size: 20px;
+}
+/*商城导航样式*/
+.link{
+    padding-top: 50px;
+    width: 300px;
+    margin: 10px auto;
+    float: none;
+}
+.link a{
+    padding: 10px 8px;
+    background: #f4f4f4;
+    border: 1px solid #bfbfbf;
+    float: left;
+    margin: 0 0 5px 5px;
+    border-radius: 3px;
+    opacity: 0;
+}
+.link a:nth-child(1){
+    -webkit-animation:fadeInUp 1.5s ease-in-out both;
+    animation:fadeInUp 1.5s ease-in-out both;
+}
+.link a:nth-child(2){
+    -webkit-animation:fadeInUp 1.5s ease-in-out both;
+    animation:fadeInUp 1.5s ease-in-out both;
+}
+.link a:nth-child(3){
+    -webkit-animation:fadeInUp 1.5s ease-in-out both;
+    animation:fadeInUp 1.5s ease-in-out both;
+}
+.link a:nth-child(4){
+    -webkit-animation:fadeInUp 1.5s .2s ease-in-out both;
+    animation:fadeInUp 1.5s .2s ease-in-out both;
+}
+.link a:nth-child(5){
+    -webkit-animation:fadeInUp 1.5s .2s ease-in-out both;
+    animation:fadeInUp 1.5s .2s ease-in-out both;
+}
+.link a:nth-child(6){
+    -webkit-animation:fadeInUp 1.5s .2s ease-in-out both;
+    animation:fadeInUp 1.5s .2s ease-in-out both;
+}
+.link a:nth-child(7){
+    -webkit-animation:fadeInUp 1.5s .4s ease-in-out both;
+    animation:fadeInUp 1.5s .4s ease-in-out both;
+}
+.link a:nth-child(8){
+    -webkit-animation:fadeInUp 1.5s .4s ease-in-out both;
+    animation:fadeInUp 1.5s .4s ease-in-out both;
+}
+.link a:nth-child(9){
+    -webkit-animation:fadeInUp 1.5s .4s ease-in-out both;
+    animation:fadeInUp 1.5s .4s ease-in-out both;
+}
+.link a:nth-child(10){
+    -webkit-animation:fadeInUp 1.5s .6s ease-in-out both;
+    animation:fadeInUp 1.5s .6s ease-in-out both;
+}
+.link a:nth-child(11){
+    -webkit-animation:fadeInUp 1.5s .6s ease-in-out both;
+    animation:fadeInUp 1.5s .6s ease-in-out both;
+}
+.link a:nth-child(12){
+    -webkit-animation:fadeInUp 1.5s .6s ease-in-out both;
+    animation:fadeInUp 1.5s .6s ease-in-out both;
+}
+.link a:nth-child(13){
+    -webkit-animation:fadeInUp 1.5s .8s ease-in-out both;
+    animation:fadeInUp 1.5s .8s ease-in-out both;
+}
+.link a:nth-child(14){
+    -webkit-animation:fadeInUp 1.5s .8s ease-in-out both;
+    animation:fadeInUp 1.5s .8s ease-in-out both;
+}
+.link a:nth-child(15){
+    -webkit-animation:fadeInUp 1.5s .8s ease-in-out both;
+    animation:fadeInUp 1.5s .8s ease-in-out both;
+}
+.link a:nth-child(16){
+    -webkit-animation:fadeInUp 1.5s 1s ease-in-out both;
+    animation:fadeInUp 1.5s 1s ease-in-out both;
+}
+.link a:nth-child(17){
+    -webkit-animation:fadeInUp 1.5s 1s ease-in-out both;
+    animation:fadeInUp 1.5s 1s ease-in-out both;
+}
+.link a:nth-child(18){
+    -webkit-animation:fadeInUp 1.5s 1s ease-in-out both;
+    animation:fadeInUp 1.5s 1s ease-in-out both;
+}
+.link a:nth-child(19){
+    -webkit-animation:fadeInUp 1.5s 1.2s ease-in-out both;
+    animation:fadeInUp 1.5s 1.2s ease-in-out both;
+}
+.link a:nth-child(20){
+    -webkit-animation:fadeInUp 1.5s 1.2s ease-in-out both;
+    animation:fadeInUp 1.5s 1.2s ease-in-out both;
+}
+.link a:nth-child(21){
+    -webkit-animation:fadeInUp 1.5s 1.2s ease-in-out both;
+    animation:fadeInUp 1.5s 1.2s ease-in-out both;
+}
+.link a:nth-child(22){
+    -webkit-animation:fadeInUp 1.5s 1.4s ease-in-out both;
+    animation:fadeInUp 1.5s 1.4s ease-in-out both;
+}
+.link a:nth-child(23){
+    -webkit-animation:fadeInUp 1.5s 1.4s ease-in-out both;
+    animation:fadeInUp 1.5s 1.4s ease-in-out both;
+}
+.link a:nth-child(24){
+    -webkit-animation:fadeInUp 1.5s 1.4s ease-in-out both;
+    animation:fadeInUp 1.5s 1.4s ease-in-out both;
+}
+.link a:nth-child(25){
+    -webkit-animation:fadeInUp 1.5s 1.6s ease-in-out both;
+    animation:fadeInUp 1.5s 1.6s ease-in-out both;
+}
+.link a:nth-child(26){
+    -webkit-animation:fadeInUp 1.5s 1.6s ease-in-out both;
+    animation:fadeInUp 1.5s 1.6s ease-in-out both;
+}
+.link a:nth-child(27){
+    -webkit-animation:fadeInUp 1.5s 1.6s ease-in-out both;
+    animation:fadeInUp 1.5s 1.6s ease-in-out both;
+}
+.link a:nth-child(28){
+    -webkit-animation:fadeInUp 1.5s 1.8s ease-in-out both;
+    animation:fadeInUp 1.5s 1.8s ease-in-out both;
+}
+.link a:nth-child(29){
+    -webkit-animation:fadeInUp 1.5s 1.8s ease-in-out both;
+    animation:fadeInUp 1.5s 1.8s ease-in-out both;
+}
+.link a:nth-child(30){
+    -webkit-animation:fadeInUp 1.5s 1.8s ease-in-out both;
+    animation:fadeInUp 1.5s 1.8s ease-in-out both;
+}
+.link a img{
+    margin-right: 5px;
+}
+/*底部*/
+.footnav {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #ebebeb;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ccc;
+    background: -webkit-gradient(linear,0 0,0 100%,from(#ffffff),to(#ebebeb));
+    font-size: 14px;
+    font-family: Arial;
+    line-height: 40px;
+    padding-left: 8px;
+    color: black;
+}
+
+@-webkit-keyframes fadeInUp {
+  from {opacity: 0;-webkit-transform: translate3d(0, 100%, 0);transform: translate3d(0, 100%, 0);}
+  to {opacity: 1;-webkit-transform: none;transform: none;}
+}
+@keyframes fadeInUp {
+  from {opacity: 0;-webkit-transform: translate3d(0, 100%, 0);transform: translate3d(0, 100%, 0);}
+  to {opacity: 1;-webkit-transform: none;transform: none;}
+}

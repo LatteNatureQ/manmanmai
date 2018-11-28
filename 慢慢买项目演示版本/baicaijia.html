@@ -1,0 +1,58 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>标题</title><link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet"><!--[if lt IE 9]>
+    <script src="lib/html5shiv/html5shiv.min.js"></script>
+    <script src="lib/respond/respond.js"></script>
+    <![endif]--><link rel="stylesheet" href="css/base.css"><link rel="stylesheet" href="css/baicaijia.css"><link rel="stylesheet" href="css/iconfont.css"></head><body><header class="baicaijia_header" id="header"><a href="index.html" class="f_l glyphicon glyphicon-menu-left"></a> <a href="#" class="f_r"><span class="right"></span></a><h1>白菜价-淘宝内部券</h1><a href="#" class=""><span class="font-icon font-icon-sousuo1"></span></a><div class="searchIn"><div class="formsch clearfix"><form method="get" action="baicai.aspx"><div class="txt"><span class="font-icon font-icon-sousuo"></span> <input type="search" placeholder="请输入搜索关键词"> <a href="javascript:;" class="a-delput glyphicon glyphicon-remove"></a></div><div class="smt"><input type="submit" value="搜索"></div></form></div></div></header><nav class="baicaijia_nav clearfix"><div class="bcj_parent clearfix"><ul class="nav bcj_nav-tabs" role="tablist"></ul></div></nav><div class="baicaijia_product"><div class="tab-content container"></div><div class="tabContentBottom"><div class="loading"><div class="bar1"></div><div class="bar2"></div><div class="bar3"></div><div class="bar4"></div><div class="bar5"></div><div class="bar6"></div><div class="bar7"></div><div class="bar8"></div></div></div><div class="fail">网络请求错误</div><div class="font-icon font-icon-fanhuidingbu" id="rtt"></div></div><footer id="ctl00_foot"><div class="foot_top"><a href="##">登录</a> <a href="##">注册</a> <a href="#header" style="width: 40%; border: 0;" id=""><img src="images/top.png" width="16" height="16">返回顶部</a></div><div class="footer"><p><a href="##" style="color: #ff4e49">手机APP下载</a> <a href="index.htm" tppabs="##" style="color:#bebebe;">慢慢买手机版 -- 掌上比价平台</a></p><p>m.manmanbuy.com</p></div></footer><div class="mask hide"></div><div class="circle"><div class="ring"><a href="category.html" class="menuItem"></a> <a href="moneyctrl.html" class="menuItem"></a> <a href="inlanddiscount.html" class="menuItem"></a> <a href="baicaijia.html" class="menuItem"></a> <a href="moneyctrl.html" class="menuItem"></a> <a href="coupon.html" class="menuItem"></a> <a href="gsproduct.html" class="menuItem"></a> <a href="index.html" class="menuItem"></a></div><a href="##" class="center"></a></div><script src="lib/jquery/jquery.min.js"></script><script src="lib/bootstrap/js/bootstrap.min.js"></script><script src="js/template-native.js"></script><script src="js/underscore-min.js"></script><script src="js/itcast.js"></script><script src="js/swipe.js"></script><script src="js/base.js"></script><script src="js/baicaijia.js"></script><script type="text/template" id="bcjnav"> <% for(var i=0;i< result.length;i++){ %> <li role="presentation" class="" name="<%=result[i].titleId%>">
+            <a href="#nav<%= result[i].titleId %>" aria-controls="home" role="tab" data-toggle="tab"> <%= result[i].title %> </a>
+        </li> <% } %> </script><script type="text/template" id="bcj_productOut"> <% for(var i=0;i< result.length;i++ ){ %> <ul role="tabpanel" class="tab-pane clearfix" id="nav<%=result[i].titleId%>">
+
+        </ul> <% } %> </script><script type="text/template" id="bcjproductIn"> <% for(var i=0;i< result.length;i++ ){ %> <li class="tab_ul">
+            <a biz-itemid="538754112089" class="gobuy" isconvert="1" href="http://s.click.taobao.com/lkqGHQx" target="_blank"></a>
+            <div class="pic"><i></i><%=#result[i].productImg%></div>
+            <div class="inf">
+                <div class="i">
+                    <div class="t"><%=#result[i].productName%></div>
+                    <div class="pr"><%=#result[i].productPrice%></div>
+                </div>
+                <div class="o"> <%=#result[i].productCouponRemain%> <div class="b clearfix">
+                        <div class="q"><%=#result[i].productCoupon%></div>
+                        <div class="g"><%=#result[i].productHref%></div>
+                    </div>
+                </div>
+            </div>
+
+        </li> <% } %> </script><script type="text/template" id="bcj_product_in"><!--<% for(var i=0;i< itemsp.length;i++ ){ %>-->
+        <!--<div id="productId">-->
+            <!--<a href=""></a>-->
+            <!--<div class="tab-pane-l f_l">-->
+                <!--<img src="images/ic_bcj.png" alt=""/>-->
+            <!--</div>-->
+            <!--<div class="tap-pane-r">-->
+                <!--<div class="tapltop">-->
+                    <!--<div class="t">-->
+                        <!--<span>[包邮]</span>-->
+                        <!--山排名-->
+                    <!--</div>-->
+                    <!--<div class="b">-->
+                        <!--<i>卷后</i>-->
+                        <!--<em>&yen;</em>-->
+                        <!--"17.3"-->
+                        <!--<del>25.5</del>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="taplbottom">-->
+                    <!--<div class="t">-->
+                        <!--<div class="tlbprogress">-->
+                            <!--<div class="tlbprogress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 10%;">-->
+                                <!--<span>10%</span>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<b>已领</b>-->
+                    <!--</div>-->
+                    <!--<div class="b">-->
+                        <!--<div class="l f_l"><a href="">点领</a></div>-->
+                        <!--<div class="r f_r"><a href="">下单</a></div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--<% } %>--></script></body></html>

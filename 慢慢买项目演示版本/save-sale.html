@@ -1,0 +1,26 @@
+<!DOCTYPE html><html><head lang="en"><meta charset="UTF-8"><meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1"><title>省钱控-国内折扣</title><link rel="stylesheet" href="css/base.css"><link rel="stylesheet" href="css/save-sale.css"></head><script type="text/template" id="sales"> <% for(var i=0;i< result.length;i++){%> <div class="h-title">
+            <h3><%=result[i].productName%></h3></div>
+        <div class="name-id">
+            <span><%=result[i].productFrom%></span> <span><%=result[i].productTime%></span> <span><%=result[i].productTips%></span>
+        </div>
+        <div class="main-center">
+            <div class="right-tu clearfix"> <%=# result[i].productImgSm%> </div>
+            <div class="left-content">
+                <p> <%=result[i].productInfo%> </p>
+                <p> <%=result[i].productInfo1%> </p>
+                <div class="left-tu"> <%=# result[i].productImgLg%> </div>
+            </div>
+            <!-- 送货地址-->
+            <div class="city-trade">
+                <div class="drop"> <%=# result[i].productCity%> </div>
+            </div>
+            <div class="goBuy">
+                <div class="goBuy-m">
+                    <a href="" class="goBuy-a"><span>前往购买</span></a>
+                </div>
+            </div>
+            <div class="bigTu">
+                <img src="images/mmbweixin2.png" alt="" />
+            </div>
+        </div>
+        <div class="talks"> <%=# result[i].productComment%> </div> <%}%> </script><body><header id="header" class="header"><div class="icon-back"><a href="moneyctrl.html">&lt;</a><div class="header-text"><span>国内折扣</span></div></div><div class="appdown"><a href="#"><img src="images/header_app.png" alt="手机app下载"></a></div></header><main class="main"><div class="sale"></div><div class="talk"><div class="talks"></div></div></main><footer id="ctl00_foot"><div class="foot_top"><a href="login.html">登录</a> <a href="##">注册</a> <a href="##" style="width: 40%; border: 0;" id="rtt"><img src="images/top.png" width="16" height="16">返回顶部</a></div><div class="footer"><p><a href="##" style="color: #ff4e49">手机APP下载</a> <a href="index.htm" tppabs="##" style="color:#bebebe;">慢慢买手机版 -- 掌上比价平台</a></p><p>m.manmanbuy.com</p></div></footer><div class="mask hide"></div><div class="circle"><div class="ring"><a href="category.html" class="menuItem"></a> <a href="moneyctrl.html" class="menuItem"></a> <a href="inlanddiscount.html" class="menuItem"></a> <a href="baicaijia.html" class="menuItem"></a> <a href="moneyctrl.html" class="menuItem"></a> <a href="coupon.html" class="menuItem"></a> <a href="gsproduct.html" class="menuItem"></a> <a href="index.html" class="menuItem"></a></div><a href="##" class="center"></a></div><script src="js/jquery.min.js"></script><script src="js/base.js"></script><script src="js/template-native.js"></script><script src="js/moneyctrl-matter.js"></script></body></html>

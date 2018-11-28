@@ -1,0 +1,94 @@
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?rretjt');
+	src:url('../fonts/icomoon.eot?#iefixrretjt') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?rretjt') format('woff'),
+		url('../fonts/icomoon.ttf?rretjt') format('truetype'),
+		url('../fonts/icomoon.svg?rretjt#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+body, html {padding: 0; margin: 0;}
+/* Reset */
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+body{
+	font-family: "Microsoft YaHei","宋体","Segoe UI", "Lucida Grande", Helvetica, Arial,sans-serif, FreeSans, Arimo;
+}
+a{color: #2fa0ec;text-decoration: none;outline: none;}
+a:hover,a:focus{color:#74777b;}
+
+
+/* 头部 */
+#header {
+	height: 50px;
+	background: #ff4e49;
+	position: relative
+}
+
+#header>.logo {
+	padding: 12px
+}
+
+#header>.logo>a>img {
+	max-height: 25px;
+	overflow: hidden
+}
+
+#header>.appdown {
+	position: absolute;
+	right: 0;
+	top: -2px;
+	padding: 7px
+}
+
+#header>.appdown>a>img {
+	max-height: 34px;
+	overflow: hidden
+}
+
+
+.htmleaf-container{
+	margin: 0 auto;
+	text-align: center;
+	overflow: hidden;
+}
+/* icomoon */
+.icon-htmleaf-home-outline:before {
+	content: "\e5000";
+}
+.icon-htmleaf-arrow-forward-outline:before {
+	content: "\e5001";
+}

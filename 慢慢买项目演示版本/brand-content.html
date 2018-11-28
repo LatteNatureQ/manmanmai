@@ -1,0 +1,29 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1"><title>Title</title><link rel="stylesheet" type="text/css" href="css/base.css"><link rel="stylesheet" type="text/css" href="css/index.css"><link rel="stylesheet" href="css/brand-content.css"></head><body><script type="text/template" id="tempBrand"> <% for(var i = 0;i < result.length;i++) { %> <li>
+                <a href="productList.html?categoryid=<%= result[i].categoryId %>&pageid=1">
+                    <em><%=(i+1)%></em>
+                    <div class="inner">
+                        <div class="title"> <%= result[i].brandName %> </div>
+                        <p> <%= result[i].brandInfo %> </p>
+                        <span>›</span>
+                    </div>
+                </a>
+            </li> <% }%> </script><script type="text/template" id="tempRange"> <%for(var i = 0 ; i < result.length;i++) { %> <li>
+                <a href="productDetails.html?productId=<%=result[i].productId%>" title="<%=result[i].productName%>">
+                    <div class="pic"> <%=#result[i].productImg%> </div>
+                    <div class="info">
+                        <div class="title"> <%=result[i].productName%> </div>
+                        <div class="price"><em><%=result[i].productPrice%></em> <span class="star5"></span></div>
+                        <div class="other"><em><%=result[i].productQuote%></em><em><%=result[i].productCom%></em></div>
+                    </div>
+                </a>
+            </li> <%} %> </script><script type="text/template" id="tempComment"> <% for(var i = 0 ; i < result.length; i++) { %> <li>
+                <a href="productDetails.html?productId=<%=result[i].productId%>">
+                    <div class="commentTitle">
+                    </div>
+                    <div class="commentBox">
+                        <div class="name"> <%=result[i].comName%><span class="star"><em class="star5"></em></span><i><%=result[i].comTime%></i></div>
+                        <div class="content"> <%=result[i].comContent%> </div>
+                        <div class="from"> <%=result[i].comFrom%> </div>
+                    </div>
+                </a>
+            </li> <% } %> </script><header id="header" class="header"><div class="logo"><a href="index.html" title="慢慢买"><img src="images/header_logo.png" alt=""></a></div><div class="appdown"><a href="##"><img src="images/header_app.png" alt="手机app下载"></a></div></header><section id="form-search"><form action="#" class="search"><input type="search" name="" id="" placeholder="请输入你想比价的商品"> <input type="button" value="搜索"></form></section><div class="allBrand"><a href="index.html">首页</a>><a href="brandTitle.html">全部分类</a>> <a href="" class="such"></a></div><div class="brand-content"><nav><span class="active" data-target="#section1">商品品牌排行</span> <span data-target="#section2">销量排行</span> <span data-target="#section3">最新评论</span></nav><section class="brandTitle active" id="section1"><ul></ul></section><section class="brandRange" id="section2"><ul></ul></section><section class="brandComment" id="section3"><ul></ul></section></div><footer id="ctl00_foot"><div class="foot_top"><a href="##">登录</a> <a href="##">注册</a> <a href="##" style="width: 40%; border: 0;" id="rtt"><img src="images/top.png" width="16" height="16">返回顶部</a></div><div class="footer"><p><a href="##" style="color: #ff4e49">手机APP下载</a> <a href="index.htm" tppabs="##" style="color:#bebebe;">慢慢买手机版 -- 掌上比价平台</a></p><p>m.manmanbuy.com</p></div></footer><div class="mask hide"></div><div class="circle"><div class="ring"><a href="category.html" class="menuItem"></a> <a href="moneyctrl.html" class="menuItem"></a> <a href="inlanddiscount.html" class="menuItem"></a> <a href="baicaijia.html" class="menuItem"></a> <a href="moneyctrl.html" class="menuItem"></a> <a href="coupon.html" class="menuItem"></a> <a href="gsproduct.html" class="menuItem"></a> <a href="index.html" class="menuItem"></a></div><a href="##" class="center"></a></div></body><script src="lib/jquery/jquery.min.js"></script><script src="js/template-native.js"></script><script src="js/base.js"></script><script src="js/common.js"></script><script src="js/brand-content.js"></script><script src="js/scrollTop.js"></script></html>

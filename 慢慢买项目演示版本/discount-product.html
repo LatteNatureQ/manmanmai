@@ -1,0 +1,78 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1"><title>国内折扣</title><link rel="stylesheet" href="css/base.css"><link rel="stylesheet" href="css/discount.css"><link rel="stylesheet" href="css/discount-product.css"><script src="js/jquery.min.js"></script></head><body><header id="header" class="header"><div class="head" id="ct_100-headerApp"><div class="back"><a href="inlanddiscount.html" class="icon-back">&lt;</a></div><div class="home"><a href="##"><img src="images/header_app.png" width="32" alt=""></a></div><h1>国内折扣</h1></div></header><main id="recommen-product" class="discount-product"><div class="container"><div class="cu-content"></div></div></main><div class="mask hide"></div><div class="circle"><div class="ring"><a href="category.html" class="menuItem"></a> <a href="moneyctrl.html" class="menuItem"></a> <a href="inlanddiscount.html" class="menuItem"></a> <a href="baicaijia.html" class="menuItem"></a> <a href="moneyctrl.html" class="menuItem"></a> <a href="coupon.html" class="menuItem"></a> <a href="gsproduct.html" class="menuItem"></a> <a href="index.html" class="menuItem"></a></div><a href="##" class="center"></a></div><div class="font-icon font-icon-uptop" id="rtt"></div><footer id="ctl00_foot"><div class="foot_top"><a href="##">登录</a> <a href="##">注册</a> <a href="##">首页</a></div><div class="footer"><p><a href="##" style="color: #ff4e49">手机APP下载</a> <a href="index.htm" tppabs="##" style="color:#bebebe;">慢慢买手机版 -- 掌上比价平台</a></p><p>m.manmanbuy.com</p></div></footer><script type="text/html" id="discountProduct"> <%for(var i=0;i< result.length;i++){%> <div class="cu-content">
+        <h3 class="title"> <%=result[i].productName%> </h3>
+        <h4><%=result[i].productPrice%></h4>
+        <div class="info">
+            <span class="mall"><%=result[i].productFrom%></span>
+            <span class="addtime"><%=result[i].productTime%></span>
+            <span class="author"><%=result[i].productTips%></span>
+        </div>
+        <div class="content clearfix">
+            <div class="picwrap">
+                <img src="images/j_sources_img_2016_10_24_190_190_0_36618798b6e1a98d9f4ae8f7a195f41b.jpg" alt="">
+            </div>
+            <div class="conn">
+                <p><%=result[i].productInfo%></p>
+                <p><%=#result[i].productImg%></p>
+            </div>
+        </div>
+        <div class="golink">
+            <a href="redirect.aspx?tjid=521575&y=cu_share" target="_blank">
+                前往购买
+            </a>
+        </div>
+    </div>
+    <div style="text-align: center;margin: 20px 10px;">
+        <img src="images/mmbweixin2.png" width="100%" height="auto" alt="">
+    </div>
+    <div class="cu-content-p1 ui-border-t">
+        <div class="tit">发表评论</div>
+        <div class="reply">
+            <div class="form">
+                <textarea name="ctl00$ContentBody$txt_nr" id="ctl00_ContentBody_txt_nr" rows="3"></textarea>
+                <input name="ctl00$ContentBody$lbl_fbr" id="ctl00_ContentBody_lbl_fbr" value="手机端网友58***74" type="hidden">
+                <input name="ctl00$ContentBody$hid_name" id="ctl00$ContentBody$hid_name" value="西域美农新疆特产五星和田红枣250g*2" type="hidden">
+                <div class="ctr1">
+                    <input type="submit" name="ctl00$ContentBody$Button1" id="ctl00_ContentBody_Button1" value="发表评论">
+                </div>
+            </div>
+        </div>
+        <div class="tit" id="newcomment">最新评论</div>
+    </div> <%}%> </script><script type="text/html" id="saveMoney"> <%for(var i=0;i< result.length;i++){%> <div class="cu-content">
+        <h3 class="title"> <%=result[i].productName%> </h3>
+        <h4><%=result[i].productPinkage%></h4>
+        <div class="info">
+            <span class="mall"><%=result[i].productFrom%></span>
+            <span class="addtime"><%=result[i].productTime%></span>
+            <span class="author"><%=result[i].productTips%></span>
+        </div>
+        <div class="content clearfix">
+            <div class="picwrap"> <%=#result[i].productImgSm%> </div>
+            <div class="conn">
+                <p><%=result[i].productInfo%></p>
+                <p><%=#result[i].productImLg/p>
+            </div>
+        </div>
+        <div class="golink">
+            <a href="redirect.aspx?tjid=521575&y=cu_share" target="_blank">
+                前往购买
+            </a>
+        </div>
+    </div>
+    <div style="text-align: center;margin: 20px 10px;">
+        <img src="images/mmbweixin2.png" width="100%" height="auto" alt="">
+    </div>
+    <div class="cu-content-p1 ui-border-t">
+        <div class="tit">发表评论</div>
+        <div class="reply">
+            <div class="form">
+                <textarea name="ctl00$ContentBody$txt_nr" id="ctl00_ContentBody_txt_nr" rows="3"></textarea>
+                <input name="ctl00$ContentBody$lbl_fbr" id="ctl00_ContentBody_lbl_fbr" value="手机端网友58***74" type="hidden">
+                <input name="ctl00$ContentBody$hid_name" id="ctl00$ContentBody$hid_name" value="西域美农新疆特产五星和田红枣250g*2" type="hidden">
+                <div class="ctr1">
+                    <input type="submit" name="ctl00$ContentBody$Button1" id="ctl00_ContentBody_Button1" value="发表评论">
+                </div>
+            </div>
+        </div>
+        <div class="tit" id="newcomment">最新评论</div>
+    </div>
+    <%}%> </script><script src="js/template-native.js"></script><script src="js/discount-product.js"></script><script src="js/base.js"></script></body></html>
