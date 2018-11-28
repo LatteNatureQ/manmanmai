@@ -2,12 +2,13 @@
 html,
 body {
     height: 100%;
+    overflow: hidden;
 }
 
 body {
     padding-top: 0.45rem;
     padding-bottom: 0.88rem;
-    background-color: #fff;
+    background-color: #f2f2f2;
 }
 
 // 头部样式
@@ -26,6 +27,7 @@ body {
 
 // 主体
 #main {
+    margin-top: 0.05rem;
     position: relative;
     height: 100%;
     .mui-content {
@@ -67,4 +69,12 @@ body {
             }
         }
     }
+}
+
+// 底部
+#footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
