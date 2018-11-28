@@ -1,10 +1,7 @@
 $(function () {
     var MMB = new mmb();
-    MMB.hide();
-    MMB.getindexmenu();
-    MMB.getmoneyctrl();
-    MMB.close();
-    MMB.productList();
+    MMB.hide().close();
+    MMB.getindexmenu().getmoneyctrl().productList();
 })
 var mmb = function () {};
 mmb.prototype = {
@@ -23,6 +20,7 @@ mmb.prototype = {
                 })
             }
         })
+        return this;
     },
     /* 获取优惠商品 */
     getmoneyctrl: function () {
@@ -30,11 +28,11 @@ mmb.prototype = {
         $.ajax({
             url: that.baseURL + '/api/getmoneyctrl',
             success: function (obj) {
-                console.log(obj);
                 var html = template('moneyctrlTpl', obj);
                 $('.productBox').html(html);
             }
         });
+        return this;
     },
     close: function () {
         $('.close').on('tap', function () {
@@ -43,11 +41,13 @@ mmb.prototype = {
             $('#iframe-wrap').remove();
             $('.menu li').addClass('animated tada')
         })
+        return this;
     },
     hide: function () {
         if (localStorage.getItem('key')) {
             $('#iframe-wrap').remove();
         }
+        return this;
     },
     /* 跳转到商品详情页 */
     productList: function () {
@@ -55,5 +55,6 @@ mmb.prototype = {
             var id = $(this).data('id');
             location = 'productid.html?productid=' + id;
         })
+        return this;
     }
 }
