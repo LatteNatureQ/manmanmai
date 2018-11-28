@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>省钱控-国内折扣</title>
+    <script src="./js/rem.js"></script>
+    <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+    <link rel="stylesheet" href="./lib/mui/fonts/mui.ttf">
+    <!--  字体图标-->
+    <link rel="stylesheet" type="text/css" href="lib/fontAwesome/css/font-awesome.css">
+    <!-- 自己的css -->
+    <link rel="stylesheet" href="./less/productid.css">
+</head>
+
+<body>
+    <!-- 头部区域 -->
+    <header id="header">
+        <a href="javascript:history.back();" class="fa fa-chevron-left"></a>
+        <h4>省钱控 - 最新优惠</h4>
+        <a href="#">
+            <img class="header_app" src="./images/header_app.png" alt="手机APP下载">
+        </a>
+    </header>
+    <!-- 主体区域 -->
+    <main id="main">
+        <div class="author">
+            <span>京东商城</span><span>10-25 14:10</span><span>小编烟火 / 慢慢买</span>
+        </div>
+        <div class="article">
+            <img src="http://cacheimg.manmanbuy.com/r_img/cacheimg.aspx?width=600&imgurl=http://a.manmanbuy.com:8013/cuxiaoPic/201610/201610001412282758.jpg"
+                alt="">
+            <p> 海天的金标生抽酱油，采用了非转基因大豆以及小麦发酵而成，而自然鲜的口感是有些鲜甜鲜甜的感觉，非常适合用来作为日常炒菜用的调味料，当然也能用作白切系列的蘸酱调料，相信吃过美味鲜的慢友们都了解的。 </p>
+            <div class="price">
+                <p> 目前京东商城移动端售价10.9元，不错的凑单品，刚需可入，规格1.28L。 </p>
+            </div>
+        </div>
+        <div class="productImg">
+            <img src="http://img10.360buyimg.com/n1/g13/M08/03/19/rBEhVFHUCF0IAAAAAAE6WA-oszMAAAvVQFF8CgAATpw626.jpg"
+                alt="">
+        </div>
+        <div class="city-trade">
+            <ul>
+                <li><a href="#"><span>北京</span><strong>有货</strong></a></li>
+                <li><a href="#"><span>北京</span><strong>有货</strong></a></li>
+                <li><a href="#"><span>北京</span><strong>有货</strong></a></li>
+                <li><a href="#"><span>北京</span><strong>有货</strong></a></li>
+                <li><a href="#"><span>北京</span><strong>有货</strong></a></li>
+                <li><a href="#"><span>北京</span><strong>有货</strong></a></li>
+                <li><a href="#"><span>北京</span><strong>有货</strong></a></li>
+                <li><a href="#"><span>北京</span><strong>有货</strong></a></li>
+                <li><a href="#"><span>北京</span><strong>有货</strong></a></li>
+                <li><a href="#"><span>北京</span><strong>有货</strong></a></li>
+            </ul>
+        </div>
+        <div class="purchase">
+            <a href="#">前往购买</a>
+        </div>
+        <div class="QR">
+            <img src="images/mmbweixin2.png" alt="">
+        </div>
+        <div class="comment">
+            <p>发表评论</p>
+            <textarea cols="30" name="ctl00$ContentBody$txt_nr"></textarea>
+            <div class="btn">
+                <button type="submit">发表评论</button>
+            </div>
+        </div>
+        <div class="UPtext">
+            <p>最新评论</p>
+            <div class="UPtextBody">
+                <img src="http://home.manmanbuy.com/upface/face/1466230634_162.jpg" alt="">
+                <div class="rigth">
+                    <div class="name clearfix">
+                        <div class="username">赶鸭子上架</div>
+                        <div class="time">2016/10/25 14:18:45</div>
+                    </div>
+                    <div class="content">比超市便宜了几块</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- 底部区域 -->
+    <footer id="footer">
+        <div class="register">
+            <a href="login.html">登录</a>
+            <a href="register.html">注册</a>
+            <a href="#"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部</a>
+        </div>
+        <div class="footer-info">
+            <p>
+                <a href="#" style="color: Red;">手机APP下载</a>
+                <a href="#">
+                    慢慢买手机版</a> -- 掌上比价平台</p>
+            <p>
+                m.manmanbuy.com
+            </p>
+        </div>
+    </footer>
+    <!--数据渲染  -->
+    <script id="commodityTxt" type="text/html">
+        <h4>{{productName}}</h4>
+        <div class="author">
+            <span>{{productFrom}}</span><span>{{productTime}}</span><span>{{productTips}}</span>
+        </div>
+        <div class="article">
+            {{@productImgSm}}
+            <p>{{productInfo2}}</p>
+            <div class="price">
+                <p>{{productInfo1}}</p>
+            </div>
+        </div>
+        <div class="productImg">
+            {{@productImgLg}}
+        </div>
+        <div class="city-trade">
+            {{@productCity}}
+        </div>
+        <div class="purchase">
+            <a href="#">前往购买</a>
+        </div>
+        <div class="QR">
+            <img src="images/mmbweixin2.png" alt="">
+        </div>
+        {{@productComment}}
+    </script>
+
+    <script src="lib/mui/js/mui.js"></script>
+    <script src="lib/zepto/zepto.min.js"></script>
+    <script src="lib/artTemplate/template-web.js"></script>
+    <script src="js/productid.js"></script>
+
+</body>
+
+</html>

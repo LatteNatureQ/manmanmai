@@ -60,7 +60,7 @@ input[type=search] {
   display: flex;
   padding: .05rem;
   background-color: #fff;
-  box-shadow: 0px 0px 10px 1px #ccc;
+  box-shadow: 0px 0px 1px 1px #ccc;
   align-items: center;
 }
 #search .search {
@@ -123,11 +123,12 @@ input[type=search] {
 html,
 body {
   height: 100%;
+  overflow: hidden;
 }
 body {
   padding-top: 0.45rem;
   padding-bottom: 0.88rem;
-  background-color: #fff;
+  background-color: #f2f2f2;
 }
 #header {
   position: fixed;
@@ -142,6 +143,7 @@ body {
   font-size: 0.18rem;
 }
 #main {
+  margin-top: 0.05rem;
   position: relative;
   height: 100%;
 }
@@ -180,4 +182,10 @@ body {
 }
 #main .mui-content .productList img {
   width: 1rem;
+}
+#footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
