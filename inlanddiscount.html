@@ -9,8 +9,8 @@
     <!-- <link rel="stylesheet" href="./lib/mui/fonts/mui.ttf"> -->
     <link rel="stylesheet" type="text/css" href="lib/fontAwesome/css/font-awesome.css">
     <link rel="stylesheet" href="./css/font_flr4ci1zize/iconfont.css">
-    <link rel="stylesheet/less" href="./less/inlanddiscount.less">
-    <script src="./lib/less/less.js"></script>
+    <link rel="stylesheet" href="./less/inlanddiscount.css">
+    <script src="./js/rem.js"></script>
 </head>
 
 <body>
@@ -30,7 +30,6 @@
             <div class="mui-scroll" id="test">
                 <!--数据列表-->
                 <div class="mui-row">
-
                 </div>
                 <!-- 底部区域 -->
                 <footer id="footer">
@@ -42,8 +41,8 @@
                     </div>
                     <div class="footer-info">
                         <p>
-                            <a href="#" style="color: Red;">手机APP下载</a>
-                            <a href="#">
+                            <a href="download.html" style="color: Red;">手机APP下载</a>
+                            <a href="download.html">
                                 慢慢买手机版</a> -- 掌上比价平台</p>
                         <p>
                             m.manmanbuy.com
@@ -58,14 +57,14 @@
 
     <script id="commodity" type="text/html">
         {{each result value}}
-            <div class="mui-col-xs-6 product">
-                <a href="#" class="show" data-id='{{value.productId}}'>
-                    {{@value.productImg}}
-                    <p class="title">{{value.productName}}</p>
-                    <p class="price">{{value.productPrice}}</p>
-                    <p class="info">{{value.productFrom}} | {{value.productTime}}</p>
-                </a>
-            </div>
+        <div class="mui-col-xs-6 product">
+            <a href="#" class="show" data-id='{{value.productId}}'>
+                {{@value.productImg}}
+                <p class="title">{{value.productName}}</p>
+                <p class="price">{{value.productPrice}}</p>
+                <p class="info">{{value.productFrom}} | {{value.productTime}}</p>
+            </a>
+        </div>
         {{/each}}
     </script>
     <script src="lib/mui/js/mui.js"></script>
