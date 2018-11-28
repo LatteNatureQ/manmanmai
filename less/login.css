@@ -1,0 +1,83 @@
+@import "base.css";
+#main {
+  width: 100%;
+  overflow: hidden;
+}
+.continner {
+  border-radius: 0.05rem;
+  margin: 0.2rem 0.07rem 0.2rem 0.07rem;
+  background-color: #fff;
+  height: 4.9rem;
+  max-width: 3.6rem;
+  padding: 0.3rem 0.2rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+.continner .icon {
+  margin: auto;
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: #efefef;
+  text-align: center;
+  line-height: 1.5rem;
+  border-radius: 50%;
+  position: relative;
+}
+.continner .icon i {
+  font-size: 1.1rem;
+  color: #ffa000;
+}
+.continner .icon h4 {
+  font-size: 0.24rem;
+  color: #ffa000;
+  font-weight: normal;
+  margin: -15px auto;
+}
+.continner form {
+  position: relative;
+  top: 0.5rem;
+}
+.continner form div {
+  margin-top: 0.2rem;
+  position: relative;
+}
+.continner form div label {
+  position: absolute;
+  font-size: 0.16rem;
+  top: 0.13rem;
+}
+.continner form div input {
+  border: none;
+  border-bottom: 1px solid #666666;
+}
+.continner .forget {
+  position: relative;
+  top: 0.6rem;
+}
+.continner .forget .forget-password {
+  float: left;
+  font-size: 0.14rem;
+  color: #ffa000;
+}
+.continner .forget .register {
+  float: right;
+  font-size: 0.14rem;
+  color: #ffa000;
+}
+.continner .gologin {
+  position: relative;
+  top: 1rem;
+  height: 0.6rem;
+  width: 0.6rem;
+  border-radius: 50%;
+  background-color: #ffa000;
+  margin: auto;
+}
+.continner .gologin a {
+  display: block;
+  position: relative;
+  color: #fff;
+  font-size: 0.3rem;
+  text-align: center;
+  line-height: 0.6rem;
+}
