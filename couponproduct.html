@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>优惠券</title>
+    <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+    <link rel="stylesheet" type="text/css" href="lib/fontAwesome/css/font-awesome.css">
+    <link rel="stylesheet/less" href="./less/couponproduct.less">
+    <link rel="stylesheet" href="./lib/swiper 4x/css/swiper.min.css">
+    <script src="./lib/less/less.js"></script>
+</head>
+
+<body>
+    <!-- 头部区域 -->
+    <header id="header">
+        <a href="javascript:history.back()">
+
+            <i class="fa fa-angle-left back"></i>
+        </a>
+        <a href="#">
+            <h4>优惠券</h4>
+
+        </a>
+        <a href="#">
+            <img class="header_app" src="./images/header_app.png" alt="">
+        </a>
+    </header>
+
+    <!-- 主体区域 -->
+    <main id="main">
+        <p>--点餐前出示手机中的优惠券,即可享受优惠--</p>
+        <ul>
+            <!-- 列表内容 -->
+        </ul>
+
+    </main>
+    <!-- 底部区域 -->
+    <footer id="footer">
+        <div class="register">
+            <a href="#">登录</a>
+            <a href="#">注册</a>
+            <a href="#">
+                <img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部</a>
+        </div>
+        <div class="footer-info">
+            <p>
+                <a href="#" style="color: Red;">手机APP下载</a>
+                <a href="#">
+                    慢慢买手机版</a> -- 掌上比价平台</p>
+            <p>
+                m.manmanbuy.com
+            </p>
+        </div>
+    </footer>
+
+    <!-- 遮罩层 -->
+    <div class="mui-backdrop">
+        <i class="fa fa-times-circle btn-close"></i>
+        <div class="container">
+                <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <!-- 轮播图内容 -->
+                        </div>
+                        <div class="swiper-button-prev arrow"></div>
+                        <!--左箭头-->
+                        <div class="swiper-button-next arrow"></div>
+                        <!--右箭头-->
+                    </div>
+        </div>
+      
+    </div>
+
+    <script src="lib/mui/js/mui.js"></script>
+    <script src="lib/zepto/zepto.min.js"></script>
+    <script src="lib/artTemplate/template-web.js"></script>
+    <script src="./lib/swiper 4x/js/swiper.js"></script>
+    <script src="js/couponproduct.js"></script>
+
+    <script type="text/html" id="listTpl">
+        {{ each result value }}
+        <li class="mui-table-view-cell mui-media product-list">
+                <a href="javascript:;" class="mui-navigate-right">
+                    <div class="mui-pull-left product-left">
+                        {{@value.couponProductImg}}
+                    </div>
+                    <div class="mui-media-body mui-pull-right product-right">
+
+                        <p class="couponProductName">{{ value.couponProductName }}</p>
+                        <p class="couponProductPrice">{{ value.couponProductPrice }}</p>
+                        <p class="couponProductTime">{{ value.couponProductTime }}</p>
+
+                    </div>
+                </a>
+            </li>
+        {{ /each }}
+    </script>
+    <script type="text/html" id="slideTpl">
+        {{ each result value }}
+        <div class="swiper-slide">
+            {{@value.couponProductImg}}
+        </div>
+        {{ /each }}
+       
+    </script>
+</body>
+
+</html>
