@@ -60,7 +60,7 @@ input[type=search] {
   display: flex;
   padding: .05rem;
   background-color: #fff;
-  box-shadow: 0px 0px 1px 1px #ccc;
+  box-shadow: 0px 0px 10px 1px #ccc;
   align-items: center;
 }
 #search .search {
@@ -120,27 +120,123 @@ input[type=search] {
   text-align: center;
   padding: .1rem 0;
 }
-/* 外嵌页面公共样式 */
-#iframe-wrap {
+html,
+body {
+  height: 100%;
+}
+body {
+  padding-top: .45rem;
+}
+#header {
+  background-color: #ff4e49;
   position: fixed;
+  width: 100%;
+  z-index: 10;
   top: 0;
-  width: 100%;
+  left: 0;
+}
+#header a,
+#header h4 {
+  color: #fff;
+}
+#main {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
   height: 100%;
+}
+#main .img {
+  height: 2rem;
+}
+#main .img img {
+  height: 100%;
+}
+#main .content {
+  padding: .05rem .2rem;
+}
+#main #refreshContainer {
+  height: 100%;
+}
+#main .mui-scroll {
   background-color: #fff;
-  z-index: 999;
 }
-#iframe-wrap .close {
-  position: absolute;
-  width: .3rem;
-  height: .3rem;
-  right: .2rem;
-  top: .5rem;
+#main .mui-scroll .title {
   font-size: .18rem;
-  z-index: 1;
+  color: #5a5a5a;
+  line-height: .24rem;
+  text-align: left;
 }
-#iframe-wrap img {
-  position: absolute;
+#main .mui-scroll h4 {
+  color: #ff6c00;
+  line-height: .20rem;
+  text-align: left;
+}
+#main .mui-scroll .info {
+  color: #999;
+  font-size: .12rem;
+  line-height: .60rem;
+  text-align: left;
+  font-weight: normal;
+}
+#main .mui-scroll .describe {
+  font-size: .16rem;
+  line-height: .26rem;
+  text-align: left;
+  color: #606060;
+}
+#main .mui-scroll .buy {
+  margin: .4rem 0 0.7rem;
   width: 100%;
-  height: 100%;
-  opacity: .8;
+  text-align: center;
+  height: .3rem;
+  background-color: #ff9000;
+  color: #fff;
+  font-size: .14rem;
+  line-height: 0.3rem;
+  border-radius: .04rem;
+}
+#main .mui-scroll .qr {
+  width: 100%;
+}
+#main .mui-scroll .text p {
+  font-size: .16rem;
+  color: #333;
+  text-align: left;
+  margin: .3rem 0 .15rem;
+}
+#main .mui-scroll .text textarea {
+  margin: 0;
+}
+#main .mui-scroll .text .bottom {
+  margin-top: -0.02rem;
+  height: .39rem;
+  background-color: #fbfbfb;
+  border: 1px solid #eceae8;
+}
+#main .mui-scroll .text .bottom div {
+  width: 1rem;
+  height: .39rem;
+  color: #fff;
+  background-color: #ff9000;
+  float: right;
+  font-size: .16rem;
+  line-height: .39rem;
+}
+#main .mui-scroll .comment {
+  margin-top: .25rem;
+}
+#main .mui-scroll .comment p {
+  font-size: .16rem;
+  color: #333;
+  text-align: left;
+}
+#main .mui-scroll .comment ul {
+  text-align: left;
+  margin-top: .15rem;
+}
+#main .mui-scroll .comment ul li {
+  font-size: .14rem;
+  line-height: .28rem;
+  color: #333;
+  border-bottom: 1px solid #ff00ff;
 }

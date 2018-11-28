@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>国内折扣</title>
+    <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+    <!-- <link rel="stylesheet" href="./lib/mui/fonts/mui.ttf"> -->
+    <link rel="stylesheet" type="text/css" href="lib/fontAwesome/css/font-awesome.css">
+    <link rel="stylesheet" href="./css/font_flr4ci1zize/iconfont.css">
+    <link rel="stylesheet" href="./less/inlanddiscount.css">
+    <script src="./js/rem.js"></script>
+</head>
+
+<body>
+    <!-- 头部区域 -->
+    <header id="header">
+        <a href="index.html">
+            <i class="iconfont icon-fanhui"></i>
+        </a>
+        <h4>国内折扣</h4>
+        <a href="#">
+            <img class="header_app" src="./images/header_app.png" alt="">
+        </a>
+    </header>
+    <!-- 主体区域 -->
+    <main id="main">
+        <div id="refreshContainer" class="mui-content mui-scroll-wrapper">
+            <div class="mui-scroll" id="test">
+                <!--数据列表-->
+                <div class="mui-row">
+                </div>
+                <!-- 底部区域 -->
+                <footer id="footer">
+                    <div class="register">
+                        <a href="login.html">登录</a>
+                        <a href="register.html">注册</a>
+                        <a href="#" class="top" >
+                            <img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部</a>
+                    </div>
+                    <div class="footer-info">
+                        <p>
+                            <a href="download.html" style="color: Red;">手机APP下载</a>
+                            <a href="download.html">
+                                慢慢买手机版</a> -- 掌上比价平台</p>
+                        <p>
+                            m.manmanbuy.com
+                        </p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </main>
+
+
+
+    <script id="commodity" type="text/html">
+        {{each result value}}
+        <div class="mui-col-xs-6 product">
+            <a href="#" class="show" data-id='{{value.productId}}'>
+                {{@value.productImg}}
+                <p class="title">{{value.productName}}</p>
+                <p class="price">{{value.productPrice}}</p>
+                <p class="info">{{value.productFrom}} | {{value.productTime}}</p>
+            </a>
+        </div>
+        {{/each}}
+    </script>
+    <script src="lib/mui/js/mui.js"></script>
+    <script src="lib/zepto/zepto.min.js"></script>
+    <script src="lib/artTemplate/template-web.js"></script>
+    <script src="js/inlanddiscount.js"></script>
+</body>
+
+</html>
