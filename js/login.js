@@ -31,8 +31,12 @@ $(function () {
             if (check == false) {
                 // 遍历
                 for (var i = 0; i < login.length; i++) {
+                    if(username != login[i].username||password != login[i].password){
+                        mui.alert("账号或密码错误,请重新登录", "温馨提示", "确定");
+                        return;
+                    }
                     // 判断用户名是否存在
-                    if (username == login[i].username) {
+                    if (username != login[i].username) {
                         mui.alert("密码不正确,请重新登录", "温馨提示", "确定")
                         check = true;
                         return false;

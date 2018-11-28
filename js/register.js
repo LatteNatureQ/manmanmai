@@ -106,6 +106,9 @@ $(function () {
            
             }, );       
             localStorage.setItem('login',JSON.stringify(login));
+            var mobileList = [];
+            mobileList.push(mobile);
+            localStorage.setItem('mobileList',JSON.stringify(mobileList));
             location="login.html";
         }
 
