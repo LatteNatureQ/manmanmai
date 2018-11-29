@@ -8,10 +8,11 @@ window.onload = function () {
             var that = this;
             that.left = obj.left;
             that.top = obj.top;
+            that.bgc = obj.backgroundColor
             $('.circle').css({
                 left: that.left || 0,
                 top: that.top || 0,
-                backgroundColor: '#b3b3b5',
+                backgroundColor: that.bgc || 'rgba(0,0,0,0.5)',
                 borderRadius: 20,
                 width: 40,
                 height: 40,
@@ -28,7 +29,7 @@ window.onload = function () {
                 transform: 'translate(-50%, -50%)',
                 backgroundColor: '#fff',
                 borderRadius: '50%',
-                boxShadow: '0 0 0 5px #c1c1c1, 0 0 0 6px #c0c0c0'
+                boxShadow: 'rgba(0,0,0,0.5) 0px 0px 0px 2px, rgba(5,0,55,1) 0px 0px 1px 1px'
             });
             $('.list').css({
                 position: 'absolute',
@@ -162,9 +163,9 @@ window.onload = function () {
                 that.listId = 0;
                 $('.list').hide();
                 $('.list').data('id', 0);
-                $(this).css({
-                    backgroundColor: 'rgba(0,0,0,.5)'
-                })
+                // $(this).css({
+                //     backgroundColor: 'rgba(0,0,0,.5)'
+                // })
                 var clientX = e.targetTouches[0].clientX;
                 var clientY = e.targetTouches[0].clientY;
                 clientX = clientX <= 20 ? 20 : clientX;
@@ -205,15 +206,17 @@ window.onload = function () {
                 if (parseInt(left) > that.clientWidth / 2) {
                     $(this).css('left', that.clientWidth - 40);
                 }
-                $(this).css({
-                    backgroundColor: '#b3b3b5'
-                })
+                // $(this).css({
+                //     backgroundColor: '#b3b3b5'
+                // })
             })
         }
     };
     var Cube = new cube();
     Cube.init({
-        left:20,
-        top:20
+        /* 圆环X轴坐标 */
+        left: 20,
+        /* 圆环Y轴坐标 */
+        top: 20,
     });
 }
