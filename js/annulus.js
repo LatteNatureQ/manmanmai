@@ -4,17 +4,20 @@ window.onload = function () {
         clientWidth: document.documentElement.clientWidth,
         clientHeight: document.documentElement.clientHeight,
         listId: $('.list').data('id'),
-        init: function () {
+        init: function (obj) {
             var that = this;
+            that.left = obj.left;
+            that.top = obj.top;
             $('.circle').css({
-                left: 22,
-                top: 17,
+                left: that.left || 0,
+                top: that.top || 0,
                 backgroundColor: '#b3b3b5',
                 borderRadius: 20,
                 width: 40,
                 height: 40,
                 position: 'fixed',
-                transition: 'all .2s ease-out'
+                transition: 'all .2s ease-out',
+                zIndex: 9999
             });
             $('.dot').css({
                 width: 20,
@@ -34,18 +37,36 @@ window.onload = function () {
                 backgroundColor: 'rgba(0, 0, 0, .7)',
                 borderRadius: 20,
                 boxSizing: 'border-box',
-                padding: '22px 10px'
+                padding: '22px 10px',
+                zIndex: 9999
             });
+            $('.list a').css({
+                width: 48,
+                height: 48,
+                fontSize: 12,
+                float: 'left',
+                display: 'flex',
+                flexDirection: 'column',
+                textDecoration: 'none',
+                color: '#fff',
+                alignItems: 'center',
+                marginRight: 18,
+                marginBottom: 5
+            });
+            $('.list a:nth-child(3n)').css({
+                margin: 0
+            });
+            $('.list img').css('width', 30);
             that.touchstart();
             that.touchmove();
             that.touchend();
         },
         touchstart: function () {
             var that = this;
-            
+
             $('.circle').on('tap', function (e) {
                 $('body').css({
-                    overflow:'hidden'
+                    overflow: 'hidden'
                 })
                 var pageX = e.pageX;
                 var pageY = e.pageY;
@@ -136,7 +157,7 @@ window.onload = function () {
             /* 手指持续触摸 */
             $('.circle').on('touchmove', function (e) {
                 $('body').css({
-                    overflow:'hidden'
+                    overflow: 'hidden'
                 })
                 that.listId = 0;
                 $('.list').hide();
@@ -166,7 +187,7 @@ window.onload = function () {
             /* 手指抬起 */
             $('.circle').on('touchend', function (e) {
                 $('body').css({
-                    overflow:'auto'
+                    overflow: 'auto'
                 })
                 var left = $(this).css('left');
                 var top = $(this).css('top');
@@ -191,5 +212,8 @@ window.onload = function () {
         }
     };
     var Cube = new cube();
-    Cube.init();
+    Cube.init({
+        left:20,
+        top:20
+    });
 }
