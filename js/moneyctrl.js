@@ -1,5 +1,4 @@
 $(function () {
-
     var Man = new Manmanbuy();
     Man.PageData();
     Man.vertrefresh();
@@ -38,29 +37,6 @@ Manmanbuy.prototype = {
         mui.init({
             pullRefresh: {
                 container: "#refreshContainer",
-                down: {
-                    callback: function () {
-
-                        setTimeout(function () {
-
-                            taht.request(function (result) {
-
-                                var html = template('commodityList', result);
-
-                                $('.commodity').html(html);
-
-                                mui('#refreshContainer').pullRefresh().endPulldownToRefresh();
-
-                                // 注意要等结束了下拉刷新了后再重置
-                                // 7. 把上拉加载的效果也要 不然拉不了了 有时候会自动触发 不是bug希望帮你加载一些
-                                mui('#refreshContainer').pullRefresh().refresh(true);
-
-                                $('#order span').html(0);
-                            })
-
-                        }, 2000)
-                    }
-                },
                 up: {
                     callback: function () {
                         pageid++;

@@ -1,0 +1,205 @@
+@import 'base.less';
+html,
+body {
+    height: 100%;
+}
+
+body {
+    position: relative;
+    padding-top: .44rem;
+}
+
+/* 页首 */
+
+#header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+    height: .44rem;
+    background-color: #fe4a65;
+    display: flex;
+    text-align: center;
+    padding: .08rem 0;
+    a:nth-child(1) {
+        width: .4rem;
+        color: white;
+        font-size: .16rem;
+        font-weight: bold;
+    }
+    h4 {
+        color: white;
+        font-weight: normal;
+        i {
+            padding: 0 .04rem;
+        }
+    }
+    .nav-list {
+        width: .4rem;
+        color: white;
+    }
+}
+
+/* 导航 */
+#nav {
+    width: 100%;
+    display: none; // .mui-backdrop {
+    //     position: fixed;
+    //     top: 0;
+    //     right: 0;
+    //     bottom: 0;
+    //     left: 0;
+    //     z-index: 19;
+    //     background-color: rgba(0, 0, 0, .6);
+    // }
+    .nav-content {
+        z-index: 20;
+        position: fixed;
+        left: 0;
+        top: .44rem;
+        background-color: white;
+        .mui-row {
+            >div {
+                height: .5rem;
+                line-height: .5rem;
+                text-align: center;
+                border-bottom: 1px solid #ccc;
+                border-right: 1px solid #ccc;
+                &:nth-child(4n) {
+                    border-right: none;
+                }
+                a {
+                    font-size: .14rem;
+                }
+            }
+        }
+        .hide-nav {
+            background-color: white;
+            width: 100%;
+            .mui-btn {
+                display: block;
+                margin: .1rem auto;
+            }
+        }
+    }
+}
+
+/* 内容 */
+
+#main {
+    height: 100%;
+    position: relative;
+    /* 回到页首 */
+    #toTop {
+        width: .5rem;
+        height: .5rem;
+        border-radius: 50%;
+        border: 1px solid #ccc;
+        position: fixed;
+        right: 0rem;
+        bottom: .4rem;
+        // background-color: pink;
+        z-index: 20;
+        background-color: rgba(255, 255, 255, .7);
+        text-align: center;
+        line-height: .6rem;
+        i {
+            font-size: .3rem;
+            transform: rotate(270deg);
+            color: black;
+            z-index: 21;
+        }
+    }
+    /* 遮罩层 */
+    .mui-backdrop {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 19;
+        background-color: rgba(0, 0, 0, .5);
+    }
+    /* 内容导航 */
+    #contentNav {
+        background-color: #fff;
+        margin-bottom: .1rem;
+        height: .5rem;
+        line-height: .5rem;
+        ul {
+            display: flex;
+            li {
+                width: 25%;
+                a {
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+                    font-size: .14rem;
+                    &.active {
+                        color: red;
+                        border-bottom: 2px solid red;
+                    }
+                }
+            }
+        }
+    }
+    /* 产品信息 */
+    #productList {
+        margin-top: .1rem;
+        background-color: #fff;
+        padding: .05rem 0;
+        .mui-row {
+            >div {
+                height: 2.3rem;
+                padding: .05rem;
+                img {
+                    width: 100%;
+                }
+                p {
+                    padding: .06rem 0;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+                em,
+                span {
+                    color: red;
+                }
+                em {
+                    font-size: .16rem;
+                    font-weight: bold;
+                    padding: 0 .02rem;
+                }
+                i {
+                    color: #ccc;
+                }
+                del {
+                    color: #666;
+                    padding: 0 .02rem;
+                }
+                a {
+                    float: right;
+                    font-size: .1rem;
+                    color: orange;
+                }
+            }
+        }
+            #discountsList {
+                display: flex;
+                flex-wrap: wrap;
+                li {
+                    width: 50%;
+                    padding: .05rem;
+                    img {
+                        width: 100%;
+                    }
+
+
+
+                }
+            }
+        // }
+    }
+}
