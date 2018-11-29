@@ -2,6 +2,7 @@ $(function () {
     var MMB = new mmb();
     MMB.hide().close();
     MMB.getindexmenu().getmoneyctrl().productList();
+    MMB.search();
 })
 var mmb = function () {};
 mmb.prototype = {
@@ -56,5 +57,11 @@ mmb.prototype = {
             location = 'productid.html?productid=' + id;
         })
         return this;
+    },
+    search:function(){
+        $('.searchList').on('tap',function(){
+             mui.alert("没有搜索到相关商品", "温馨提示", "确定");
+        })
+       
     }
 }
