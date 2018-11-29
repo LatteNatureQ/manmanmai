@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慢慢买-省钱控</title>
+    <link rel="stylesheet" href="./less/moneyctrl.css">
+    <link rel="stylesheet" type="text/css" href="lib/fontAwesome/css/font-awesome.css">
+    <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+</head>
+<body>
+    <!-- 头部区域 -->
+    <header id="header">
+        <!-- 页面logo -->
+        <div class="logo">
+            <h1>
+                <a href="index.html">
+                    <img src="http://static.manmanbuy.com/m/img/mlogo.png" alt="">
+                </a>
+            </h1>
+        </div>
+        <!-- 搜索框 -->
+        <div class="search">
+            <form action="#">
+                <i class="fa fa-search"></i>
+                <input type="search" placeholder="商品比价、查历史价">
+            </form>
+        </div>
+        <!-- 下载按钮 -->
+        <div class="download">
+            <a href="download.html">下载</a>
+        </div>
+    </header>
+
+    <!-- 顶部导航 -->
+    <nav id="topNav">
+        <!-- 导航内容 -->
+        <div class="content-nav">
+            <div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+                <div class="mui-scroll">
+                    <!--这里放置真实显示的DOM内容-->
+                    <ul>
+                        <li>
+                            <a href="index.html">首页</a>
+                        </li>
+                        <li class="active">
+                            <a href="#">省钱控</a>
+                        </li>
+                        <li>
+                            <a href="history.html">查历史价</a>
+                        </li>
+                        <li>
+                            <a href="category.html">比价搜索</a>
+                        </li>
+                        <li>
+                            <a href="inlanddiscount.html">国内折扣</a>
+                        </li>
+                        <li>
+                            <a href="baicaijia.html">白菜价</a>
+                        </li>
+                        <li>
+                            <a href="#">小时风云榜</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主体区域 -->
+    <main id="main">
+        <!-- 内容区域 -->
+        <section id="content">
+            <ul class="mui-table-view product-list">
+                <li class="mui-table-view-cell mui-media">
+                    <a href="javascript:;" class="product-content">
+                        <img class="mui-pull-left" src="http://img10.360buyimg.com/n1/g13/M08/03/19/rBEhVFHUCF0IAAAAAAE6WA-oszMAAAvVQFF8CgAATpw626.jpg">
+                        <div class="mui-media-body">
+                            <p class='mui-ellipsis product-title'>
+                                移动端凑单品：海天 鲜味 生抽 1.28L
+                                <span>10.9元</span>
+                            </p>
+                            <p class="product-information">
+                                <span class="product-source">京东商城 | 10-25 14:10</span>
+                                <span class="product-comment">
+                                    <i class="fa fa-commenting-o"></i>
+                                    1
+                                </span>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li class="mui-table-view-cell mui-media">
+                    <a href="javascript:;" class="product-content">
+                        <img class="mui-pull-left" src="http://img10.360buyimg.com/n1/g13/M08/03/19/rBEhVFHUCF0IAAAAAAE6WA-oszMAAAvVQFF8CgAATpw626.jpg">
+                        <div class="mui-media-body">
+                            <p class='mui-ellipsis product-title'>
+                                移动端凑单品：海天 鲜味 生抽 1.28L
+                                <span>10.9元</span>
+                            </p>
+                            <p class="product-information">
+                                <span class="product-source">京东商城 | 10-25 14:10</span>
+                                <span class="product-comment">
+                                    <i class="fa fa-commenting-o"></i>
+                                    1
+                                </span>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li class="mui-table-view-cell mui-media">
+                    <a href="javascript:;" class="product-content">
+                        <img src="http://cacheimg.manmanbuy.com/r_img/cacheimg.aspx?width=600&amp;imgurl=http://a.manmanbuy.com:8013/cuxiaoPic/201610/2016100012575382955.jpg" alt="RIWA 雷瓦 T5 2档家用大功率电吹风2200W">                            <p class='mui-ellipsis product-title'>
+                                移动端凑单品：海天 鲜味 生抽 1.28L
+                                <span>10.9元</span>
+                            </p>
+                            <p class="product-information">
+                                <span class="product-source">京东商城 | 10-25 14:10</span>
+                                <span class="product-comment">
+                                    <i class="fa fa-commenting-o"></i>
+                                    1
+                                </span>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <!-- 分页区域 -->
+        <section id="page">
+                <ul class="mui-pagination">
+                        <!-- <li class="mui-previous mui-disabled">
+                            <a href="#">
+                                上一页
+                            </a>
+                        </li>
+                        <li class="mui-active">
+                            <a href="#">
+                                1
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                2
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                3
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                4
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                5
+                            </a>
+                        </li>
+                        <li class="mui-next ">
+                            <a href="#">
+                                下一页
+                            </a>
+                        </li> -->
+                    </ul>
+        </section>
+    </main>
+
+    <!-- 底部导航 -->
+    <nav id="footerNav">
+        <a href="index.html">首页</a>
+        <span> > 省钱控</span>
+    </nav>
+
+    <!-- 登录区域 -->
+    <section id="login">
+        <a href="login.html">
+            登录
+        </a>
+        <a href="register.html">
+            注册
+        </a>
+        <a href="#" class="top">
+            <i class="fa fa-arrow-up"></i>
+            返回顶部
+        </a>
+    </section>
+
+    <!-- 底部区域 -->
+    <footer id="footer">
+        <a href="#">
+            <img src="https://img.alicdn.com/imgextra/i2/379516416/O1CN011xGZdJT3GJ8PYuu_!!379516416.png" alt="">
+        </a>
+    </footer>
+    
+    <!-- 创建模板 -->
+    <script id="moneyctrlTpl" type="text/html">
+        {{each result value}}
+        <li class="mui-table-view-cell mui-media">
+            <a href="javascript:;" class="product-content" data-id="{{value.productId}}">
+                {{@value.productImgSm}}
+                <div class="mui-media-body">
+                    <p class='mui-ellipsis product-title'>
+                        {{value.productName}}
+                        <span>{{value.productPinkage}}</span>
+                    </p>
+                    <p class="product-information">
+                        <span class="product-source">{{value.productFrom}} | {{value.productTime}}</span>
+                        <span class="product-comment">
+                            <i class="fa fa-commenting-o"></i>
+                            {{value.productComCount}}
+                        </span>
+                    </p>
+                </div>
+            </a>
+        </li>
+        {{/each}}
+    </script>
+    <script src="./lib/mui/js/mui.min.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <script src="./lib/zepto/zepto.min.js"></script>
+    <script src="./js/moneyctrl.js"></script>
+</body>
+</html>
