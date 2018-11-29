@@ -16,6 +16,7 @@ mmb.prototype = {
                 var html = template('menuTpl', obj);
                 $('.menu ul').append(html);
                 $('.li7 a').attr('href', 'javascript:;')
+                $('.li4 a').attr('href', 'moneyctrl1.html')
                 $('.li7 a').on('tap', function () {
                     console.log(111);
                 })
