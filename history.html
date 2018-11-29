@@ -4,34 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>优惠券</title>
+    <title>慢慢买比价网--手机版</title>
     <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
-    <link rel="stylesheet" type="text/css" href="lib/fontAwesome/css/font-awesome.css">
-    <link rel="stylesheet" href="./less/coupon.css">
+    <link rel="stylesheet" href="./lib/fontAwesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./less/history.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
     <!-- 头部区域 -->
     <header id="header">
-        <a href="javascript:history.back()">
-
-            <i class="fa fa-angle-left back"></i>
-        </a>
-        <a href="#">
-            <h4>优惠券</h4>
-        </a>
-        <a href="download.html">
-            <img class="header_app" src="./images/header_app.png" alt="">
-        </a>
+        <a href="javascript:history.back();" class="fa fa-angle-left left"></a>
+        <p>历史价格查询</p>
     </header>
-
     <!-- 主体区域 -->
     <main id="main">
-        <ul>
-            
-        </ul>
-
+        <p class="link">商品链接</p>
+        <input class="text" type="text" placeholder="请通过购物App中使用分享或浏览器打开商品页面获取商品链接">
+        <div class="slect">
+            <input class="history" type="button" value="查询历史价格">
+            <input type="button" value="重置">
+        </div>
+        <p class="procedure">两步操作即可识别商品真假促销</p>
+        <p class="one">1.打开购物APP（如手机淘宝）复制商品链接</p>
+        <p>2.打开慢慢买APP，系统自动识别查历史价</p>
     </main>
     <!-- 底部区域 -->
     <footer id="footer">
@@ -54,17 +50,7 @@
     <script src="lib/mui/js/mui.js"></script>
     <script src="lib/zepto/zepto.min.js"></script>
     <script src="lib/artTemplate/template-web.js"></script>
-    <script type="text/html" id="listTpl">
-        {{each result value}}
-            <li>
-                <a href="./couponproduct.html?id={{ value.couponId }}">
-                    <img src="{{ /value.couponImg }}" alt="">
-                    <p>{{ value.couponTitle }}</p>
-                </a>
-            </li>
-        {{/each}}
-    </script>
-    <script src="js/coupon.js"></script>
+    <script src="./js/rem.js"></script>
 </body>
 
 </html>

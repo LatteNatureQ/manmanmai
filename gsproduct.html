@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!-- 视口 -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>凑单品</title>
+    <link rel="stylesheet/less" href="css/base.less">
+    <link rel="stylesheet/less" href="css/gsproduct.less">
+    <!-- icon图 -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <script src="js/less.js"></script>
+</head>
+
+<body>
+    <!-- 头部区域 -->
+    <div id="ctl00_headerApp" class="head">
+        <div class="back">
+            <a href="index.html" class="icon-back"></a>
+        </div>
+        <h1>
+            凑单品
+        </h1>
+        <div class="home">
+            <a href="http://m.manmanbuy.com/?o=download" onclick="trackEvent('header部下载');" class="icon-app"></a>
+        </div>
+    </div>
+    <!-- 主体区域 -->
+    <main class="gs-product">
+        <div class="list">
+            <div class="hd">
+                <div class="filter">
+                    <ul>
+                        <li class="on"><a href="javascript:;">京东<i></i></a></li>
+                        <li class=""><a href="javascript:;">华北<i></i></a></li>
+                        <div class="popsort popbox" id="shop">
+                                <li class=""><a href="javascript:;">全部价格<i></i></a></li>
+                        </div>
+                       
+                    </ul>
+                </div>
+                <div class="search"> <i class="icon-search"></i></div>
+                <!--各种下拉-->
+                <div class="popsort popbox" id="shop">
+                    <ul>
+                        <li class="on"><a href="javascript:GetRequest('site', 1);">京东</a></li>
+                        <li><a href="javascript:GetRequest('site', 13);">一号店</a></li>
+                        <li><a href="javascript:GetRequest('site', 190);">天猫超市</a></li>
+                    </ul>
+                </div>
+                <div class="popcat popbox" id="area">
+                    <ul>
+                        <li class="on"><a href="javascript:GetRequest('area', 1)">华北（北京、山西等）</a></li>
+                        <li><a href="javascript:GetRequest('area', 2)">华东（山东、浙江等）</a></li>
+                        <li><a href="javascript:GetRequest('area', 3)">华南（广东、广西等）</a></li>
+                        <li><a href="javascript:GetRequest('area', 4)">华中（湖北、河南等）</a></li>
+                        <li><a href="javascript:GetRequest('area', 5)">西南（四川、云南等）</a></li>
+                        <li><a href="javascript:GetRequest('area', 6)">东北（辽宁、吉林等）</a></li>
+                        <li><a href="javascript:GetRequest('area',7)">西北（宁夏、新疆等）</a></li>
+                    </ul>
+                </div>
+                <div class="popprice popbox" id="price">
+                    <ul>
+                        <li class="on"><a href="javascript:GetRequest('areaMoney', 0);">全部价格</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bd gs-product-list">
+                <div class="coudan_product clearfix">
+                    <ul class="section">
+                        <li>
+                            <a href="http://item.m.jd.com/ware/view.action?wareId=1274360"> <img src="http://img10.360buyimg.com/n7/jfs/t577/85/103283769/55548/3ecfcbf8/5461b6e1N70e46439.jpg"
+                                    alt="">
+                                <p class="des">廿一客(21cake)专用餐具 1人份(不单独配送)</p>
+                                <p class="other">
+                                    <span class="price">¥0.50</span>
+                                    <button>去凑单</button>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://item.m.jd.com/ware/view.action?wareId=1274360"> <img src="http://img12.360buyimg.com/n7/jfs/t1873/141/1440248981/135057/d080bbcd/56569c5bNaa303c6f.jpg"
+                                    alt="">
+                                <p class="des">【京东超市】一楠 咖啡 白咖啡 三合一速溶咖啡单条装 15g/条</p>
+                                <p class="other">
+                                    <span class="price">¥1.00</span>
+                                    <button>去凑单</button>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://item.m.jd.com/ware/view.action?wareId=1274360"> <img src="http://img12.360buyimg.com/n7/jfs/t1741/199/585705439/69267/c5d388a7/55d422f2N7282c389.jpg"
+                                    alt="">
+                                <p class="des">威克(vico) WK82210 毛刷 油漆刷子 木柄刷子 扫灰刷油刷 排笔刷</p>
+                                <p class="other">
+                                    <span class="price">¥1.00</span>
+                                    <button>去凑单</button>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://item.m.jd.com/ware/view.action?wareId=1274360"> <img src="http://img11.360buyimg.com/n7/jfs/t2725/244/841611976/283905/ec790537/5728291dN770aa381.jpg"
+                                    alt="">
+                                <p class="des">酷派大神 原装平板保护膜 适用于酷派大神1S 9976A/9976D</p>
+                                <p class="other">
+                                    <span class="price">¥1.00</span>
+                                    <button>去凑单</button>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://item.m.jd.com/ware/view.action?wareId=1274360"> <img src="http://img11.360buyimg.com/n7/jfs/t1810/90/912937535/144911/2a77ba70/55dc57fbN0dc22502.jpg"
+                                    alt="">
+                                <p class="des">【京东超市】喜之郎 优乐美 u.loveit 麦香味奶茶 22g/包</p>
+                                <p class="other">
+                                    <span class="price">¥1.00</span>
+                                    <button>去凑单</button>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://item.m.jd.com/ware/view.action?wareId=1274360"> <img src="http://img12.360buyimg.com/n7/jfs/t1747/350/956204984/128809/695953f2/55dc583eNc66b21c9.jpg"
+                                    alt="">
+                                <p class="des">【京东超市】喜之郎 优乐美 u.loveit 草莓味奶茶 22g/包</p>
+                                <p class="other">
+                                    <span class="price">¥1.00</span>
+                                    <button>去凑单</button>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://item.m.jd.com/ware/view.action?wareId=1274360"> <img src="http://img10.360buyimg.com/n7/jfs/t1945/63/1379380233/161511/a1cb2fac/56569d04N23c560b1.jpg"
+                                    alt="">
+                                <p class="des">【京东超市】一楠 奶茶 港式奶茶 速溶奶茶单条装 15g/条</p>
+                                <p class="other">
+                                    <span class="price">¥1.00</span>
+                                    <button>去凑单</button>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://item.m.jd.com/ware/view.action?wareId=1274360"> <img src="http://img14.360buyimg.com/n7/jfs/t1249/292/713271919/121142/1250fb7/553de9a7Nb3f62383.jpg"
+                                    alt="">
+                                <p class="des">3M 耳塞 降噪睡眠 弹性舒适 2枚装 1100</p>
+                                <p class="other">
+                                    <span class="price">¥1.00</span>
+                                    <button>去凑单</button>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://item.m.jd.com/ware/view.action?wareId=1274360"> <img src="http://img10.360buyimg.com/n1/jfs/t2728/303/1939720019/219078/adf57814/57512eb1N5016b3e8.jpg"
+                                    alt="">
+                                <p class="des">【京东超市】水动乐 桃味营养素饮料 600ml / 瓶</p>
+                                <p class="other">
+                                    <span class="price">¥1.00</span>
+                                    <button>去凑单</button>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://item.m.jd.com/ware/view.action?wareId=1274360"> <img src="http://img11.360buyimg.com/n7/jfs/t445/143/225994981/64408/f3fb186f/541248bbNd1e10c10.jpg"
+                                    alt="">
+                                <p class="des">胜创(KINGMAX)KMS-01 多功能卡片式手机支架 颜色随机</p>
+                                <p class="other">
+                                    <span class="price">¥1.00</span>
+                                    <button>去凑单</button>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://item.m.jd.com/ware/view.action?wareId=1274360"> <img src="http://img12.360buyimg.com/n7/jfs/t262/146/425641652/106177/52a9c023/53eb3344Nf57ba8eb.jpg"
+                                    alt="">
+                                <p class="des">【京东超市】印度尼西亚进口 丽芝士(Richeese) 纳宝帝奶酪威化饼干58克</p>
+                                <p class="other">
+                                    <span class="price">¥1.00</span>
+                                    <button>去凑单</button>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://item.m.jd.com/ware/view.action?wareId=1274360"> <img src="http://img12.360buyimg.com/n7/jfs/t2269/6/2097258448/391809/995f378c/56a0bac4N83958c1b.jpg"
+                                    alt="">
+                                <p class="des">博大面条 麦芯挂面160g</p>
+                                <p class="other">
+                                    <span class="price">¥1.00</span>
+                                    <button>去凑单</button>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://item.m.jd.com/ware/view.action?wareId=1274360"> <img src="http://img10.360buyimg.com/n7/jfs/t2737/195/3542698919/284060/6d983919/5791d5e1N8dfd737c.jpg"
+                                    alt="">
+                                <p class="des">吉米家居 JM-G173530 3.5*30MM 家用钢钉 水泥钉 钉子 木工钉 内含20个</p>
+                                <p class="other">
+                                    <span class="price">¥1.00</span>
+                                    <button>去凑单</button>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://item.m.jd.com/ware/view.action?wareId=1274360"> <img src="http://img11.360buyimg.com/n7/jfs/t2836/224/1929516401/227116/6c29a150/574f9927Ncf1f3030.jpg"
+                                    alt="">
+                                <p class="des">吉米家居 JM-G163520 3.5*20MM干壁钉 螺丝钉 螺纹钉 钉子 十字沉头自攻螺丝 木牙螺丝纤维板钉 内含20个</p>
+                                <p class="other">
+                                    <span class="price">¥1.00</span>
+                                    <button>去凑单</button>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://item.m.jd.com/ware/view.action?wareId=1274360"> <img src="http://img13.360buyimg.com/n7/jfs/t2593/297/3349992939/51686/6052b2ac/57887ed0Na34de1ee.jpg"
+                                    alt="">
+                                <p class="des">金钟 开塞露(含甘油) 20ml</p>
+                                <p class="other">
+                                    <span class="price">¥1.00</span>
+                                    <button>去凑单</button>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://item.m.jd.com/ware/view.action?wareId=1274360"> <img src="http://img12.360buyimg.com/n7/jfs/t2977/48/1895836471/206978/8f59c4ea/57957187N8f032f9e.jpg"
+                                    alt="">
+                                <p class="des">【京东超市】马来西亚进口(杨协成)黑豆豆奶 1升装</p>
+                                <p class="other">
+                                    <span class="price">¥1.00</span>
+                                    <button>去凑单</button>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://item.m.jd.com/ware/view.action?wareId=1274360"> <img src="http://img11.360buyimg.com/n7/jfs/t2596/213/2200706243/227116/6c29a150/575cd115Nc0ba8427.jpg"
+                                    alt="">
+                                <p class="des">吉米家居 JM-G163525 3.5*25MM干壁钉 螺丝钉 螺纹钉 钉子 十字沉头自攻螺丝 木牙螺丝纤维板钉 内含20个</p>
+                                <p class="other">
+                                    <span class="price">¥1.00</span>
+                                    <button>去凑单</button>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://item.m.jd.com/ware/view.action?wareId=1274360"> <img src="http://img11.360buyimg.com/n7/jfs/t2725/244/841611976/283905/ec790537/5728291dN770aa381.jpg"
+                                    alt="">
+                                <p class="des">优贝思(Upis)硅胶仿真奶嘴 新生儿 2枚 韩国进口</p>
+                                <p class="other">
+                                    <span class="price">¥1.00</span>
+                                    <button>去凑单</button>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://item.m.jd.com/ware/view.action?wareId=1274360"> <img src="http://img14.360buyimg.com/n7/jfs/t2815/301/2210220938/152216/91e20ff3/575cce1fN6cd4f6ae.jpg"
+                                    alt="">
+                                <p class="des">吉米家居 JM-G19630 6*30MM 膨胀管 塑料膨胀管 自攻膨胀螺丝钉胶塞 内含20个</p>
+                                <p class="other">
+                                    <span class="price">¥1.00</span>
+                                    <button>去凑单</button>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://item.m.jd.com/ware/view.action?wareId=1274360"> <img src="http://img10.360buyimg.com/n7/jfs/t2983/65/766719535/167760/c5a6deff/57679ed7Nc689581f.jpg"
+                                    alt="">
+                                <p class="des">【京东超市】蓓琳娜(BELLINA)产品手册</p>
+                                <p class="other">
+                                    <span class="price">¥1.00</span>
+                                    <button>去凑单</button>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://item.m.jd.com/ware/view.action?wareId=1274360"> <img src="http://img10.360buyimg.com/n7/jfs/t2620/352/2500287917/201778/2dbb72e9/5768f970N7d4c931d.jpg"
+                                    alt="">
+                                <p class="des">吉米家居 JM-G13003 电工胶布 绝缘胶带 阻燃胶布 PVC胶布 黑色 10米</p>
+                                <p class="other">
+                                    <span class="price">¥1.00</span>
+                                    <button>去凑单</button>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://item.m.jd.com/ware/view.action?wareId=1274360"> <img src="http://img12.360buyimg.com/n7/jfs/t2890/126/2222583587/301536/d6c99d9c/575cd66eN2adbcef8.jpg"
+                                    alt="">
+                                <p class="des">吉米家居 JM-G13001 电工胶布 绝缘胶带 阻燃胶布 PVC胶布 红色 10米</p>
+                                <p class="other">
+                                    <span class="price">¥1.00</span>
+                                    <button>去凑单</button>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://item.m.jd.com/ware/view.action?wareId=1274360"> <img src="http://img10.360buyimg.com/n7/jfs/t2857/345/1417722395/131641/59fe9e17/573e751fNc951055f.jpg"
+                                    alt="">
+                                <p class="des">飘漾(Pure Young)婴儿柔湿巾 99%纯水便携装10片PY13</p>
+                                <p class="other">
+                                    <span class="price">¥1.00</span>
+                                    <button>去凑单</button>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://item.m.jd.com/ware/view.action?wareId=1274360"> <img src="http://img14.360buyimg.com/n7/jfs/t2368/41/1521883924/285335/f6ab0fdf/5666a182Nb6541dda.jpg"
+                                    alt="">
+                                <p class="des">【京东超市】优乐咖啡 特浓3合1速溶 15g/包</p>
+                                <p class="other">
+                                    <span class="price">¥1.00</span>
+                                    <button>去凑单</button>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://item.m.jd.com/ware/view.action?wareId=1274360"> <img src="http://img12.360buyimg.com/n7/jfs/t2086/155/1575799330/245727/19273de0/5666a1b7N5fb403cd.jpg"
+                                    alt="">
+                                <p class="des">【京东超市】优乐咖啡 原味3合1速溶 15g/包</p>
+                                <p class="other">
+                                    <span class="price">¥1.00</span>
+                                    <button>去凑单</button>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://item.m.jd.com/ware/view.action?wareId=1274360"> <img src="http://img10.360buyimg.com/n1/jfs/t3247/151/2711021413/258645/7da97f70/57e4d2e9N01f1b837.jpg"
+                                    alt="">
+                                <p class="des">【东东日租卡】中国联通 北京 手机卡 电话 手机号卡（合约专用不可单独购买）</p>
+                                <p class="other">
+                                    <span class="price">¥1.00</span>
+                                    <button>去凑单</button>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://item.m.jd.com/ware/view.action?wareId=1274360"> <img src="http://d6.yihaodianimg.com/N07/M0A/6C/9E/CgQIz1XS7ZOAK8YGAAOYScgyGpI02701_230*230.jpg"
+                                    alt="">
+                                <p class="des">新雅 广式莲蓉月饼 100g/袋</p>
+                                <p class="other">
+                                    <span class="price">¥0.01</span>
+                                    <button>去凑单</button>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://item.m.jd.com/ware/view.action?wareId=1274360"> <img src="http://d7.yihaodianimg.com/N09/M06/81/86/ChEi2FX2m46AACo6AANQ5NoMK6I62401_230*230.jpg"
+                                    alt="">
+                                <p class="des">Goody 谷蒂 玉米味脆皮花生豆 40g/袋 越南进口</p>
+                                <p class="other">
+                                    <span class="price">¥1.0</span>
+                                    <button>去凑单</button>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://item.m.jd.com/ware/view.action?wareId=1274360"> <img src="http://d6.yihaodianimg.com/N09/M06/62/A7/ChEi11cZ01uADr1xAANq2Y3pJI443901_230*230.jpg"
+                                    alt="">
+                                <p class="des">Great Value 惠宜 竹牙签 200支</p>
+                                <p class="other">
+                                    <span class="price">¥1.0</span>
+                                    <button>去凑单</button>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://item.m.jd.com/ware/view.action?wareId=1274360"> <img src="http://d7.yihaodianimg.com/N01/M07/AD/71/CgQCrlIe4JKAYmshAANHAGRXj-c75200_230*230.jpg"
+                                    alt="">
+                                <p class="des">钱江 大老板菜(榨菜片)70g</p>
+                                <p class="other">
+                                    <span class="price">¥1.0</span>
+                                    <button>去凑单</button>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://item.m.jd.com/ware/view.action?wareId=1274360"> <img src="http://d8.yihaodianimg.com/N10/M04/FE/E9/ChEi2lYwXteAHMW2AANp0aDT9Mw45301_230*230.jpg"
+                                    alt="">
+                                <p class="des">Weidendorf 德亚全脂纯牛奶250ml 澳大利亚进口</p>
+                                <p class="other">
+                                    <span class="price">¥1.0</span>
+                                    <button>去凑单</button>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://item.m.jd.com/ware/view.action?wareId=1274360"> <img src="http://d8.yihaodianimg.com/N09/M00/CC/2D/ChEi11dXlfmAdW8mAAVa-yhA8rA50501_230*230.jpg"
+                                    alt="">
+                                <p class="des">Orion 好丽友 高笑美黄油可可味 40g/袋</p>
+                                <p class="other">
+                                    <span class="price">¥1.0</span>
+                                    <button>去凑单</button>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://item.m.jd.com/ware/view.action?wareId=1274360"> <img src="http://d7.yihaodianimg.com/N10/M07/24/5A/ChEi2lebICeASehPAAIC206nHzY41001_230*230.jpg"
+                                    alt="">
+                                <p class="des">黑土小镇 荞麦 330g/袋</p>
+                                <p class="other">
+                                    <span class="price">¥1.0</span>
+                                    <button>去凑单</button>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://item.m.jd.com/ware/view.action?wareId=1274360"> <img src="http://d8.yihaodianimg.com/N09/M09/81/89/ChEi11X2mwuAbZmyAAL2S9WXTMY83201_230*230.jpg"
+                                    alt="">
+                                <p class="des">Goody 谷蒂 蒜香味豌豆 40g/袋 越南进口</p>
+                                <p class="other">
+                                    <span class="price">¥1.0</span>
+                                    <button>去凑单</button>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://item.m.jd.com/ware/view.action?wareId=1274360"> <img src="http://d6.yihaodianimg.com/N06/M01/2F/A9/CgQIzVVpBFOATIGoAAVxcJekPSQ24901_230*230.jpg"
+                                    alt="">
+                                <p class="des">北纯 玉米碴 380g/袋</p>
+                                <p class="other">
+                                    <span class="price">¥1.0</span>
+                                    <button>去凑单</button>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://item.m.jd.com/ware/view.action?wareId=1274360"> <img src="http://d8.yihaodianimg.com/N10/M01/07/79/ChEi21bmLg-AamNSAAMBli2Fatk03001_230*230.jpg"
+                                    alt="">
+                                <p class="des">FIVERAMS/五羊 婴儿护肤柔湿巾 10抽</p>
+                                <p class="other">
+                                    <span class="price">¥1.0</span>
+                                    <button>去凑单</button>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://item.m.jd.com/ware/view.action?wareId=1274360"> <img src="http://d8.yihaodianimg.com/N04/M07/24/7F/CgQDrVGoUE6AJnmXAAJLMH82nE820301_230*230.jpg"
+                                    alt="">
+                                <p class="des">口水娃 多味花生(烤肉味)30g/袋</p>
+                                <p class="other">
+                                    <span class="price">¥1.0</span>
+                                    <button>去凑单</button>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://item.m.jd.com/ware/view.action?wareId=1274360"> <img src="http://d6.yihaodianimg.com/V00/M05/C9/C7/CgQDsVRFB2CAHmN7AAPUP7R93sM56601_230*230.jpg"
+                                    alt="">
+                                <p class="des">Anchor安佳 进口儿童牛奶 190ml 新西兰进口</p>
+                                <p class="other">
+                                    <span class="price">¥1.0</span>
+                                    <button>去凑单</button>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://item.m.jd.com/ware/view.action?wareId=1274360"> <img src="http://d7.yihaodianimg.com/N06/M01/E5/6F/CgQIzVePVTGALudtAAOR63vMz_o34101_230*230.jpg"
+                                    alt="">
+                                <p class="des">桂格燕麦小饼干蔓越莓35克</p>
+                                <p class="other">
+                                    <span class="price">¥1.0</span>
+                                    <button>去凑单</button>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://item.m.jd.com/ware/view.action?wareId=1274360"> <img src="http://d7.yihaodianimg.com/N05/M06/CE/A3/ChEbulZNa7mAFuywAAF4WdDDKoE48001_230*230.jpg"
+                                    alt="">
+                                <p class="des">Lention/蓝盛 BW100多彩便携绕线器 适用于耳机、数据线、音频线等收纳整理 白色</p>
+                                <p class="other">
+                                    <span class="price">¥1.0</span>
+                                    <button>去凑单</button>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://item.m.jd.com/ware/view.action?wareId=1274360"> <img src="http://d7.yihaodianimg.com/N06/M01/E4/2D/CgQIzlVUcvmAYXh7AAL_If_KANs93301_230*230.jpg"
+                                    alt="">
+                                <p class="des">多格萨萨蜜 宠物食品 狗零食 软骨素小鸡翅 净重90g</p>
+                                <p class="other">
+                                    <span class="price">¥1.0</span>
+                                    <button>去凑单</button>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://item.m.jd.com/ware/view.action?wareId=1274360"> <img src="http://d6.yihaodianimg.com/N06/M03/55/2A/ChEbu1bOsJCAEBRQAAY7Zp2a8QY26201_230*230.jpg"
+                                    alt="">
+                                <p class="des">博倩 老姜王 头皮按摩膏 100mL/袋</p>
+                                <p class="other">
+                                    <span class="price">¥1.0</span>
+                                    <button>去凑单</button>
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- 主体区域 -->
+    </div>
+    <!-- 底部区域 -->
+    <footer id="ctl00_foot">
+        <div class="foot_top">
+            <a href="login.aspx.htm">登录</a>
+            <a href="login.aspx.htm">注册</a>
+            <a href="#" style="width: 40%; border: 0;">
+                <img src="http://www.zuyushop.com/wap/images/top.jpg" width="15" height="15">返回顶部</a>
+        </div>
+        <div class="footer">
+            <p>
+                <a href="javascript:if(confirm(%27http://m.manmanbuy.com/download/  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://m.manmanbuy.com/download/%27"
+                    onclick="trackEvent('footer下载');" style="color: Red;">手机APP下载</a> <a href="index.htm" tppabs="http://m.manmanbuy.com/">
+                    慢慢买手机版</a> -- 掌上比价平台</p>
+            <p>
+                m.manmanbuy.com
+                <img src="https://z11.cnzz.com/stat.htm-id=1256699064&amp;r=&amp;iw=1&amp;showp=0x0&amp;lg=undefined&amp;cnzz_eid=none&amp;p=http---m.manmanbuy.com-&amp;rnd=453668140.gif"
+                    width="0" height="0">
+            </p>
+        </div>
+    </footer>
+    <!-- 创建模板 -->
+    <script id="filter" type="text/html">
+        <ul>
+            {{each result as value i}}
+            <li class="on"><a href="javascript:SelectShow('{{value.selectName}}')" data-id="0" class="{{value.selectName}}">{{value.selected}}<i></i></a></li>
+            {{/each}}
+        </ul>
+    </script>
+    <script id="gsShop" type="text/html">
+        <ul>
+            {{each result as value i}}
+            <li class=""><a href="javascript:GetShopProduct('shopid', {{value.shopId}},'{{value.shopName}}');" data-shopid="{{value.shopId}}">{{value.shopName}}</a></li>
+            {{/each}}
+        </ul>
+    </script>
+    <script id="gsArea" type="text/html">
+        <ul>
+            {{each result as value i}}
+            <li class=""><a href="javascript:GetAreaProduct('areaid', {{value.areaId}},'{{value.areaName.split('（')[0]}}')" data-areaid={{value.areaId}}>{{value.areaName}}</a></li>
+            {{/each}}
+        </ul>
+    </script>
+    <script id="gsProductList" type="text/html">
+        <ul id="container" class="masonry" style="position: relative; height: 0px;">
+            {{each result as value i}}
+            <li>
+                <a href="http://item.m.jd.com/ware/view.action?wareId=1274360" class="item border-img">
+                    <div class="pic"><img src="{{value.productImg}}" style="width: 174px; height: 174px;"></div>
+                    <div class="title">{{value.productName}}</div>
+                    <div class="other">
+                        <div class="price">{{value.productPrice}}</div>
+                        <div class="btn">去凑单</div>
+                        <div class="clearfix"></div>
+                    </div>
+                </a>
+            </li>
+            {{/each}}
+        </ul>
+        <div class="clearfix"></div>
+    </script>
+    <script src="js/template.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+        (function ($) {
+            $.getUrlParam = function (name) {
+                var reg = new RegExp("(^|&)" +
+                    name + "=([^&]*)(&|$)");
+                var r = window.location.search.substr(1).match(reg);
+                if (r != null) return unescape(r[2]);
+                return null;
+            }
+        })(jQuery);
+    </script>
+    <script src="js/gsproduct.js"></script>
+</body>
+
+</html>

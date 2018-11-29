@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>产品分类-慢慢买比价网</title>
+  <link rel="stylecut icon" href="https://m.manmanbuy.com/favicon.ico">
+  <link rel="stylesheet" href="lib/mui/css/mui.min.css">
+  <link rel="stylesheet" href="lib/fontAwesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/category.css">
+  <script src="js/rem.js"></script>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <header id="header">
+    <div class="head">
+      <a class="logo" href="index.html">
+        <img src="http://static.manmanbuy.com/m/img/mlogo.png" alt="">
+      </a>
+      <form action="#">
+        <i class="fa fa-search"></i>
+        <input class="search" type="search" placeholder="商品比价,查历史价">
+      </form>
+      <a class="download" href="https://at.umeng.com/onelink/Pvmmmy" target="_blank">
+        下载
+      </a>
+    </div>
+    <div class="nav-bar">
+      <div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+        <div class="mui-scroll nav-scroll clearfix">
+        <a  href="index.html">
+            首页
+        </a>
+        <a href="#">
+            省钱控
+        </a>
+        <a href="#">
+            查看史价
+        </a>
+        <a class="active" href="category.html">
+            比价搜索
+        </a>
+        <a href="#">
+            国内折扣
+        </a>
+        <a href="#">
+            白菜价
+        </a>
+        <a  href="#">
+            小时风云榜
+        </a>
+      </div>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <div class="mui-scroll-wrapper">
+      <div class="mui-scroll">
+        <div class="content">
+          <!--大家电-->
+          <section class="category">
+            <div class="category_t">
+              <a href="javascript:void(0);">大家电</a>
+            </div>
+            <ul class="category_all clearfix">
+              
+            </ul>
+          </section>
+        </div>
+        <div id="footer">
+            <div class="mui-row">
+              <div class="mui-col-xs-4">
+                <a href="#">登录</a>
+              </div>
+              <div class="mui-col-xs-4">
+                <a href="#">注册</a>
+              </div>
+              <div class="mui-col-xs-4">
+                <a id="cancelTop" class="fa fa-arrow-up" href="javascript:void(0);">返回顶部</a>
+              </div>
+            </div>
+            <div class="bottom">
+              <p>
+                <a href="#">手机APP下载</a>
+                <a href="#">慢慢买手机版</a>
+                <span>---掌上比价平台</span>
+              </p>
+              <span>m.manmanbuy.com</span>
+            </div>
+          </di>
+      </div>
+    </div>
+  </main>
+  <div id="fixed-ad">
+    <a class="close fa fa-times-circle" href="javascript:void(0);"></a>
+    <div class="left">
+      <img class="mui-pull-left" src="https://img.alicdn.com/imgextra/i4/690311/TB2mY9udDJYBeNjy1zeXXahzVXa_!!690311.png_200x200.jpg">
+      <div class="content mui-pull-left">
+        <p>实时更新品牌榜</p>
+        <span>全网比价不吃亏</span>
+      </div>
+    </div>
+    <a class="download" href="https://at.umeng.com/onelink/Pvmmmy">立即打开</a>
+  </div>
+  <script id="categoryTpl" type="text/html">
+    {{ each result value index }}
+    <section class="category">
+      <div class="category_t">
+        <a href="javascript:void(0);" data-id="{{ value.titleId }}" data-status="show">{{ value.title }}</a>
+      </div>
+      <ul class="category_all" data-c="{{value.titleId}}" style="display:none">
+      </ul>
+    </section>
+    {{ /each }}
+  </script>
+  <script id="categoryAllTpl" type="text/html">
+    {{ each result value index }}
+    <li><a href="productList.html?categoryId={{ value.categoryId}}&categoryName={{ value.category }}" data-id="{{ value.categoryId}}">{{ value.category }}</a></li>
+    {{ /each }}
+    {{ if totalLis - result.length == 2}}
+    <li><a href="javascript:void(0);"></a></li>
+    <li><a href="javascript:void(0);"></a></li>
+    {{ else if totalLis - result.length == 1 }}
+    <li><a href="javascript:void(0);"></a></li>
+    {{ /if }}
+  </script>
+  <script src="lib/mui/js/mui.min.js"></script>
+  <script src="lib/zepto/zepto.min.js"></script>
+  <script src="lib/artTemplate/template-web.js"></script>
+  <script src="js/category.js"></script>
+</body>
+</html>
