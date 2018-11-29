@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- 引包 -->
+    <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+    <link rel="stylesheet" href="./lib/fontAwesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./lib/swiper 4x/css/swiper.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+        <link rel="stylesheet" href="./less/baicailist.css">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>热销淘宝优惠券</title>
+
+</head>
+
+<body>
+    <!-- 页首 -->
+    <header id="header">
+        <a href="javascript:history.back();">
+            <i class="fas fa-chevron-left"></i>
+        </a>
+        <h4 id="navList">
+            <span id="titleName">热销</span>
+            <i class="fas fa-chevron-down"></i>
+        </h4>
+        <a href="index.html" class="nav-list">
+            <i class="fas fa-home"></i>
+        </a>
+    </header>
+
+    <!-- 导航 -->
+    <nav id="nav">
+        <div class="nav-content">
+            <div class="nav-list mui-row">
+                <!-- 导航模板内容 -->
+            </div>
+            <div class="hide-nav">
+                <button type="button" class="mui-btn mui-btn-danger mui-btn-outlined" id="hideNavList">收起分类</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 内容 -->
+    <main id="main">
+        <!-- 返回顶部 -->
+        <div id="toTop"><i class="fas fa-fighter-jet"></i></div>
+        <div class="mui-scroll-wrapper" id="refreshContainer">
+            <div class="mui-scroll">
+                <div class="mui-backdrop"></div>
+                <!--这里放置真实显示的DOM内容-->
+                <!-- 内容导航 -->
+                <section id="contentNav">
+                    <ul>
+                        <li>
+                            <a href="#" class="active">
+                                人气
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                最新
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                销量
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                价格
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <!-- 产品列表-->
+                <section id="productList">
+                    <!--数据列表-->
+                    <div class="mui-row">
+
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <script id="navTpl" type="text/html">
+        {{each res value}}
+        <div class="mui-col-xs-3">
+            <a href="baicailist.html?title={{value.title}}">{{value.title}}</a>
+        </div>
+        {{/each}}
+    </script>
+
+    <script id="productTpl" type="text/html">
+        {{each res value}}
+        <!-- <li> -->
+        <div class="mui-col-xs-6">
+            {{@value.productImg}}
+            <p>{{@value.productName}}</p>
+            <span>{{@value.productPrice}}</span>
+            {{@value.productHref}}
+            <!-- </li> -->
+        </div>
+        {{/each}}
+    </script>
+
+    <script id="productCatTpl" type="text/html">
+        {{each res value}}
+        <!-- <li> -->
+        <div class="mui-col-xs-6">
+            {{@value.productImg}}
+            <p>{{value.productName}}</p>
+            <span>{{value.productPrice}}</span>
+            {{value.productCom}}
+            <!-- </li> -->
+        </div>
+        {{/each}}
+    </script>
+
+    <script src="./lib/zepto/zepto.min.js"></script>
+    <script src="./lib/mui/js/mui.min.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <script src="./lib/swiper 4x/js/swiper.min.js"></script>
+    <script src="./js/baicailist.js"></script>
+</body>
+
+</html>
