@@ -1,4 +1,16 @@
 $(function () {
+            // 获取登陆状态
+            var hasLogged=sessionStorage.getItem('hasLogged');
+            // 已登录
+            if(hasLogged){
+                mui.confirm("已登录,无需重新登录,是否跳转到首页", "温馨提示", ["确定","取消"],function(e){
+                   if(e.index==0){
+                       location="index.html";
+                   }
+                   
+                });
+
+            }
             $('.login').on('tap', function () {
                     var username = $('.username').val();
                     var password = $('.password').val();
@@ -16,6 +28,8 @@ $(function () {
                             if (username == login[i].username&&password==login[i].password) {
                                
                                 mui.alert("登录成功", "温馨提示", "确定")  
+                                // 存储登录记录
+                                sessionStorage.setItem('hasLogged',"已登录");
                                 location="index.html"        
                                 return false;                 
                             }else{
