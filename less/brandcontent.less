@@ -1,0 +1,263 @@
+@import "base.less";
+html {
+    height: 100%;
+}
+
+body {
+    font-family: "NSimSun";
+    height: 100%;
+    padding-top: .85rem;
+    padding-bottom: 1.4rem;
+    overflow: hidden;
+}
+
+#header {
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+#footer {
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+/* 设置a标签点击时的字体颜色 */
+a:active{
+    color: black;
+}
+/* 搜索区域 */
+
+#search {
+    position: fixed;
+    top: .45rem;
+    width: 100%;
+    .search {
+        height: .24rem;
+    }
+}
+
+/* 导航区域 */
+
+#nav {
+    z-index: 999;
+    top: .8rem;
+    width: 100%;
+    height: .4rem;
+    background-color: #f7f7f7;
+    padding: .1rem;
+    line-height: .2rem;
+    box-shadow: 0px 2px 2px 2px #ccc;
+    position: fixed;
+    a {
+        position: absolute;
+        left: .1rem;
+    }
+    h4 {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        font-weight: normal;
+        display: inline-block;
+        line-height: .1rem;
+    }
+}
+
+/* 主体区域 */
+
+#main {
+    margin-top: .45rem;
+    position: relative;
+    padding: .1rem;
+    height: 100%;
+    .title {
+        width: 100%;
+        height: .36rem;
+        background-color: #eeeeee;
+        border-top: 1px solid #cccccc;
+        border-bottom: 1px solid #cccccc;
+        text-align: center;
+        line-height: .36rem;
+        ul {
+            display: flex;
+            li {
+                flex: 1;
+                float: left;
+                &.active {
+                    background-color: #232a34;
+                    a {
+                        color: #fff;
+                    }
+                }
+                a {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    font-size: .14rem;
+                }
+            }
+        }
+    }
+    .content {
+        background-color: #f7f7f7;
+        padding: .1rem;
+        width: 100%;
+        .brandlist {
+            background-color: #f7f7f7;
+            width: 100%;
+            li {
+                width: 100%;
+                height: .71rem;
+                padding: .15rem;
+                display: flex;
+                .dot {
+                    margin-right: .1rem;
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
+                    line-height: 20px;
+                    background-color: #ccc;
+                    color: #FFFFFF;
+                    font-size: 14px;
+                    font-style: normal;
+                    vertical-align: top;
+                    text-align: center;
+                    &.red {
+                        background-color: red;
+                    }
+                    &.skyblue {
+                        background-color: skyblue;
+                    }
+                    &.green {
+                        background-color: green;
+                    }
+                }
+                .right {
+                    font-size: .16rem;
+                    p {
+                        color: #ccc;
+                    }
+                }
+            }
+        }
+        .sales-volume {
+            display: none;
+            li {
+                height: 1.3rem;
+                padding: .1rem;
+                border-bottom: 1px solid #ccc;
+                a {
+                    display: flex;
+                    .product-img {
+                        width: 1rem;
+                        height: 1rem;
+                        margin-right: .05rem;
+                        img {
+                            display: block;
+                            width: 1rem;
+                            height: 1rem;
+                        }
+                    }
+                    .product-par {
+                        .product-name {
+                            white-space: normal;
+                            font-size: .17rem;
+                            color: black;
+                        }
+                        .product-num {
+                            display: flex;
+                            margin-top: .15rem;
+                            justify-content: space-between;
+                            .product-price {
+                                color: red;
+                                font-size: .17rem;
+                            }
+                            .star {
+                                i {
+                                    color: #ff9000;
+                                }
+                            }
+                        }
+                        .product-params {
+                            margin-top: .1rem;
+                            font-size: .16rem;
+                        }
+                    }
+                }
+            }
+        }
+        .comment {
+            display: none;
+            border: 1px solid #ccc;
+            li {
+                margin-top: .2rem;
+                padding: 0 .1rem;
+                display: flex;
+                flex-direction: column;
+                img {
+                    display: block;
+                    width: 1rem;
+                    height: 1rem;
+                    .comment-title {
+                        font-size: .16rem;
+                        line-height: .2rem;
+                        margin-top: .1rem;
+                    }
+                }
+                .comment-content {
+                    position: relative;
+                    &::after {
+                        content: '';
+                        width: 0;
+                        height: 0;
+                        position: absolute;
+                        left: 29px;
+                        top: -8px;
+                        border-bottom: 8px solid #ccc;
+                        border-left: 8px solid transparent;
+                        border-right: 8px solid transparent;
+                    }
+                    padding: .2rem .1rem;
+                    background-color: #eeeeee;
+                    border: 1px solid #ccc;
+                    border-radius: .06rem;
+                    display: flex;
+                    flex-direction: column;
+                    .comment-username {
+                        font-size: .18rem;
+                        display: flex;
+                        justify-content: flex-end;
+                        margin-right: .3rem;
+                    }
+                    .comment-star-time {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-top: .2rem;
+                        .star {
+                            i {
+                                color: #ff9000;
+                            }
+                        }
+                        .comTime {
+                            font-size: .16rem;
+                        }
+                    }
+                    .comContent {
+                        margin-top: .1rem;
+                        font-size: .16rem;
+                        line-height: .2rem;
+                    }
+                    .comFrom {
+                        margin-top: .2rem;
+                        font-size: .16rem;
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -60,7 +60,7 @@ input[type=search] {
   display: flex;
   padding: .05rem;
   background-color: #fff;
-  box-shadow: 0px 0px 10px 1px #ccc;
+  box-shadow: 0px 0px 1px 1px #ccc;
   align-items: center;
 }
 #search .search {
@@ -120,27 +120,72 @@ input[type=search] {
   text-align: center;
   padding: .1rem 0;
 }
-/* 外嵌页面公共样式 */
-#iframe-wrap {
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  padding-top: 0.45rem;
+  padding-bottom: 0.88rem;
+  background-color: #f2f2f2;
+}
+#header {
   position: fixed;
   top: 0;
+  left: 0;
+  z-index: 10;
   width: 100%;
+}
+#header a,
+#header h4 {
+  color: #fff;
+  font-size: 0.18rem;
+}
+#main {
+  margin-top: 0.05rem;
+  position: relative;
   height: 100%;
+}
+#main .mui-content {
   background-color: #fff;
-  z-index: 999;
 }
-#iframe-wrap .close {
-  position: absolute;
-  width: .3rem;
-  height: .3rem;
-  right: .2rem;
-  top: .5rem;
-  font-size: .18rem;
-  z-index: 1;
+#main .mui-content .productList {
+  background-color: #fff;
+  margin-bottom: 0.1rem;
+  display: flex;
 }
-#iframe-wrap img {
+#main .mui-content .productList .litre {
+  color: #333;
+}
+#main .mui-content .productList .litre .price {
+  color: #ff6c00;
+}
+#main .mui-content .productList .productRight {
+  padding-top: .1rem;
+  padding-right: .1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+#main .mui-content .productList .productRight .title {
+  color: #333;
+}
+#main .mui-content .productList .productRight p.productInfo {
+  margin-top: .2rem;
+  font-size: .12rem;
+  position: relative;
+}
+#main .mui-content .productList .productRight p.productInfo .comment {
   position: absolute;
+  right: 0;
+}
+#main .mui-content .productList img {
+  width: 1rem;
+}
+#footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
   width: 100%;
-  height: 100%;
-  opacity: .8;
 }

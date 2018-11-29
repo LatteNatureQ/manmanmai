@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>注册页面</title>
+    <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+    <!-- <link rel="stylesheet" href="./lib/mui/fonts/mui.ttf"> -->
+    <link rel="stylesheet" type="text/css" href="lib/fontAwesome/css/font-awesome.css">
+    <link rel="stylesheet" href="./less/register.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- 头部区域 -->
+    <header id="header">
+        <a href="#">
+            <img class="header_logo" src="./images/header_logo.png" alt="">
+        </a>
+        <a href="#">
+            <img class="header_app" src="./images/header_app.png" alt="">
+        </a>
+    </header>
+ 
+    <!-- 主体区域 -->
+    <main id="main">
+        <form action="#">
+            <label style="display:none">用户名</label>
+            <input type="text" placeholder="请输入用户名" class="username">
+            <label style="display:none">密码</label>
+            <input type="password" placeholder="密码(6-20个字符)" class="password">
+            <label style="display:none">手机号</label>
+            <input value="13513513512" type="text" placeholder="请输入手机号" class="mobile">
+            <div class="code">
+                <a href="#" id="num">8838</a>
+                <label style="display:none">验证码</label>
+                <input type="text" class="vcode">
+                <button id="gemobilecode" type="button">获取手机验证码</button>
+
+            </div>
+            <label style="display:none">手机验证码</label>
+            <input type="text" placeholder="请输入手机验证码" class="mobilecode">
+            <label style="display:none">邮箱</label>
+            <input type="email" placeholder="请输入邮箱" class="email">
+            <button type="button" value="注册" class="register">注册</button>
+            
+        </form>
+       
+     
+  
+    </main>
+    <!-- 底部区域 -->
+    <footer id="footer">
+        <div class="register">
+            <a href="login.html">登录</a>
+            <a href="register.html">注册</a>
+            <a href="#">
+                <img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部</a>
+        </div>
+        <div class="footer-info">
+            <p>
+                <a href="#" style="color: Red;">手机APP下载</a>
+                <a href="#">
+                    慢慢买手机版</a> -- 掌上比价平台</p>
+            <p>
+                m.manmanbuy.com
+            </p>
+        </div>
+    </footer>
+    <script src="lib/mui/js/mui.js"></script>
+    <script src="lib/zepto/zepto.min.js"></script>
+    <script src="lib/artTemplate/template-web.js"></script>
+    <script src="./js/rem.js"></script>
+    <script src="js/register.js"></script>
+</body>
+
+</html>

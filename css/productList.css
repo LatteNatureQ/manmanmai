@@ -1,0 +1,280 @@
+/* 设置根字体大小 */
+html {
+  font-size: 100px;
+  height: 100%;
+}
+ul,
+p {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: #666;
+}
+input {
+  padding: 0;
+  margin: 0;
+}
+body {
+  position: relative;
+  min-width: 320px;
+  width: 100%;
+  height: 100%;
+  padding-top: .85rem;
+  font-size: .14rem;
+}
+#main {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+#header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 0.85rem;
+  background-color: #fff;
+}
+#header .head {
+  display: flex;
+  justify-content: space-around;
+  height: .45rem;
+  padding: .1rem .1rem;
+  border-bottom: 1px solid #c4c4c4;
+}
+#header .head > .logo > img {
+  display: block;
+  max-width: 100%;
+  max-height: .24rem;
+  width: auto;
+  height: .24rem;
+}
+#header .head > form {
+  position: relative;
+  flex: 1;
+  padding: 0 .15rem 0 .25rem;
+}
+#header .head > form > i {
+  position: absolute;
+  left: .35rem;
+  top: .05rem;
+  color: #d6d6d6;
+}
+#header .head > form > .search {
+  display: block;
+  width: 100%;
+  height: .24rem;
+  padding: 0;
+  margin: 0;
+  border-radius: .12rem ;
+  border: none;
+  background-color: #f9f9f9;
+  text-indent: .25rem;
+  text-align: left;
+  color: #757575;
+  font-size: .14rem;
+}
+#header .head > .download {
+  width: auto;
+  height: .24rem;
+  padding: 0 .1rem;
+  line-height: .22rem;
+  border-radius: .12rem;
+  border: 1px solid #f04a4a;
+  color: #f04a4a;
+  text-align: center;
+}
+#header .nav-bar {
+  position: relative;
+  width: 100%;
+  height: .4rem;
+}
+#header .nav-bar .nav-scroll {
+  position: absolute;
+  left: 0;
+  width: auto;
+  height: 0.4rem;
+  white-space: nowrap;
+}
+#header .nav-bar .nav-scroll a {
+  position: relative;
+  display: inline-block;
+  height: .4rem;
+  padding: 0 .1rem;
+  line-height: .4rem;
+  font-size: .15rem;
+  font-weight: bold;
+  color: #333;
+}
+#header .nav-bar .nav-scroll a.active::after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -0.15rem;
+  content: "";
+  width: 0.3rem;
+  height: 0.04rem;
+  background-color: #fa783b;
+}
+#main .content .select {
+  display: flex;
+  width: 100%;
+  height: 0.4rem;
+  border-bottom: 1px solid #c4c4c4;
+  border-top: 1px solid #c4c4c4;
+  background-color: #fff;
+}
+#main .content .select > a {
+  width: 25%;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  text-align: center;
+  color: #333;
+}
+#main .content .select > a.active {
+  color: #fa783b;
+}
+#main .content .product > ul > li {
+  border-bottom: 1px solid #c4c4c4;
+}
+#main .content .product > ul > li > a {
+  display: flex;
+  padding: .1rem .05rem;
+  background-color: #fff;
+}
+#main .content .product > ul > li > a .left {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+#main .content .product > ul > li > a .left > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#main .content .product > ul > li > a .right {
+  flex: 1;
+  padding-left: .1rem;
+}
+#main .content .product > ul > li > a .right .title {
+  width: 100%;
+  height: 0.56rem;
+  line-height: 0.28rem;
+  font-size: 0.15rem;
+  color: #666;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+#main .content .product > ul > li > a .right .price {
+  margin-top: .1rem;
+  font-size: .20rem;
+  color: #fa783b;
+}
+#main .content .product > ul > li > a .right .price > span {
+  font-size: .12rem;
+}
+#main .content .product > ul > li > a .right .star {
+  display: flex;
+  justify-content: space-between;
+  font-size: .12rem;
+}
+#main .paging {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 0.5rem;
+  line-height: 0.3rem;
+  padding: .1rem;
+}
+#main .paging > button {
+  width: auto;
+  height: 0.3rem;
+  padding: .05rem .05rem;
+  line-height: .18rem;
+  text-align: center;
+}
+#main .paging p {
+  font-size: .16rem;
+}
+#main .paging p span {
+  color: #fa783b;
+}
+#footer {
+  position: relative;
+}
+#footer > div > div:nth-child(3) a {
+  border-right: none;
+}
+#footer > div > div a {
+  display: block;
+  width: 100%;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  text-align: center;
+  border: 1px solid #c4c4c4;
+  border-left: none;
+}
+#footer .bottom {
+  width: 100%;
+  margin-top: 0.1rem;
+  text-align: center;
+  color: #666;
+}
+#footer .bottom > p {
+  margin-bottom: 0;
+  font-size: .12rem;
+}
+#footer .bottom > p a:nth-child(1) {
+  color: #fa783b;
+}
+#fixed-ad {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 0.6rem;
+  padding: .1rem .05rem;
+  background-color: #faf8f5;
+  z-index: 999;
+}
+#fixed-ad .close {
+  position: absolute;
+  top: -0.08rem;
+  right: 0;
+  font-size: .20rem;
+}
+#fixed-ad .left {
+  display: flex;
+  flex: 1;
+  color: #666;
+}
+#fixed-ad .left img {
+  width: 0.4rem;
+  margin-right: .1rem;
+}
+#fixed-ad .left > .content {
+  flex: 1;
+  height: 100%;
+  color: #666;
+}
+#fixed-ad .left > .content > p {
+  display: block;
+  margin-bottom: .05rem;
+  line-height: 0.16rem;
+  font-size: .16rem;
+}
+#fixed-ad .left > .content > span {
+  display: block;
+  line-height: 0.14rem;
+  font-size: .14rem;
+}
+#fixed-ad > .download {
+  width: auto;
+  padding: .1rem;
+  color: #fff;
+  border-radius: .06rem;
+  background-color: #ff7700;
+}
