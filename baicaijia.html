@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- 引包 -->
+    <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+    <link rel="stylesheet" href="./lib/fontAwesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./lib/swiper 4x/css/swiper.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link rel="stylesheet/less" href="./less/baicaijia.less">
+    <script src="./lib/less/less.js"></script>
+    <title>白菜价优惠券-每天千款淘宝优惠券秒杀，一折限时疯抢！</title>
+
+</head>
+
+<body>
+    <!-- 页首 -->
+    <header id="header">
+        <a href="#">白菜价</a>
+        <div class="mui-input-row mui-search">
+            <input type="search" class="mui-input-clear" placeholder="好宝贝 等你搜">
+        </div>
+        <a href="#" class="nav-list">
+            <i class="fa fa-list-ul"></i>
+        </a>
+    </header>
+
+    <!-- 导航 -->
+    <nav id="nav">
+        <!-- <div class="mui-mask mui-backdrop">
+        </div> -->
+        <div class="nav-content">
+            <div class="nav-list mui-row">
+                <!-- <div class="mui-col-xs-3">
+                    <a href="#">全部</a>
+                </div>
+                <div class="mui-col-xs-3">
+                    <a href="#">热销</a>
+                </div>
+                <div class="mui-col-xs-3">
+                    <a href="#">9块9包邮</a>
+                </div>
+                <div class="mui-col-xs-3">
+                    <a href="#">19块包邮</a>
+                </div>
+                <div class="mui-col-xs-3">
+                    <a href="#">数码家电</a>
+                </div>
+                <div class="mui-col-xs-3">
+                    <a href="#">居家</a>
+                </div>
+                <div class="mui-col-xs-3">
+                    <a href="#">美食</a>
+                </div>
+                <div class="mui-col-xs-3">
+                    <a href="#">男装</a>
+                </div>
+                <div class="mui-col-xs-3">
+                    <a href="#">女装</a>
+                </div>
+                <div class="mui-col-xs-3">
+                    <a href="#">鞋包配饰</a>
+                </div>
+                <div class="mui-col-xs-3">
+                    <a href="#">文体</a>
+                </div>
+                <div class="mui-col-xs-3">
+                    <a href="#">母婴</a>
+                </div>
+                <div class="mui-col-xs-3">
+                    <a href="#">美妆</a>
+                </div>
+                <div class="mui-col-xs-3">
+                    <a href="#">玩具</a>
+                </div> -->
+            </div>
+            <div class="hide-nav">
+                <button type="button" class="mui-btn mui-btn-danger mui-btn-outlined" id="hideNavList">收起分类</button>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- 内容 -->
+    <main id="main">
+        <!-- 返回顶部 -->
+        <div id="toTop">
+            <i class="fas fa-fighter-jet"></i>
+        </div>
+        <div class="mui-scroll-wrapper" id="refreshContainer">
+            <div class="mui-scroll">
+                <div class="mui-backdrop"></div>
+                <!--这里放置真实显示的DOM内容-->
+                <!-- 导航 -->
+                <nav id="nav2">
+                    <ul>
+                        <li class="links">
+                            <a href="./baicailist.html?title=热销">
+                                <img src="./images/nav1.png" alt="">
+                                <p>热销</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./baicailist.html?title=9.9包邮">
+                                <img src="./images/nav2.png" alt="">
+                                <p>9.9包邮</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./baicailist.html?title=19块包邮">
+                                <img src="./images/nav1.png" alt="">
+                                <p>19块包邮</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./baicailist.html?title=超级人气榜">
+                                <img src="./images/nav4.png" alt="">
+                                <p>超级人气榜</p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- 超级人气榜 -->
+                <section id="popular">
+                    <div class="title">
+                        <h5>超级人气榜</h5>
+                        <a href="#">更多</a>
+                    </div>
+                    <div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+                        <div class="mui-scroll">
+                            <ul id="popularList">
+                            </ul>
+                        </div>
+                    </div>
+
+                </section>
+
+                <!-- 商家优惠信息 -->
+                <section id="discounts">
+                    <div class="title">
+                        <h5>商家优惠信息 实时直播
+                            <span class="text">7491</span>
+                        </h5>
+                    </div>
+                    <!--数据列表-->
+                    <ul class="mui-table-view mui-table-view-chevron" id="discountsList">
+
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <script id="navTpl" type="text/html">
+        {{each res value}}
+        <div class="mui-col-xs-3">
+            <a href="baicailist.html?title={{value.title}}">{{value.title}}</a>
+        </div>
+        {{/each}}
+    </script>
+
+    <script id="popularTpl" type="text/html">
+        {{each res value}}
+        <li>
+            <a href="#">
+                <!-- <img src="./images/popular1.png" alt=""> -->
+                {{@value.productImg}}
+                <p>{{@value.productName}}</p>
+                <span class="price">{{@value.productPrice}}</span>
+                <!-- <span class="money-icon">￥</span> -->
+                <!-- <span class="price">19.1</span>
+                <span class="grey">券后</span> -->
+            </a>
+        </li>
+        {{/each}}
+    </script>
+
+    <script id="discountTpl" type="text/html">
+        {{each res value}}
+        <li>
+            {{@value.productImg}}
+            <p>{{@value.productName}}</p>
+            <span>{{@value.productPrice}}</span>
+            {{@value.productHref}}
+        </li>
+        {{/each}}
+    </script>
+
+    <script src="./lib/zepto/zepto.min.js"></script>
+    <script src="./lib/mui/js/mui.min.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <script src="./lib/swiper 4x/js/swiper.min.js"></script>
+    <script src="./js/baicaijia.js"></script>
+</body>
+
+</html>
