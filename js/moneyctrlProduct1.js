@@ -50,7 +50,7 @@ MoneyctrlProduct.prototype = {
     //跳转到商品详情的点击事件
 	toMoneyctrlProduct: function () {
 		$('.product-list').on('tap','.product-content',function () {
-			location = 'moneyctrlProduct.html?productid='+$(this).data('id');
+			location = 'moneyctrlProduct1.html?productid='+$(this).data('id');
 		})
 	},
 
