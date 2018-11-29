@@ -1,0 +1,94 @@
+@import "base.less";
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: "NSimSun";
+    height: 100%;
+    padding-top: .85rem;
+    padding-bottom: 1.4rem;
+    overflow: hidden;
+}
+
+#header {  
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+#footer {
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+/* 设置a标签点击时的字体颜色 */
+a:active{
+    color: black;
+}
+
+/* 搜索区域 */
+
+#search {
+    position: fixed;
+    top: .45rem;
+    width: 100%;
+    .search {
+        height: .24rem;
+    }
+}
+
+/* 导航区域 */
+
+#nav {
+    z-index: 999;
+    top: .8rem;
+    width: 100%;
+    height: .4rem;
+    background-color: #f7f7f7;
+    padding: .1rem;
+    line-height: .2rem;
+    box-shadow: 0px 2px 2px 2px #ccc;
+    position: fixed;
+    a {
+        position: absolute;
+        left: .1rem;
+    }
+    h4 {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        font-weight: normal;
+        display: inline-block;
+        line-height: .1rem;
+    }
+}
+
+/* 主体区域 */
+
+#main {
+    margin-top: .45rem;
+    position: relative;
+    height: 100%;
+    .title {
+        font-size: .15rem;
+        line-height: .4rem;
+        padding-left: .2rem;
+        color: #944604;
+        height: .4rem;
+        box-shadow: 0px 1px 1px 1px #ccc;
+        background-color: #eeeeee;
+    }
+    .brand-list {
+        margin-top: .1rem;
+        background-color: #f5f5f5;
+        li {
+            height: .4rem;
+            background-color: #f5f5f5;
+        }
+    }
+}

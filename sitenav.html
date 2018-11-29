@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>商城导航</title>
+    <!-- 1. 引入mui的CSS文件 提供mui样式 -->
+    <link rel="stylesheet" href="lib/mui/css/mui.min.css">
+    <!-- 2. 引入字体图标的CSS文件  提供字体图标-->
+    <link rel="stylesheet" href="lib/fontAwesome/css/font-awesome.css">
+    <link rel="stylesheet" href="./less/sitenav.css">
+    <!-- 5. 引入rem.js 要在前面引入因为他会影响到页面渲染提前引入 -->
+    <script src="js/rem.js"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- 头部区域 -->
+    <header id="header">
+        <a href="javascript:history.back()">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+        </a>
+        <h3>商城导航</h3>
+        <a href="#">
+            <img class="header-app" src="./images/header_app.png" alt="">
+        </a>
+    </header>
+    <!-- 中间主体区域 -->
+    <main id="main">
+        <!-- 区域滚动的父容器 -->
+        <div class="mui-scroll-wrapper">
+            <!-- 区域滚动的子容器 -->
+            <div class="mui-scroll">
+                <ul class="sitenavList">
+                    
+                </ul>
+            </div>
+        </div>
+    </main>
+    <!-- 底部区域 -->
+    <footer id="footer">
+    </footer>
+
+    <script id="sitenavTpl" type="text/html">
+        {{each result value}}
+        <li><a href="{{value.navHref}}" id="{{value.navId}}">
+            <img src="{{value.navImg}}" alt="">
+            <span class="navTitle">{{value.navTitle}}</span>
+        </a></li>
+        {{/each}}
+    </script>
+
+    <!-- 5. 引入mui的js文件 提供mui js插件-->
+    <script src="lib/mui/js/mui.js"></script>
+    <!-- 6. 引入zepto的js文件 操作元素发送请求  zepto就相当于jquery-->
+    <script src="lib/zepto/zepto.min.js"></script>
+    <!-- 7. 引入模板引擎的js文件 渲染模板的 -->
+    <script src="lib/artTemplate/template-web.js"></script>
+    <!-- 8. 引入主页的js文件 -->
+    <script src="js/sitenav.js"></script>
+</body>
+
+</html>
