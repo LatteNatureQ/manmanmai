@@ -83,7 +83,6 @@ window.onload = function () {
                     that.listId = 0;
                     $('.list').data('id', 0);
                 }
-                console.log(that.clientHeight);
                 /* 屏幕左半边 */
                 if (left < that.clientWidth / 2) {
                     if (top == 0) {
