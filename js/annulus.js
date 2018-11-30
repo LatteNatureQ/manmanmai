@@ -17,7 +17,7 @@ cube.prototype = {
             width: 40,
             height: 40,
             position: 'fixed',
-            transition: 'all .2s ease-out',
+            transition: 'left .1s ease',
             zIndex: 9999
         });
         $('.dot').css({
