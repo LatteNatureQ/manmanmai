@@ -94,7 +94,7 @@ cube.prototype = {
                 if (top == 0) {
                     $('.list').css({
                         left: 100,
-                        top: 56 
+                        top: 56
                     });
                     return;
                 };
@@ -155,7 +155,9 @@ cube.prototype = {
             };
         })
         $('.circle').on('touchstart', function () {
-
+            $('body').css({
+                overflow: 'hidden'
+            })
         })
     },
     touchmove: function () {
